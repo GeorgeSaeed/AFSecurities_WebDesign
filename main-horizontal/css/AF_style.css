@@ -1,0 +1,177 @@
+.w-30 {
+    width: 160px !important;
+}
+
+
+.sticky-toolbar a{
+    color: #ef4545 !important;
+    background-color: #f3f6f9;
+    border-color: transparent;
+}
+
+
+
+#chat-circle{
+    color: #ffff !important;
+    background-color: #4eb968;
+    border-color: transparent;   
+}
+.green{
+    color: #ffff !important;
+    background-color: #4eb968;
+}
+.serv{
+   width:20em;
+   color:#0c1a32 !important;
+   background-color: #fff;
+}
+.main-header .ar-lng{
+    background-color:#0c1a32;
+    width:50px;
+    height:50px;
+  
+  
+}
+.card .about{
+
+    
+    min-height: 285px;
+   
+}
+.box-light{
+
+ background-color:#566f9e;
+
+}
+.fs-16{
+    color:#e3e3e8;
+}
+
+.s1{
+    position: absolute;
+    z-index: 2;
+    left:9%;
+    width: 40%;
+    padding-top: 8em;
+
+  
+}
+
+.s2{
+  
+    position: absolute;
+    z-index: 2;
+    right: 9%;
+    width: 40%;
+    padding-top: 8em;
+  
+}
+
+
+
+.mob-title{
+    color: #008920;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.app-download-btns img{
+    width: 150px;
+}
+
+.carousel-caption .s1-title h2{
+    color: #008920;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 20px;
+
+}
+.sp{
+ 
+ 
+    padding-bottom: 1em;
+    padding-top: 2em;
+  
+
+}
+.t{
+    padding-bottom: 2em;
+    
+   
+}
+.feature{
+    margin-top: 50px;
+   
+}
+.feature-icon,
+.stats-icon{
+    display: inline-block;
+    padding: 0 30px;
+    overflow: hidden;
+}
+.feature h4{
+    color: #000000;
+    margin: 20px 0 0;
+}
+.feature:hover .feature-icon img,
+.stats-item:hover .stats-icon img{
+    -webkit-animation: toRightFromLeft 0.3s forwards;
+    -moz-animation: toRightFromLeft 0.3s forwards;
+    animation: toRightFromLeft 0.3s forwards;
+}
+.ser{
+    background-color: rgb(175, 169, 175);
+}
+.page-header .t{
+    margin: 30px 0 40px;
+}
+.carousel-caption {
+
+    top: 9.25rem
+}
+
+.app-download{
+    padding-bottom: 20px;
+}
+.text-home{
+   margin-top: 2em;
+}
+
+.bankslogo{
+    padding: 0.1rem;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    border-radius: 10px;
+ }
+.userbtn{
+
+      width: auto;
+   
+    font-size: 1.214rem;
+   
+}
+
+.table > thead > tr > th {
+   font-size: 18px;}
+
+   .table > tbody > tr > td {
+   font-size: 16px;} 
+   
+ nsp{ padding: 0;}
+/*--footer--*/
+footer{
+    background-color:#566f9e;
+}
+.main-footer{
+    background-color: #566f9e;
+ 
+}
+.stats-icon img{
+    max-width:50%
+}
+
+
+
+/*--//footer--*/
