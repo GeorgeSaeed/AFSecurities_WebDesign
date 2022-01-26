@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../images/favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
 
     <title>AF Securities</title>
   
@@ -17,7 +17,6 @@
 	<link rel="stylesheet" href="css/horizontal-menu.css"> 
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/Af_style.css">
-	<link rel="stylesheet" href="css/Af_team.css">
 
 	<link rel="stylesheet" href="css/skin_color.css">	
 
@@ -27,155 +26,170 @@
 <div class="wrapper">
 	<div id="loader"></div>
 
-  <header class="main-header">
-	  <div class="inside-header">
-		<div class="d-flex align-items-center logo-box justify-content-start">
-			<!-- Logo -->
-			<a href="index.html" class="logo">
-			  <!-- logo-->
-			  <div class="logo-lg">
-				  <span class="light-logo"><img src="../images/logo-dark.svg" alt="logo"  width="267" height="60"></span>
-				  <span class="dark-logo"><img src="../images/logo-light.svg" alt="logo" width="267" height="60"></span>
-			  </div>
-			</a>	
-		</div>  
-		<!-- Header Navbar -->
-		<nav class="navbar navbar-static-top">
-		  <div class="app-menu">
-			<ul class="header-megamenu nav">
-				<li class="btn-group nav-item d-none d-xl-inline-block">
-					<a href="contact_app_chat.html" class="waves-effect waves-light nav-link svg-bt-icon btn-  -light" title="Chat">
-						<i data-feather="message-circle"></i>
-					</a>
-				</li>
-				<li class="btn-group nav-item d-none d-xl-inline-block">
-					<a href="mailbox.html" class="waves-effect waves-light nav-link svg-bt-icon btn-danger-light" title="Mailbox">
-						<i data-feather="at-sign"></i>
-					</a>
-				</li>
-				<li class="btn-group nav-item d-none d-xl-inline-block">
-					<a href="extra_taskboard.html" class="waves-effect waves-light nav-link svg-bt-icon btn-danger-light" title="Taskboard">
-						<i data-feather="clipboard"></i>
-					</a>
-				</li>
-			</ul> 
-		  </div>
+    <header class="main-header">
+        <div class="inside-header">
+          <div class="d-flex align-items-center logo-box justify-content-start">
+              <!-- Logo -->
+              <a href="index.html" class="logo">
+                <!-- logo-->
+                <div class="logo-lg">
+                    <span class="light-logo"><img src="images/logo-dark.svg" alt="logo"  width="267" height="60"></span>
+                    <span class="dark-logo"><img src="images/logo-light.svg" alt="logo" width="267" height="60"></span>
+                </div>
+              </a>	
+          </div>  
+          <!-- Header Navbar -->
+          <nav class="navbar navbar-static-top">
+            <div class="app-menu">
+              <ul class="header-megamenu nav">
+                  <li class="btn-group nav-item d-none d-xl-inline-block">
+                      <a href="contact_app_chat.html" class="waves-effect waves-light nav-link svg-bt-icon btn-danger-light" title="Chat">
+                          <i data-feather="message-circle"></i>
+                      </a>
+                  </li>
+                  <li class="btn-group nav-item d-none d-xl-inline-block">
+                      <a href="mailbox.html" class="waves-effect waves-light nav-link svg-bt-icon btn-danger-light" title="Mailbox">
+                          <i data-feather="at-sign"></i>
+                      </a>
+                  </li>
+                  <li class="btn-group nav-item d-none d-xl-inline-block">
+                      <a href="extra_taskboard.html" class="waves-effect waves-light nav-link svg-bt-icon btn-danger-light" title="Taskboard">
+                          <i data-feather="clipboard"></i>
+                      </a>
+                  </li>
+              </ul> 
+            </div>
+  
+            <div class="navbar-custom-menu r-side">
+              <ul class="nav navbar-nav">
+                <li class="btn-group nav-item d-lg-inline-flex d-none">
+                    <a href="#" class="full-screen" title="Full Screen bg-transparent" style="width:auto;">
+                        <i class="flag-icon flag-icon-eg"></i>
+                    </a>
+                </li>  
+                
+                  <li class="btn-group d-lg-inline-flex d-none">
+                      <div class="app-menu">
+                          <div class="search-bx mx-5">
+                              <form>
+                                  <div class="input-group">
+                                    <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+                                      <button class="btn" type="submit" id="button-addon3"><i data-feather="search"></i></button>
+                                    </div>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="btn-group nav-item d-lg-inline-flex d-none">
+                      <a href="#" data-provide="fullscreen" class="waves-effect waves-light nav-link full-screen btn-danger-light" title="Full Screen">
+                          <i data-feather="maximize"></i>
+                      </a>
+                  </li>
+                <!-- Notifications -->
+                <li class="dropdown notifications-menu">
+                  <a href="#" class="waves-effect waves-light dropdown-toggle btn-danger-light" data-bs-toggle="dropdown" title="Notifications">
+                    <i data-feather="bell"></i>
+                  </a>
+                  <ul class="dropdown-menu animated bounceIn">
+  
+                    <li class="header">
+                      <div class="p-20">
+                          <div class="flexbox">
+                              <div>
+                                  <h4 class="mb-0 mt-0">Notifications</h4>
+                              </div>
+                              <div>
+                                  <a href="#" class="text-danger">Clear All</a>
+                              </div>
+                          </div>
+                      </div>
+                    </li>
+  
+                    <li>
+                      <!-- inner menu: contains the actual data -->
+                      <ul class="menu sm-scrol">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-users text-info"></i> Curabitur id eros quis nunc suscipit blandit.
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-warning text-warning"></i> Duis malesuada justo eu sapien elementum, in semper diam posuere.
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-users text-danger"></i> Donec at nisi sit amet tortor commodo porttitor pretium a erat.
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-shopping-cart text-success"></i> In gravida mauris et nisi
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-user text-danger"></i> Praesent eu lacus in libero dictum fermentum.
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-user text-danger"></i> Nunc fringilla lorem 
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-user text-success"></i> Nullam euismod dolor ut quam interdum, at scelerisque ipsum imperdiet.
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="footer">
+                        <a href="#">View all</a>
+                    </li>
+                  </ul>
+                </li>	
+  
+                <!-- User Account-->
+                <li class="dropdown user user-menu">
+                  <a href="#" class="waves-effect waves-light dropdown-toggle btn-danger-light" data-bs-toggle="dropdown" title="User">
+                    <i data-feather="user"></i>
+                  </a>
+                  <ul class="dropdown-menu animated flipInX">
+                    <li class="user-body">
+                     <a class="dropdown-item" href="#"><i class="ti-user text-muted me-2"></i> Profile</a>
+                     
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="#"><i class="ti-lock text-muted me-2"></i> Logout</a>
+                    </li>
+                  </ul>
+                  </li>
 
-		  <div class="navbar-custom-menu r-side">
-			<ul class="nav navbar-nav">		  
-				<li class="btn-group d-lg-inline-flex d-none">
-					<div class="app-menu">
-						<div class="search-bx mx-5">
-							<form>
-								<div class="input-group">
-								  <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
-								  <div class="input-group-append">
-									<button class="btn" type="submit" id="button-addon3"><i data-feather="search"></i></button>
-								  </div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</li>
-				<li class="btn-group nav-item d-lg-inline-flex d-none">
-					<a href="#" data-provide="fullscreen" class="waves-effect waves-light nav-link full-screen btn-danger-light" title="Full Screen">
-						<i data-feather="maximize"></i>
-					</a>
-				</li>
-			  <!-- Notifications -->
-			  <li class="dropdown notifications-menu">
-				<a href="#" class="waves-effect waves-light dropdown-toggle btn-danger-light" data-bs-toggle="dropdown" title="Notifications">
-				  <i data-feather="bell"></i>
-				</a>
-				<ul class="dropdown-menu animated bounceIn">
+                  <li class="btn-group nav-item d-lg-inline-flex d-none">
+                    <a href="#modal-login" class="waves-effect waves-light dropdown-toggle btn-danger-light" data-bs-toggle="modal" data-bs-target="#modal-login" title="Login">
+                      <i class="fa fa-sign-in"></i>
+                    </a>
+                   
+                </li>
 
-				  <li class="header">
-					<div class="p-20">
-						<div class="flexbox">
-							<div>
-								<h4 class="mb-0 mt-0">Notifications</h4>
-							</div>
-							<div>
-								<a href="#" class="text-danger">Clear All</a>
-							</div>
-						</div>
-					</div>
-				  </li>
-
-				  <li>
-					<!-- inner menu: contains the actual data -->
-					<ul class="menu sm-scrol">
-					  <li>
-						<a href="#">
-						  <i class="fa fa-users text-info"></i> Curabitur id eros quis nunc suscipit blandit.
-						</a>
-					  </li>
-					  <li>
-						<a href="#">
-						  <i class="fa fa-warning text-warning"></i> Duis malesuada justo eu sapien elementum, in semper diam posuere.
-						</a>
-					  </li>
-					  <li>
-						<a href="#">
-						  <i class="fa fa-users text-danger"></i> Donec at nisi sit amet tortor commodo porttitor pretium a erat.
-						</a>
-					  </li>
-					  <li>
-						<a href="#">
-						  <i class="fa fa-shopping-cart text-success"></i> In gravida mauris et nisi
-						</a>
-					  </li>
-					  <li>
-						<a href="#">
-						  <i class="fa fa-user text-danger"></i> Praesent eu lacus in libero dictum fermentum.
-						</a>
-					  </li>
-					  <li>
-						<a href="#">
-						  <i class="fa fa-user text-danger"></i> Nunc fringilla lorem 
-						</a>
-					  </li>
-					  <li>
-						<a href="#">
-						  <i class="fa fa-user text-success"></i> Nullam euismod dolor ut quam interdum, at scelerisque ipsum imperdiet.
-						</a>
-					  </li>
-					</ul>
-				  </li>
-				  <li class="footer">
-					  <a href="#">View all</a>
-				  </li>
-				</ul>
-			  </li>	
-
-			  <!-- User Account-->
-			  <li class="dropdown user user-menu">
-				<a href="#" class="waves-effect waves-light dropdown-toggle btn-danger-light" data-bs-toggle="dropdown" title="User">
-					<i data-feather="user"></i>
-				</a>
-				<ul class="dropdown-menu animated flipInX">
-				  <li class="user-body">
-					 <a class="dropdown-item" href="#"><i class="ti-user text-muted me-2"></i> Profile</a>
-					 <a class="dropdown-item" href="#"><i class="ti-wallet text-muted me-2"></i> My Wallet</a>
-					 <a class="dropdown-item" href="#"><i class="ti-settings text-muted me-2"></i> Settings</a>
-					 <div class="dropdown-divider"></div>
-					 <a class="dropdown-item" href="#"><i class="ti-lock text-muted me-2"></i> Logout</a>
-				  </li>
-				</ul>
-			  </li>	
-
-			  <!-- Control Sidebar Toggle Button -->
-			  <li>
-				  <a href="#" data-toggle="control-sidebar" title="Setting" class="waves-effect waves-light btn-danger-light">
-					<i data-feather="settings"></i>
-				  </a>
-			  </li>
-
-			</ul>
-		  </div>
-		</nav>
-	  </div>
-  </header>
+                
+               
+  
+                <!-- Control Sidebar Toggle Button -->
+                <li>
+                    <a href="#" data-toggle="control-sidebar" title="Setting" class="waves-effect waves-light btn-danger-light">
+                      <i data-feather="settings"></i>
+                    </a>
+                </li>
+  
+              </ul>
+            </div>
+          </nav>
+        </div>
+    </header>
   
   <!-- Left side column. contains the logo and sidebar -->
   <nav class="main-nav" role="navigation">
@@ -506,552 +520,87 @@
 
 		<section class="content">
 			<div class="row">
-				<div class="col-12">
-					<div class="box">
-						<div class="box-body p-0">
-							<div class="row align-items-center">
-								<div class="col-lg-3">
-									<div>
-										<input class="form-control p-20" type="text" data-ref="input-search" placeholder="Search Contact">
-									</div>
-								</div>
-								<div class="col-lg-9">					
-									<ul class="list-inline text-center mb-0">
-										<li data-filter="all"><a href="#" class="text-bold list-link hover-primary p-15">Show all</a></li>
-										<li data-filter=".finance"><a href="#" class="text-bold list-link hover-primary p-15">Finance</a></li>
-										<li data-filter=".realestate"><a href="#" class="text-bold list-link hover-primary p-15">Real Estate</a></li>
-										<li data-filter=".healthcare"><a href="#" class="text-bold list-link hover-primary p-15">Healthcare</a></li>
-										<li data-filter=".advertising"><a href="#" class="text-bold list-link hover-primary p-15">Advertising</a></li>
-										<li data-filter=".banking"><a href="#" class="text-bold list-link hover-primary p-15">Banking</a></li>
-									</ul>
-								</div>
+					<div class="col-12">
+						<div class="box">
+							<div class="card-body bg-img py-200" style="background-image: url(images/banner2.jpg)" data-overlay="5">
+							  <blockquote class="blockquote blockquote-inverse no-border no-margin">
+								<p class="fs-22">We are Egypt’s oldest online trading company re-invented.</p>
+							   
+							  </blockquote>
+							</div>
+		  
+							<div class="box-body">
+							  <h4>AF Securities</h4>
+						   
+		  
+							  <p>Launched in 2001, AF Securities, formerly known as Arab Finance Brokerage, made its debut in the market as the first online platform for executing purchase and sale transactions on the Egyptian Exchange (EGX) and as an EGX-focused news portal.</p>
+							  <p>The company then obtained a securities license in 2008, allowing it to expand further.</p>
+							  <p>Through its journey, the company has witnessed several ownerships, of which the latest was in March 2018 when it was acquired by new management with an eye for a complete growth-focused revamp.</p>
+		  
+					  
+		  
+								
+							 
+							</div>
+						  </div>						
+							<!-- /.box-footer-->
+							
+						</div>
+	
+						
+						<div class="col-md-6 col-12">
+							<div class="card about">
+							  <img class="card-img-top" src="images/gallery/team/t4.png" alt="Card image cap">
+							  <div class="card-body about">
+								<h4 class="card-title">Vision</h4>
+								<p class="card-text">Since its inception, AF Securities has been passionate about creating innovative financial technologies and products, and we are confident that AF Securities will thrive in the financial services industry by empowering individual investors with our supreme products, in addition to, accelerating the pace towards digital transformation to reach the highest number possible of clients.
+								</p>
+							  </div>
+							  
+							</div>
+						</div>
+	
+						<div class="col-md-6 col-12">
+							<div class="card">
+							  <img class="card-img-top" src="images/gallery/team/t7.png" alt="Card image cap">
+							  <div class="card-body about">
+								<h4 class="card-title">Our Purpose</h4>
+								<p class="card-text">We seek to deliver the best trading experience to our clients across the MENA region, starting with Egypt, through our superior financial services.</p>
+									<p>We aim to strengthen our position in the market as one of the leading securities brokerage companies.</p>
+									<p>We are keen on maintaining clients’ satisfaction through offering innovative technological solutions as well as following an approach that targets educating, supporting, and advising clients to enable them to make the right investment decision.</p>
+								
+							  </div>
+							  
+							</div>
+						</div>
+	
+	
+					<div class="col-md-6 col-12">
+						<div class="box overflow-hidden ">
+							<div class="ratio ratio-16x9 ved">
+							  <iframe width="560" height=" 315" src="https://www.youtube.com/embed/S0niPCz-Ipo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-3 col-12">
-				  <div class="box">
-					<div class="box-body p-0">
-					  <div class="media-list media-list-hover media-list-divided radio-group radios-filter">
-						<div class="media">
-							<div class="radio">
-								<input name="group1" value="all" type="radio" class="with-gap radio-col-primary" id="radio_0">
-								<label for="radio_0" class="mb-0 fw-600">All</label>
-							</div>
+	
+					<div class="col-md-6 col-12">
+						<div class="box overflow-hidden ">
+							<div class="ratio ratio-16x9 ved">
+							 <iframe width="560" height="315" src="https://www.youtube.com/embed/mWkBXLo-53U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        </div>
 						</div>
-						<div class="media">
-							<div class="radio">
-								<input name="group1" value=".sponsored" type="radio" class="with-gap radio-col-primary" id="radio_1">
-								<label for="radio_1" class="mb-0 fw-600">Sponsored</label>
-							</div>
-						</div>
-						<div class="media">
-							<div class="radio">
-								<input name="group1" value=".medium" type="radio" class="with-gap radio-col-primary" id="radio_2">
-								<label for="radio_2" class="mb-0 fw-600">Medium</label>
-							</div>
-						</div>
-						<div class="media">
-							<div class="radio">
-								<input name="group1" value=".neutral" type="radio" class="with-gap radio-col-primary" id="radio_3">
-								<label for="radio_3" class="mb-0 fw-600">Neutral</label>
-							</div>
-						</div>
-						<div class="media">
-							<div class="radio">
-								<input name="group1" value=".notrated" type="radio" class="with-gap radio-col-primary" id="radio_4">
-								<label for="radio_4" class="mb-0 fw-600">Not rated</label>
-							</div>
-						</div>
-					  </div>
 					</div>
-				</div>			  
-			  </div>
-			  <div class="col-lg-9 col-12">
-				<div class="row ico-filter" data-ref="ico-filter">
-					<div class="col-12 col-md-6 col-lg-4 mix realestate sponsored">
-						<div class="box box-body bg-hexagons-white pull-up">
-						  <div class="media align-items-center p-0">
-							<div class="text-center">
-							  <a href="#"><i class="cc XRP me-5" title="XRP"></i></a>
-							</div>
-							<div>
-							  <h3 class="no-margin text-bold">Ripple</h3>
-							  <span>Real Estate</span>
-							</div>
-						  </div>
-						  <div class="flexbox align-items-center mt-25">
-							<div>
-							  <p class="no-margin fw-600"><span class="text-primary">$25.000</span> / $30.000</p>
-							  <p class="no-margin">Sponsored</p>
-							</div>
-							<div class="text-end">
-							  <p class="no-margin fw-600"><span class="text-primary">84%</span></p>
-							  <p class="no-margin">9d left</p>
-							</div>
-						  </div>
-						</div>			
-					  </div>
-					  <div class="col-12 col-md-6 col-lg-4 mix finance sponsored">
-						<div class="box box-body bg-hexagons-white pull-up">
-						  <div class="media align-items-center p-0">
-							<div class="text-center">
-							  <a href="#"><i class="cc BAT me-5" title="BAT"></i></a>
-							</div>
-							<div>
-							  <h3 class="no-margin text-bold">BasicAtt</h3>
-							  <span>Finance</span>
-							</div>
-						  </div>
-						  <div class="flexbox align-items-center mt-25">
-							<div>
-							  <p class="no-margin fw-600"><span class="text-primary">$2.000</span> / $3.000</p>
-							  <p class="no-margin">Sponsored</p>
-							</div>
-							<div class="text-end">
-							  <p class="no-margin fw-600"><span class="text-primary">40%</span></p>
-							  <p class="no-margin">8d left</p>
-							</div>
-						  </div>
-						</div>			
-					  </div>
-					  <div class="col-12 col-md-6 col-lg-4 mix healthcare sponsored">
-						<div class="box box-body bg-hexagons-white pull-up">
-						  <div class="media align-items-center p-0">
-							<div class="text-center">
-							  <a href="#"><i class="cc ADA me-5" title="ADA"></i></a>
-							</div>
-							<div>
-							  <h3 class="no-margin text-bold">Cardano</h3>
-							  <span>Healthcare</span>
-							</div>
-						  </div>
-						  <div class="flexbox align-items-center mt-25">
-							<div>
-							  <p class="no-margin fw-600"><span class="text-primary">$13.900</span> / $25.000</p>
-							  <p class="no-margin">Sponsored</p>
-							</div>
-							<div class="text-end">
-							  <p class="no-margin fw-600"><span class="text-primary">62%</span></p>
-							  <p class="no-margin">9d left</p>
-							</div>
-						  </div>
-						</div>			
-					  </div>
-					  <div class="col-12 col-md-6 col-lg-4 mix advertising sponsored">
-						<div class="box box-body bg-hexagons-white pull-up">
-						  <div class="media align-items-center p-0">
-							<div class="text-center">
-							  <a href="#"><i class="cc LTC me-5" title="LTC"></i></a>
-							</div>
-							<div>
-							  <h3 class="no-margin text-bold">Litecoin</h3>
-							  <span>Marketing</span>
-							</div>
-						  </div>
-						  <div class="flexbox align-items-center mt-25">
-							<div>
-							  <p class="no-margin fw-600"><span class="text-primary">$4.600</span> / $15.200</p>
-							  <p class="no-margin">Sponsored</p>
-							</div>
-							<div class="text-end">
-							  <p class="no-margin fw-600"><span class="text-primary">31%</span></p>
-							  <p class="no-margin">25d left</p>
-							</div>
-						  </div>
-						</div>			
-					  </div>
-					  <div class="col-12 col-md-6 col-lg-4 mix finance neutral">
-						<div class="box box-body bg-hexagons-white pull-up">
-						  <div class="media align-items-center p-0">
-							<div class="text-center">
-							  <a href="#"><i class="cc XEM me-5" title="XEM"></i></a>
-							</div>
-							<div>
-							  <h3 class="no-margin text-bold">Nem</h3>
-							  <span>Finance</span>
-							</div>
-						  </div>
-						  <div class="flexbox align-items-center mt-25">
-							<div>
-							  <p class="no-margin fw-600"><span class="text-primary">$9.600</span> / $20.000</p>
-							  <p class="no-margin">Neutral</p>
-							</div>
-							<div class="text-end">
-							  <p class="no-margin fw-600"><span class="text-primary">48%</span></p>
-							  <p class="no-margin">6d left</p>
-							</div>
-						  </div>
-						</div>			
-					  </div>
-					  <div class="col-12 col-md-6 col-lg-4 mix banking neutral">
-						<div class="box box-body bg-hexagons-white pull-up">
-						  <div class="media align-items-center p-0">
-							<div class="text-center">
-							  <a href="#"><i class="cc NEO me-5" title="NEO"></i></a>
-							</div>
-							<div>
-							  <h3 class="no-margin text-bold">NEO</h3>
-							  <span>Banking</span>
-							</div>
-						  </div>
-						  <div class="flexbox align-items-center mt-25">
-							<div>
-							  <p class="no-margin fw-600"><span class="text-primary">$25.000</span> / $30.000</p>
-							  <p class="no-margin">Neutral</p>
-							</div>
-							<div class="text-end">
-							  <p class="no-margin fw-600"><span class="text-primary">84%</span></p>
-							  <p class="no-margin">9d left</p>
-							</div>
-						  </div>
-						</div>			
-					  </div>
-					  <div class="col-12 col-md-6 col-lg-4 mix exchange medium">
-						<div class="box box-body bg-hexagons-white pull-up">
-						  <div class="media align-items-center p-0">
-							<div class="text-center">
-							  <a href="#"><i class="cc EOS me-5" title="EOS"></i></a>
-							</div>
-							<div>
-							  <h3 class="no-margin text-bold">EOS</h3>
-							  <span>Exchange</span>
-							</div>
-						  </div>
-						  <div class="flexbox align-items-center mt-25">
-							<div>
-							  <p class="no-margin fw-600"><span class="text-primary">$25.000</span> / $30.000</p>
-							  <p class="no-margin">Medium</p>
-							</div>
-							<div class="text-end">
-							  <p class="no-margin fw-600"><span class="text-primary">84%</span></p>
-							  <p class="no-margin">9d left</p>
-							</div>
-						  </div>
-						</div>			
-					  </div>
-					  <div class="col-12 col-md-6 col-lg-4 mix realestate notrated">
-						<div class="box box-body bg-hexagons-white pull-up">
-						  <div class="media align-items-center p-0">
-							<div class="text-center">
-							  <a href="#"><i class="cc XMR me-5" title="XMR"></i></a>
-							</div>
-							<div>
-							  <h3 class="no-margin text-bold">Monero</h3>
-							  <span>Real Estate</span>
-							</div>
-						  </div>
-						  <div class="flexbox align-items-center mt-25">
-							<div>
-							  <p class="no-margin fw-600"><span class="text-primary">$25.000</span> / $30.000</p>
-							  <p class="no-margin">Not Rated</p>
-							</div>
-							<div class="text-end">
-							  <p class="no-margin fw-600"><span class="text-primary">84%</span></p>
-							  <p class="no-margin">9d left</p>
-							</div>
-						  </div>
-						</div>			
-					  </div>
-					  <div class="col-12 col-md-6 col-lg-4 mix blockchain notrated">
-						<div class="box box-body bg-hexagons-white pull-up">
-						  <div class="media align-items-center p-0">
-							<div class="text-center">
-							  <a href="#"><i class="cc QTUM me-5" title="QTUM"></i></a>
-							</div>
-							<div>
-							  <h3 class="no-margin text-bold">QTUM</h3>
-							  <span>Blockchain</span>
-							</div>
-						  </div>
-						  <div class="flexbox align-items-center mt-25">
-							<div>
-							  <p class="no-margin fw-600"><span class="text-primary">$25.000</span> / $30.000</p>
-							  <p class="no-margin">Not Rated</p>
-							</div>
-							<div class="text-end">
-							  <p class="no-margin fw-600"><span class="text-primary">84%</span></p>
-							  <p class="no-margin">9d left</p>
-							</div>
-						  </div>
-						</div>			
-					  </div>
-					  <div class="col-12 col-md-6 col-lg-4 mix trading notrated">
-						<div class="box box-body bg-hexagons-white pull-up">
-						  <div class="media align-items-center p-0">
-							<div class="text-center">
-							  <a href="#"><i class="cc LSK me-5" title="LSK"></i></a>
-							</div>
-							<div>
-							  <h3 class="no-margin text-bold">Lisk</h3>
-							  <span>Trading</span>
-							</div>
-						  </div>
-						  <div class="flexbox align-items-center mt-25">
-							<div>
-							  <p class="no-margin fw-600"><span class="text-primary">$25.000</span> / $30.000</p>
-							  <p class="no-margin">Not Rated</p>
-							</div>
-							<div class="text-end">
-							  <p class="no-margin fw-600"><span class="text-primary">84%</span></p>
-							  <p class="no-margin">9d left</p>
-							</div>
-						  </div>
-						</div>			
-					  </div>
-					  <div class="col-12 col-md-6 col-lg-4 mix smart notrated">
-						<div class="box box-body bg-hexagons-white pull-up">
-						  <div class="media align-items-center p-0">
-							<div class="text-center">
-							  <a href="#"><i class="cc OMG me-5" title="OMG"></i></a>
-							</div>
-							<div>
-							  <h3 class="no-margin text-bold">OmiGO</h3>
-							  <span>Smart</span>
-							</div>
-						  </div>
-						  <div class="flexbox align-items-center mt-25">
-							<div>
-							  <p class="no-margin fw-600"><span class="text-primary">$25.000</span> / $30.000</p>
-							  <p class="no-margin">Not Rated</p>
-							</div>
-							<div class="text-end">
-							  <p class="no-margin fw-600"><span class="text-primary">84%</span></p>
-							  <p class="no-margin">9d left</p>
-							</div>
-						  </div>
-						</div>			
-					  </div>
-					  <div class="col-12 col-md-6 col-lg-4 mix advertising medium">
-						<div class="box box-body bg-hexagons-white pull-up">
-						  <div class="media align-items-center p-0">
-							<div class="text-center">
-							  <a href="#"><i class="cc USDT me-5" title="USDT"></i></a>
-							</div>
-							<div>
-							  <h3 class="no-margin text-bold">Tether</h3>
-							  <span>Advertising</span>
-							</div>
-						  </div>
-						  <div class="flexbox align-items-center mt-25">
-							<div>
-							  <p class="no-margin fw-600"><span class="text-primary">$25.000</span> / $30.000</p>
-							  <p class="no-margin">Medium</p>
-							</div>
-							<div class="text-end">
-							  <p class="no-margin fw-600"><span class="text-primary">84%</span></p>
-							  <p class="no-margin">9d left</p>
-							</div>
-						  </div>
-						</div>			
-					  </div>
-					  <div class="col-12 col-md-6 col-lg-4 mix blockchain medium">
-						<div class="box box-body bg-hexagons-white pull-up">
-						  <div class="media align-items-center p-0">
-							<div class="text-center">
-							  <a href="#"><i class="cc ZEC me-5" title="ZEC"></i></a>
-							</div>
-							<div>
-							  <h3 class="no-margin text-bold">Zcach</h3>
-							  <span>Blockchain</span>
-							</div>
-						  </div>
-						  <div class="flexbox align-items-center mt-25">
-							<div>
-							  <p class="no-margin fw-600"><span class="text-primary">$25.000</span> / $30.000</p>
-							  <p class="no-margin">Medium</p>
-							</div>
-							<div class="text-end">
-							  <p class="no-margin fw-600"><span class="text-primary">84%</span></p>
-							  <p class="no-margin">9d left</p>
-							</div>
-						  </div>
-						</div>			
-					  </div>
-					  <div class="col-12 col-md-6 col-lg-4 mix trading neutral">
-						<div class="box box-body bg-hexagons-white pull-up">
-						  <div class="media align-items-center p-0">
-							<div class="text-center">
-							  <a href="#"><i class="cc STRAT me-5" title="STRAT"></i></a>
-							</div>
-							<div>
-							  <h3 class="no-margin text-bold">Stratis</h3>
-							  <span>Trading</span>
-							</div>
-						  </div>
-						  <div class="flexbox align-items-center mt-25">
-							<div>
-							  <p class="no-margin fw-600"><span class="text-primary">$25.000</span> / $30.000</p>
-							  <p class="no-margin">Neutral</p>
-							</div>
-							<div class="text-end">
-							  <p class="no-margin fw-600"><span class="text-primary">84%</span></p>
-							  <p class="no-margin">9d left</p>
-							</div>
-						  </div>
-						</div>			
-					  </div>
-					  <div class="col-12 col-md-6 col-lg-4 mix finance sponsored">
-						<div class="box box-body bg-hexagons-white pull-up">
-						  <div class="media align-items-center p-0">
-							<div class="text-center">
-							  <a href="#"><i class="cc ARDR me-5" title="ARDR"></i></a>
-							</div>
-							<div>
-							  <h3 class="no-margin text-bold">Ardor</h3>
-							  <span>Finance</span>
-							</div>
-						  </div>
-						  <div class="flexbox align-items-center mt-25">
-							<div>
-							  <p class="no-margin fw-600"><span class="text-primary">$25.000</span> / $30.000</p>
-							  <p class="no-margin">Sponsored</p>
-							</div>
-							<div class="text-end">
-							  <p class="no-margin fw-600"><span class="text-primary">84%</span></p>
-							  <p class="no-margin">9d left</p>
-							</div>
-						  </div>
-						</div>			
-					  </div>
-					  <div class="col-12 col-md-6 col-lg-4 mix finance sponsored">
-						<div class="box box-body bg-hexagons-white pull-up">
-						  <div class="media align-items-center p-0">
-							<div class="text-center">
-							  <a href="#"><i class="cc STEEM me-5" title="STEEM"></i></a>
-							</div>
-							<div>
-							  <h3 class="no-margin text-bold">Steem</h3>
-							  <span>Finance</span>
-							</div>
-						  </div>
-						  <div class="flexbox align-items-center mt-25">
-							<div>
-							  <p class="no-margin fw-600"><span class="text-primary">$25.000</span> / $30.000</p>
-							  <p class="no-margin">Sponsored</p>
-							</div>
-							<div class="text-end">
-							  <p class="no-margin fw-600"><span class="text-primary">84%</span></p>
-							  <p class="no-margin">9d left</p>
-							</div>
-						  </div>
-						</div>			
-					  </div>
-					  <div class="col-12 col-md-6 col-lg-4 mix banking sponsored">
-						<div class="box box-body bg-hexagons-white pull-up">
-						  <div class="media align-items-center p-0">
-							<div class="text-center">
-							  <a href="#"><i class="cc WAVES me-5" title="WAVES"></i></a>
-							</div>
-							<div>
-							  <h3 class="no-margin text-bold">Wavrs</h3>
-							  <span>Banking</span>
-							</div>
-						  </div>
-						  <div class="flexbox align-items-center mt-25">
-							<div>
-							  <p class="no-margin fw-600"><span class="text-primary">$25.000</span> / $30.000</p>
-							  <p class="no-margin">Sponsored</p>
-							</div>
-							<div class="text-end">
-							  <p class="no-margin fw-600"><span class="text-primary">84%</span></p>
-							  <p class="no-margin">9d left</p>
-							</div>
-						  </div>
-						</div>			
-					  </div>
-					  <div class="col-12 col-md-6 col-lg-4 mix exchange sponsored">
-						<div class="box box-body bg-hexagons-white pull-up">
-						  <div class="media align-items-center p-0">
-							<div class="text-center">
-							  <a href="#"><i class="cc REP me-5" title="REP"></i></a>
-							</div>
-							<div>
-							  <h3 class="no-margin text-bold">Augur</h3>
-							  <span>Exchange</span>
-							</div>
-						  </div>
-						  <div class="flexbox align-items-center mt-25">
-							<div>
-							  <p class="no-margin fw-600"><span class="text-primary">$25.000</span> / $30.000</p>
-							  <p class="no-margin">Sponsored</p>
-							</div>
-							<div class="text-end">
-							  <p class="no-margin fw-600"><span class="text-primary">84%</span></p>
-							  <p class="no-margin">9d left</p>
-							</div>
-						  </div>
-						</div>			
-					  </div>
-					  <div class="col-12 col-md-6 col-lg-4 mix realestate sponsored">
-						<div class="box box-body bg-hexagons-white pull-up">
-						  <div class="media align-items-center p-0">
-							<div class="text-center">
-							  <a href="#"><i class="cc KMD me-5" title="KMD"></i></a>
-							</div>
-							<div>
-							  <h3 class="no-margin text-bold">Komodo</h3>
-							  <span>Real Estate</span>
-							</div>
-						  </div>
-						  <div class="flexbox align-items-center mt-25">
-							<div>
-							  <p class="no-margin fw-600"><span class="text-primary">$25.000</span> / $30.000</p>
-							  <p class="no-margin">Sponsored</p>
-							</div>
-							<div class="text-end">
-							  <p class="no-margin fw-600"><span class="text-primary">84%</span></p>
-							  <p class="no-margin">9d left</p>
-							</div>
-						  </div>
-						</div>			
-					  </div>
-					  <div class="col-12 col-md-6 col-lg-4 mix blockchain sponsored">
-						<div class="box box-body bg-hexagons-white pull-up">
-						  <div class="media align-items-center p-0">
-							<div class="text-center">
-							  <a href="#"><i class="cc ARK me-5" title="ARK"></i></a>
-							</div>
-							<div>
-							  <h3 class="no-margin text-bold">Ark</h3>
-							  <span>Blockchain</span>
-							</div>
-						  </div>
-						  <div class="flexbox align-items-center mt-25">
-							<div>
-							  <p class="no-margin fw-600"><span class="text-primary">$25.000</span> / $30.000</p>
-							  <p class="no-margin">Sponsored</p>
-							</div>
-							<div class="text-end">
-							  <p class="no-margin fw-600"><span class="text-primary">84%</span></p>
-							  <p class="no-margin">9d left</p>
-							</div>
-						  </div>
-						</div>			
-					  </div>				
-				</div>
-				<nav>
-				  <ul class="pagination justify-content-center">
-					<li class="page-item disabled">
-					  <a class="page-link" href="#">
-						<span class="ion-ios-arrow-thin-left"></span>
-					  </a>
-					</li>
-					<li class="page-item active"><a class="page-link" href="#">1</a></li>
-					<li class="page-item"><a class="page-link" href="#">2</a></li>
-					<li class="page-item"><a class="page-link" href="#">3</a></li>
-					<li class="page-item"><a class="page-link" href="#">4</a></li>
-					<li class="page-item"><a class="page-link" href="#">5</a></li>
-					<li class="page-item">
-					  <a class="page-link" href="#">
-						<span class="ion-ios-arrow-thin-right"></span>
-					  </a>
-					</li>
-				  </ul>
-				</nav>
-			  </div> 
+					
+				   
+					  
+				
+	
+			   
+				  
+				
+			   
+				  
 			</div>
-		</section>
+			</section>
 
 
 
@@ -1065,7 +614,7 @@
 
 
   	<!--footer -->
-	<footer class="sp">
+	  <footer class="sp">
 		<div class="container">
 			<div class="row sp">
 				<div class="col-lg-3">
@@ -1129,14 +678,14 @@
 					<div class="footer-title">
 						<h3>Download Our App</h3>
 					</div>
-                    <div class="app-download-btns mt-4">
-                        <a href="#" class="col-md-6"><img src="../images/footer-google-btn.png" alt=""></a>
-                        <a href="#" class="col-md-6"><img src="../images/footer-app-btn.png" alt=""></a>
+                    <div class="app-download-btns mb-4">
+                        <a href="#" class="col-md-6"><img src="images/footer-google-btn.png" alt=""></a>
+                        <a href="#" class="col-md-6"><img src="images/footer-app-btn.png" alt=""></a>
                     </div>
                     <div class="box text-center b-1">
                         <div class="box-body">
-                          <h2 class="mt-20">Call Us</h2>
-                          <h2 class="text-bold text-primary mt-20">19717</h2>
+                          <h2 class="mt-10">Call Us</h2>
+                          <h1 class="text-bold text-primary mt-20">19717</h1>
                          
                           
                         </div>
@@ -1149,7 +698,7 @@
 	</footer>
 	<!-- //footer -->
  
-   <footer class="main-footer">
+   <div class="b-footer dark">
     <div class="pull-right d-none d-sm-inline-block">
         <ul class="nav nav-danger nav-dotted nav-dot-separated justify-content-center justify-content-md-end">
 		  <li class="nav-item">
@@ -1160,8 +709,8 @@
 		  </li>
 		</ul>
     </div>
-	  &copy; 2021 <a href="https://www.arabfinance.com/"> AF-Securities</a>. All Rights Reserved.
-  </footer>
+	  &copy; 2022 <a href="https://www.arabfinance.com/"> AF-Securities</a>. All Rights Reserved.
+  </div>
   <!-- Control Sidebar -->
   <aside class="control-sidebar">
 	  
@@ -1448,7 +997,7 @@
 	<div id="chat-box-body">
 		<div id="chat-circle" class="waves-effect waves-circle btn btn-circle btn-lg btn-danger l-h-50">
             <div id="chat-overlay"></div>
-            <span class="icon-Group-chat fs-40"><img src="../images/WhatsApp_icon.png" alt="..."></span>
+            <span class="icon-Group-chat fs-40"><img src="images/WhatsApp_icon.png" alt="..."></span>
 		</div>
 
 		<div class="chat-box">
@@ -1557,17 +1106,17 @@
 	<!-- Page Content overlay -->
 	
 	
-	<!-- Vendor JS -->
-	<script src="js/vendors.min.js"></script>
-	<script src="js/pages/chat-popup.js"></script>
-    <script src="../assets/icons/feather-icons/feather.min.js"></script>	
-	
-	<!-- Crypto Admin App -->
-    <script src="js/numscroller-1.0.js"></script>
-	<script src="js/jquery.smartmenus.js"></script>
-	<script src="js/menus.js"></script>
-	<script src="js/template.js"></script>
-	
+		<!-- Vendor JS -->
+		<script src="js/vendors.min.js"></script>
+		<script src="js/pages/chat-popup.js"></script>
+		<script src="../assets/icons/feather-icons/feather.min.js"></script>
+	  
+		
+		<!-- Crypto Admin App -->
+		<script src="js/numscroller-1.0.js"></script>
+		<script src="js/jquery.smartmenus.js"></script>
+		<script src="js/menus.js"></script>
+		<script src="js/template.js"></script>
 	
 </div>
 </body>

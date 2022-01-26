@@ -36,25 +36,54 @@
 											
 							</div>
 							<div class="p-40">
-								<form action="index.html" method="post">
+								<form novalidate action="index.html" method="post">
+
+
+									<div class="form-group">
+											<div class="input-group mb-3 controls">
+													<span class="input-group-text bg-transparent"><i class=" ti-user"></i></span>
+													<input type="email" name="email" class="form-control ps-15 bg-transparent" placeholder="Email" required data-validation-required-message="This field is required">
+											</div>
+									</div>
+									
+									
 									
 									
 									<div class="form-group">
-										<div class="input-group mb-3">
+									
+										<div class="input-group mb-3 controls">
 											<span class="input-group-text bg-transparent"><i class="ti-lock"></i></span>
-											<input type="password" class="form-control ps-15 bg-transparent" placeholder="Password">
+											<input type="password" name="password" class="form-control ps-15 bg-transparent" placeholder="Password" required data-validation-required-message="This field is required">
+										</div>
+										
+									</div>
+									
+									<div class="form-group">
+										<div class="input-group mb-3 controls">
+											<span class="input-group-text bg-transparent"><i class="ti-lock"></i></span>
+											<input type="password" name="password2" class="form-control ps-15 bg-transparent" placeholder="Retype Password" data-validation-match-match="password" required>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<div class="input-group mb-3 controls">
+											<span class="input-group-text bg-transparent"><i class="ti-lock"></i></span>
+											<input type="password" name="password3" class="form-control ps-15 bg-transparent" placeholder="Pin Code" required data-validation-required-message="This field is required">
 										</div>
 									</div>
 									<div class="form-group">
-										<div class="input-group mb-3">
+										<div class="input-group mb-3 controls">
 											<span class="input-group-text bg-transparent"><i class="ti-lock"></i></span>
-											<input type="password" class="form-control ps-15 bg-transparent" placeholder="Retype Password">
+											<input type="password" name="password4" class="form-control ps-15 bg-transparent" placeholder="Retype Pin Code" data-validation-match-match="password3" required>
 										</div>
 									</div>
+
+
+
 									  <div class="row">
 										<div class="col-12">
-										  <div class="checkbox">
-											<input type="checkbox" id="basic_checkbox_1" >
+										  <div class="checkbox controls">
+											<input type="checkbox" id="basic_checkbox_1" required >
 											<label for="basic_checkbox_1">I agree to the <a href="#modal-terms" class="text-danger" data-bs-toggle="modal" data-bs-target="#modal-terms" title="terms"><b>Terms</b></a></label>
 										  </div>
 										</div>
@@ -77,11 +106,11 @@
 	</div>
 
  <!-- /.modal terms-->
- <div class="modal center-modal fade bs-example-modal-lg" id="modal-terms" tabindex="-1">
+ <div class="modal center-modal fade" id="modal-terms" tabindex="-1">
 	<div class="modal-dialog">
-	  <div class="modal-content">
+	  <div class="modal-content termlo">
 		<div class="modal-header">
-		  <h5 class="modal-title text-warning">Terms and Conditions </h5>
+		  <h5 class="modal-title text-danger">Terms and Conditions </h5>
 		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 		</div>
 		<div class="modal-body">
@@ -115,12 +144,19 @@
   </div>     
   <!-- /.modal terms-->
 	<!-- Vendor JS -->
+	
+	
 	<script src="js/vendors.min.js"></script>
 	<script src="js/pages/chat-popup.js"></script>
+	<script src="js/jquery.smartmenus.js"></script>
+	<script src="js/menus.js"></script>
+	<script src="js/template.js"></script>
     <script src="../assets/icons/feather-icons/feather.min.js"></script>
 	
 	<script src="../assets/vendor_components/sweetalert/sweetalert.min.js"></script>
     <script src="../assets/vendor_components/sweetalert/jquery.sweet-alert.custom.js"></script>	
+	<script src="js/pages/validation.js"></script>
+    <script src="js/pages/form-validation.js"></script>
 	
 	
 </body>

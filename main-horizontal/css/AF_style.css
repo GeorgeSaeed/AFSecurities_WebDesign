@@ -92,7 +92,7 @@
  
  
     padding-bottom: 1em;
-    padding-top: 2em;
+    padding-top: 1em;
   
 
 }
@@ -152,20 +152,27 @@
     font-size: 1.214rem;
    
 }
-
+ .termlo{
+ 
+     margin-top:10em;
+    
+ }
 .table > thead > tr > th {
    font-size: 18px;}
 
    .table > tbody > tr > td {
    font-size: 16px;} 
    
- nsp{ padding: 0;}
+ .nsp{ padding: 0;}
 /*--footer--*/
 footer{
     background-color:#566f9e;
 }
-.main-footer{
-    background-color: #566f9e;
+
+.b-footer {
+    padding: 20px;
+ background: #172b4c;
+
  
 }
 .stats-icon img{
@@ -175,3 +182,9 @@ footer{
 
 
 /*--//footer--*/
+.input-group > .form-control, .input-group > .form-select {
+    position: relative;
+    flex: 1 1 auto;
+    width: 80%;
+    min-width: 0;
+}
