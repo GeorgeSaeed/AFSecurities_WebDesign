@@ -157,12 +157,84 @@
      margin-top:10em;
     
  }
-.table > thead > tr > th {
-   font-size: 18px;}
+ 
 
-   .table > tbody > tr > td {
-   font-size: 16px;} 
+ .table > thead > tr > td, .table > thead > tr > th {
+     padding: 0.5rem;
+      }
+ .table > tbody > tr > td, .table > tbody > tr > th {
+    padding: 0.5rem;
+}
+.bid{
+    background-color: rgb(27 197 188 / 48%)!important;
+}
+.ask{
+    background-color: rgb(246 78 96 / 48%) !important;
+    
+}
+
+.lastb {
+    background-color: rgb(78 114 246 / 25%) !important;
+}
+.headery{
+    background-color: rgb(86 111 158 / 37%) !important;
+
+}
+
+.btn-toggle.btn-xs > .handle {
+    position: absolute;
+    top: 10.15px;
+    left:  0.5995rem;
+    width: 2.425rem;
+    height: 1.825rem;
+    border-radius: 0;
+    background: rgb(4 12 18 / 75%);
+    transition: left .25s;
+    box-shadow: none;
+}
+.btn-toggle.btn-xs.active > .handle {
+    left: 3.2875rem;
+    transition: left .25s;
+}
+.btn-toggle.active {
+    background-color: #20304c;
+}
+
+.btn-toggle.btn-xs {
+    padding: 10px;
+    background-color: #20304c;
+
+ 
+    font-size: 1.714rem;
+    height: 45px;
+    text-align: center;
+ 
+    margin: 10px 5px;
+    border-radius: 10px;
+}
+ .data-delay {
    
+   
+    margin: 0;
+    padding: 0 23px;
+    line-height: 33px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #fff;
+   
+    position: relative;
+    font-weight: bold;
+    display: inline-block!important;
+    padding: 1px 15px 1px 15px!important;
+    background-color: #ef4545;
+    font-size: 12px!important;
+}
+
+.boxy{
+  padding: 0 1.5rem;
+
+}
+
  .nsp{ padding: 0;}
 /*--footer--*/
 footer{
@@ -178,13 +250,35 @@ footer{
 .stats-icon img{
     max-width:50%
 }
+.mybordrer{
+    
+}
 
-
-
+.main-header .navbar {
+    padding-right: 0;
+}
+.main-header .logo .logo-lg {
+    padding-left: 0;
+}
+.layout-top-nav .content-wrapper, .layout-top-nav .main-footer, .layout-top-nav .main-nav > .navbar {
+    width: 94.5%;}
 /*--//footer--*/
 .input-group > .form-control, .input-group > .form-select {
     position: relative;
     flex: 1 1 auto;
     width: 80%;
     min-width: 0;
+}
+
+.theme-warning .callout.callout-warning {
+    /* border-color: #6993ff; */
+    background-color: rgb(255 255 255 / 12%) !important;
+}
+.theme-warning .nav-tabs.nav-tabs-danger .nav-link:hover, .theme-warning .nav-tabs.nav-tabs-danger .nav-link:active, .theme-warning .nav-tabs.nav-tabs-danger .nav-link:focus, .theme-warning .nav-tabs.nav-tabs-danger .nav-link.active  {
+    border-bottom-color: #4eb968;
+    background-color: #4eb968;
+    color: #ffffff;
+}
+.marketw{
+    width: 95%;
 }
