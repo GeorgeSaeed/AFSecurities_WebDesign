@@ -19,7 +19,15 @@
     <link rel="stylesheet" href="css/Af_style.css">
 
 	<link rel="stylesheet" href="css/skin_color.css">	
-
+  <script>
+    function submitForm(form) {
+      $('#sa-title').click(function(){
+        swal("Duplicated Account!", "This email is linked with more than one account, kindly contact with our support to update your data.")
+   
+      });
+      return false;
+    }
+  </script>
 </head>
 <body class="layout-top-nav dark-skin theme-warning fixed">
 	
@@ -675,7 +683,7 @@ Reach out to us and we will take care of it.
 
 
 
-       <div class="modal center-modal fade" id="modal-login" tabindex="-1">
+       <div class="modal center-modal fade" id="modal-login" tabindex="-1" onsubmit="return submitForm(this);">
         <div class="modal-dialog">
           <div class="modal-content bg-transparent">
             
@@ -692,7 +700,7 @@ Reach out to us and we will take care of it.
                                             <p class="mb-0">Sign in to continue to AF Securities.</p>							
                                         </div>
                                         <div class="p-40">
-                                            <form novalidate action="#sa-success" method="post">
+                                            <form novalidate  method="post">
                                                 <div class="form-group">
                                                     <div class="input-group mb-3 controls" >
                                                         <span class="input-group-text"><i class=" ti-user"></i></span>
@@ -711,7 +719,7 @@ Reach out to us and we will take care of it.
                                                     </div>
                                                     <!-- /.col -->
                                                     <div class="col-12 text-center">
-                                                      <button type="submit" class="btn btn-danger mt-10" id="sa-success">SIGN IN</button>
+                                                      <button type="submit" class="btn btn-danger mt-10" id="sa-title">SIGN IN</button>
                                                     </div>
                                                     <!-- /.col -->
                                                   </div>
