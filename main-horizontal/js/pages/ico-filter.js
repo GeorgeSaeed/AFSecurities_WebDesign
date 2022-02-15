@@ -73,7 +73,7 @@ $(function () {
                 } else {
                     // If no searchValue, treat as filter('all')
 
-                    mixer.filter('all');
+                    mixer.filter('sell');
                 }
             }
 	

@@ -88,21 +88,10 @@
     margin-top: 20px;
 
 }
-.sp{
- 
- 
-    padding-bottom: 1em;
-    padding-top: 1em;
-  
 
-}
-.t{
-    padding-bottom: 2em;
-    
-   
-}
 .feature{
-    margin-top: 50px;
+    margin-top: 10px;
+    margin-bottom: 40px;
    
 }
 .feature-icon,
@@ -165,6 +154,10 @@
  .table > tbody > tr > td, .table > tbody > tr > th {
     padding: 0.5rem;
 }
+.no {
+    padding: 0.9rem;
+    font-size: 16px;}
+
 .bid{
     background-color: rgb(27 197 188 / 48%)!important;
 }
@@ -180,6 +173,34 @@
     background-color: rgb(86 111 158 / 37%) !important;
 
 }
+.new-progress-wrap {
+    min-width: 100px;
+    margin: 0 auto;
+    
+}
+.new-progress-line > li {
+    background-color: rgba(211, 211, 211, 0.3);
+    min-height: 10px;
+    position: relative;
+}
+.new-progress-line > li + li:before {
+     height: 24px;
+ }
+ .new-progress-line .scale.first {
+    margin-top: 15px;
+    text-align: left;
+    line-height: 10px;
+    left: 0;
+    right: auto;
+ 
+}
+.buy{
+    background-color: rgb(27 197 189 / 24%) !important;
+}
+.sell {
+    background-color: rgb(246 78 96 / 32%) !important;
+}
+
 
 .btn-toggle.btn-xs > .handle {
     position: absolute;

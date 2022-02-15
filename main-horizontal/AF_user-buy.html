@@ -18,8 +18,8 @@
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/Af_style.css">
 
-	<link rel="stylesheet" href="css/skin_color.css">	
-
+	<link rel="stylesheet" href="css/skin_color.css">
+  
 </head>
 <body class="layout-top-nav dark-skin theme-warning fixed">
 	
@@ -505,42 +505,69 @@
 		<!-- Main content -->
         <section class="content">
 			<div class="row">				
-				<div class="col-xl-4 col-lg-5">
+				<div class="col-xl-3 col-lg-5">
 				  <!-- Profile Image -->
 				  <div class="box">
 					<div class="box-body box-profile">
-					  <img class="rounded img-fluid mx-auto d-block max-w-150" src="images/5.jpg" alt="User profile picture">
+					  <img class="rounded-circle bg-success-light  mx-auto d-block max-w-150" src="../images/avatar/avatar-5.png" alt="User Avatar">
 
 					  <h3 class="profile-username text-center my-10">Olfat Kamel</h3>
 
 					  <h4 class="text-center mt-0"><i class="fa fa-envelope-o me-10"></i>olfat@yahoo.com</h4>
 
-					 
+					  <form>
+						<div class="form-group w-p-60 text-center">
+							<label class="me-15 form-label">Sub-Accounts</label>
+							<div class="btn-group">
+							  <button class="btn dropdown-toggle btn-outline btn-primary" type="button" data-bs-toggle="dropdown" aria-expanded="false">01</button>
+							  <div class="dropdown-menu" x-placement="bottom-start">
+								
+								<a class="dropdown-item" href="#">02</a>
+								<a class="dropdown-item" href="#">03</a>
+							  </div>
+							</div>
+						</div>
+						
+					
+					</form>
+
+					 <!-- sidebar -->
 
 					  <div class="row">
 						<div class="col-12">
-							<div class="media-list media-list-hover media-list-divided w-p100 mt-30">
-								<h5 class="media media-single p-15">
-								  <i class="fa fa-handshake-o me-10"></i><span class="title">Portfolio Status</span>
-								</h5>
-								<h5 class="media media-single p-15">
+							<div class="media-list media-list-hover media-list-divided w-p100 mt-25">
+							<a href="#" class="media media-single p-15">
+								<h5>
+								<i class="fa fa-handshake-o me-10"></i><span class="title">Portfolio Status</span>
+								</h5></a>
+								<a href="#" class="media media-single p-15">
+								<h5>
 								  <i class="fa fa-line-chart me-10"></i><span class="title">Stocks</span>
-								</h5>
-								<h5 class="media media-single p-15">
+								</h5></a>
+								<a href="#" class="media media-single p-15">
+								<h5>
 								  <i class="fa fa-file-text-o me-10"></i><span class="title">Orders</span>
-								</h5>
-								<h5 class="media media-single p-15">
-								  <i class="fa fa-money me-10"></i><span class="title">Account Statements</span>
-								</h5>
-								<h5 class="media media-single p-15">
+								</h5></a>
+								<a href="#" class="media media-single p-15">
+								<h5>
+								  <i class="fa fa-money me-10"></i> <span class="title">Account Statements</span>
+								</h5></a>
+								<a href="#" class="media media-single p-15">
+								<h5>
 								  <i class="fa fa-dollar me-10"></i><span class="title">Invoices</span>
-								</h5>
-								<h5 class="media media-single p-15">
+								</h5></a>
+								<a href="#" class="media media-single p-15">
+								<h5 >
 								  <i class="fa  fa-tv me-10"></i><span class="title">Screen</span>
-								</h5>
-								<h5 class="media media-single p-15">
+								</h5></a>
+								<a href="#" class="media media-single p-15">
+								<h5>
 								  <i class="fa fa-hand-pointer-o me-10"></i><span class="title">Requests</span>
-								</h5>
+								</h5></a>
+							</div>
+							<div class="d-flex justify-content-between pt-50 ">
+								<button type="button" class="btn btn-success w-p40">BUY</button>
+								<button type="button" class="btn btn-danger w-p40">SELL</button>
 							</div>
 						</div>
 						
@@ -553,60 +580,194 @@
 
 
 
-				<!-- /.col -->
+				<!-- main -->
 
-				<div class="col-xl-8 col-lg-7">
-                    <div class="row">
+			<div class="col-xl-9 col-lg-7">
+            
+                   
+                        	<!-- buy -->
+                          <div class="row">
 						<div class="box">
                             <div class="box-header with-border">
-                              <h4 class="box-title"><strong>Buy</strong></h4>
+                              <h4 class="box-title"><strong>BUY</strong></h4>
                               <ul class="box-controls pull-right">
                                 <li><a class="box-btn-close" href="#"></a></li>
                                 <li><a class="box-btn-slide"  href="#"></a></li>	
                                 <li><a class="box-btn-fullscreen" href="#"></a></li>
                               </ul>
                             </div>
-          
-                            <div class="box-body">
-                                <div class="row">
-                                    <div class="col-md-9">
-                                        <div class="box-body green">
-                                         
-											<form class="dash-form">
-												<div class="form-group row">
-                                                 <div class="col-md-6">
 
-												  <label class="col-md-4 col-form-label text-nowrap pr-10">I want to buy</label>
-												  <div class="col-md-8">
-													<input class="form-control" type="text" value="1.00000000" maxlength="25">
-													  <span class="currency">ETH</span>
-												  </div>
-                                                </div>
-                                                <div class="col-md-6">
+                           
+                            <div class="box body">
+                                <div class="row container-fluid">
+                                    <div class="col-md-9 ">
+                                        <div class="p-20 mt-20 buy bt-4 border-success">
+											<div class="box body box bg-banknote-white">
 
-                                                    <label class="col-md-4 col-form-label text-nowrap pr-10">I want to buy</label>
-                                                    <div class="col-md-8">
-                                                      <input class="form-control" type="text" value="1.00000000" maxlength="25">
-                                                        <span class="currency">ETH</span>
-                                                    </div>
-                                                  </div>
+											<div class="flexbox align-items-center mt-3 ps-10">
+												<div class="d-md-flex justify-content-between align-items-center d-inline-block">
+													<h4 class="my-0"><i class="fa fa-flash me-5"></i> Avilable Power:<span class="text-primary"> 316198547</span></h4>
+													
 												</div>
-												
-												<button type="submit" class="btn btn-success btn-block">Buy</button>
-											</form>	
-                                        </div>					
+						  
+												<div class="gap-items-4">
+													<div class="search-bx mx-5 px-0">
+														<form>
+															<div class="input-group">
+															  <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+															  <div class="input-group-append">
+																<button class="btn-group d-lg-inline-flex d-none" type="submit" id="button-addon3"><i data-feather="search"></i></button>
+															  </div>
+															</div>
+														</form>
+													</div>
+													
+												</div>
+											</div>
+                                          
 
+											<div><hr></div>
+
+											<ul class="flexbox flex-justified text-center my-10">
+												<li class="be-1">
+												  <div class="fs-16">Value</div>
+												  <h4 class="mt-10"> 7369</h4>
+												</li>
+					
+												<li class="be-1">
+												  <div class="fs-16">Change</div>
+												  <h4 class="text-danger mt-10"><i class="fa fa-caret-down"></i> -14.1</h4>
+												</li>
+					
+												<li class="be-0">
+												  <div class="fs-16">Today's Range</div>
+                                                  <form class="form-horizontal px-10">
+                                                    <div class="form-group row">
+                                                       
+                                                        <div class="col-sm-12">
+                                                            <input type="text" id="range_01">
+                                                        </div>
+                                                    </div>
+                                                </form>
+												</li>
+					
+												
+											  </ul>
+                                             </div>
+
+											   <div><hr></div>
+                                             <form class="dash-form novalidate">
+                                            <div class="row">
+                                                  
+                                                    <div class="col-xl-6 col-12">
+                                                        
+            
+                                                       
+                                                            <div class="form-group row">
+                                                              <label class="col-md-4 col-form-label text-nowrap pr-10">Type</label>
+                                                              <div class="col-md-8">
+                                                                <select class="form-select">
+                                                                    <option>Limit</option>
+                                                                    <option>Market</option>
+                                                                   
+                                                                  </select>
+                                                                
+                                                              </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                              <label class="col-md-4 col-form-label text-nowrap pr-10">Quantity</label>
+                                                              <div class="col-md-8">
+                                                                <input class="form-control" type="text" value="0.03240000" maxlength="25">
+                                                             
+                                                              </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label class="col-md-4 col-form-label text-nowrap pr-10">Custodian</label>
+                                                                <div class="col-md-8">
+                                                                  <input class="form-control" type="text" value="QNB" maxlength="25" disabled>
+                                                               
+                                                                </div>
+                                                              </div>
+                                                             
+                                                       						
+                                                    </div>
+                                                    <div class="col-xl-6 col-12">
+                                                       
+                                                    
+                                                            <div class="form-group row">
+                                                                <label class="col-md-4 col-form-label text-nowrap pr-10">Price</label>
+                                                                <div class="col-md-8">
+                                                                  <input class="form-control" type="text"  maxlength="25">
+                                                                  
+                                                                </div>
+                                                              </div>
+                                                              <div class="form-group row">
+                                                                <label class="col-md-4 col-form-label text-nowrap pr-10">Validity</label>
+                                                                <div class="col-md-8">
+                                                                  <input class="form-control" type="text" value="0.03240000" maxlength="25">
+                                                               
+                                                                </div>
+                                                              </div>
+                                                              <div class="form-group row">
+                                                                  <label class="col-md-4 col-form-label text-nowrap pr-10">Exec.Rule</label>
+                                                                  <div class="col-md-8">
+                                                                    <select class="form-select">
+                                                                        <option>Minimum Fill</option>
+                                                                        <option>Regular</option>
+                                                                        <option>All or None</option>
+                                                                        <option>Minimum Fill</option>
+                                                                        <option>Fill or Kill</option>
+                                                                        <option>Fill and Kill</option>
+                                                                        
+                                                                       
+                                                                      </select>
+                                                                 
+                                                                  </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                  <label class="col-md-4 col-form-label text-nowrap pr-10">My Qty</label>
+                                                                  <div class="col-md-8">
+                                                                    <input class="form-control" type="text" value="0.03240000" maxlength="25">
+                                                                   
+                                                                 
+                                                                  </div>
+                                                                </div>
+                                                        					
+                                                    </div>
+                                                    <div><hr></div>
+                                                    <div class="d-flex justify-content-around ">
+
+                                                    <button type="button" class="btn btn-warning btn-block w-p20">Save</button>
+                                                    <button type="button" class="btn btn-success btn-block w-p20" data-bs-toggle="modal" data-bs-target="#modal-m">Buy</button>
+                                                    <button type="button" class="btn btn-primary btn-block w-p20">Cancel</button>
+                                                    </div>
+                                                    <div><hr></div>
+                                                    <h4 class="text-center  pt-10">Order Value: <span> 365878</span></h4>
+                                              	
+                                             </div>
+                                            </form>	
+                                          
+                                        </div>				
 
                                     </div>
 
                                     <div class="col-md-3">
-                                        <div class="box-body pt-0">
+                                        <div class="preview">
+                                            <a href="#" class="show-code" title="click to show css class name" data-bs-toggle="collapse" 
+                                            data-bs-target="#collapseExample" 
+                                            aria-expanded="false" 
+                                            aria-controls="collapseExample"><i class="si-menu si"></i></a>
+                                            </div> 
+
+                                            <div class="collapse collapse show" id="collapseExample">    
+
+                                        <div class="box-body pt-0" >
                                             <div class="table-responsive">
                                                 <table class="table table-bordered no-margin">
-                                                  <thead>
+                                                  <thead class="headery">
                                                     <tr>
                                                      
-                                                      <th scope="col">Size</th>
+                                                      <th scope="col">Volume</th>
                                                       <th scope="col">Ask</th>
                                                     </tr>
                                                   </thead>
@@ -640,16 +801,16 @@
                                                   </tbody>
                                                 </table>
                                             </div>
-                                        </div> 
-
+                                        </div>
+                                        
                                         <div class="box-body pt-0">
                                             <div class="table-responsive">
                                                 <table class="table table-bordered no-margin">
-                                                  <thead>
+                                                    <thead class="headery">
                                                     <tr>
                                                      
-                                                        <th scope="col">Size</th>
-                                                        <th scope="col">Ask</th>
+                                                        <th scope="col">Volume</th>
+                                                        <th scope="col">Bid</th>
                                                     </tr>
                                                   </thead>
                                                   <tbody>
@@ -684,23 +845,32 @@
                                             </div>
                                         </div> 
 
+                                       </div> 
+
 
                                     </div>
 
 
                                 </div>
+                                
+          
+                           
+                           </div>
 
-                             
+                                                     
                              
                             </div>
                           </div>
-					</div>
+                    	<!--/ buy-->
+                  
 
+                        
+			    </div>
 
-				  
-
+					
+				 
 				</div>
-			</div>
+		
 		</section>
 
      
@@ -766,13 +936,43 @@
 		
 	
 
-</div>
-</div>
-</div>
+    </div>
+  </div>
+        </div>
 
      
 	  
       <!-- /.modal login-->
+
+	   <!--modal Trading Password -->
+        <div class="modal center-modal fade" id="modal-m" tabindex="-1">
+	     <div class="modal-dialog">
+	      <div class="modal-content">
+		   <div class="modal-header">
+		  <h5 class="modal-title">Kindly, Confirm The Trading Password</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		     </div>
+		
+		<div class="modal-body">
+			 <form method="post" action="">
+				<div class="form-group">
+					<div class="input-group mb-3 controls">
+						<span class="input-group-text bg-transparent"><i class=" ti-lock"></i></span>
+						<input type="password" name="password" class="form-control ps-15 bg-transparent" placeholder="Trading Password" data-validation-required-message="This field is required" required >
+					</div>
+				</div>
+				
+		</div>
+		<div class="modal-footer modal-footer-uniform text-end">
+		  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+		  <button type="submit" class="btn btn-primary">Confirm</button>
+		</div>
+	     </form>
+	    </div>
+	   </div>
+	   </div>
+       
+    <!-- /.modal -->
 
 	  
 
@@ -784,7 +984,7 @@
 		<!---------------------------------------- My content -------------------------------------->
 	  
 	  
-  </div>
+      
   <!-- /.content-wrapper -->
 
 
@@ -1284,7 +1484,22 @@
 	<!-- Vendor JS -->
 	<script src="js/vendors.min.js"></script>
 	<script src="js/pages/chat-popup.js"></script>
-    <script src="../assets/icons/feather-icons/feather.min.js"></script>
+    <script src="assets/icons/feather-icons/feather.min.js"></script>
+	<script src="assets/icons/feather-icons/feather.min.js"></script>
+    <script src="assets/vendor_components/ion-rangeSlider/js/ion.rangeSlider.min.js"></script>
+	
+	<script src="http://www.amcharts.com/lib/3/amcharts.js" type="text/javascript"></script>
+	<script src="http://www.amcharts.com/lib/3/gauge.js" type="text/javascript"></script>
+	<script src="http://www.amcharts.com/lib/3/serial.js" type="text/javascript"></script>
+	<script src="http://www.amcharts.com/lib/3/amstock.js" type="text/javascript"></script>
+	<script src="http://www.amcharts.com/lib/3/pie.js" type="text/javascript"></script>
+	<script src="http://www.amcharts.com/lib/3/plugins/animate/animate.min.js" type="text/javascript"></script>
+	<script src="http://www.amcharts.com/lib/3/plugins/export/export.min.js" type="text/javascript"></script>
+	<script src="http://www.amcharts.com/lib/3/themes/patterns.js" type="text/javascript"></script>
+	<script src="http://www.amcharts.com/lib/3/themes/light.js" type="text/javascript"></script>
+	<script src="assets/vendor_components/echarts-master/dist/echarts-en.min.js"></script>
+	<script src="assets/vendor_components/echarts-liquidfill-master/dist/echarts-liquidfill.min.js"></script>
+
   
 	
 	<!-- Crypto Admin App -->
@@ -1295,6 +1510,15 @@
   
   <script src="js/pages/validation.js"></script>
   <script src="js/pages/form-validation.js"></script>
+  <script src="assets/vendor_components/Web-Ticker-master/jquery.webticker.min.js"></script>
+  <script src="assets/vendor_components/echarts-master/dist/echarts-en.min.js"></script>
+  <script src="assets/vendor_components/echarts-liquidfill-master/dist/echarts-liquidfill.min.js"></script>
+  <script src="assets/vendor_components/datatable/datatables.min.js"></script>
+  <script src="js/pages/dashboard16.js"></script>
+	<script src="js/pages/dashboard16-chart.js"></script>
+    <script src="js/pages/range-sliders.init.js"></script>
+    
+			
 	
 	
 </div>
