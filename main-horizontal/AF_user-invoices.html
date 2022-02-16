@@ -505,42 +505,69 @@
 		<!-- Main content -->
         <section class="content">
 			<div class="row">				
-				<div class="col-xl-3 col-lg-6">
+				<div class="col-xl-3 col-lg-5">
 				  <!-- Profile Image -->
 				  <div class="box">
 					<div class="box-body box-profile">
-					  <img class="rounded img-fluid mx-auto d-block max-w-150" src="images/5.jpg" alt="User profile picture">
+					  <img class="rounded-circle bg-success-light  mx-auto d-block max-w-150" src="../images/avatar/avatar-5.png" alt="User Avatar">
 
 					  <h3 class="profile-username text-center my-10">Olfat Kamel</h3>
 
 					  <h4 class="text-center mt-0"><i class="fa fa-envelope-o me-10"></i>olfat@yahoo.com</h4>
 
-					 
+					  <form>
+						<div class="form-group w-p-60 text-center">
+							<label class="me-15 form-label">Sub-Accounts</label>
+							<div class="btn-group">
+							  <button class="btn dropdown-toggle btn-outline btn-primary" type="button" data-bs-toggle="dropdown" aria-expanded="false">01</button>
+							  <div class="dropdown-menu" x-placement="bottom-start">
+								
+								<a class="dropdown-item" href="#">02</a>
+								<a class="dropdown-item" href="#">03</a>
+							  </div>
+							</div>
+						</div>
+						
+					
+					</form>
+
+					 <!-- sidebar -->
 
 					  <div class="row">
 						<div class="col-12">
-							<div class="media-list media-list-hover media-list-divided w-p100 mt-30">
-								<h5 class="media media-single p-15">
-								  <i class="fa fa-handshake-o me-10"></i><span class="title">Portfolio Status</span>
-								</h5>
-								<h5 class="media media-single p-15">
+							<div class="media-list media-list-hover media-list-divided w-p100 mt-25">
+							<a href="#" class="media media-single p-15">
+								<h5>
+								<i class="fa fa-handshake-o me-10"></i><span class="title">Portfolio Status</span>
+								</h5></a>
+								<a href="#" class="media media-single p-15">
+								<h5>
 								  <i class="fa fa-line-chart me-10"></i><span class="title">Stocks</span>
-								</h5>
-								<h5 class="media media-single p-15">
+								</h5></a>
+								<a href="#" class="media media-single p-15">
+								<h5>
 								  <i class="fa fa-file-text-o me-10"></i><span class="title">Orders</span>
-								</h5>
-								<h5 class="media media-single p-15">
-								  <i class="fa fa-money me-10"></i><span class="title">Account Statements</span>
-								</h5>
-								<h5 class="media media-single p-15">
+								</h5></a>
+								<a href="#" class="media media-single p-15">
+								<h5>
+								  <i class="fa fa-money me-10"></i> <span class="title">Account Statements</span>
+								</h5></a>
+								<a href="#" class="media media-single p-15">
+								<h5>
 								  <i class="fa fa-dollar me-10"></i><span class="title">Invoices</span>
-								</h5>
-								<h5 class="media media-single p-15">
+								</h5></a>
+								<a href="#" class="media media-single p-15">
+								<h5 >
 								  <i class="fa  fa-tv me-10"></i><span class="title">Screen</span>
-								</h5>
-								<h5 class="media media-single p-15">
+								</h5></a>
+								<a href="#" class="media media-single p-15">
+								<h5>
 								  <i class="fa fa-hand-pointer-o me-10"></i><span class="title">Requests</span>
-								</h5>
+								</h5></a>
+							</div>
+							<div class="d-flex justify-content-between pt-50 ">
+								<button type="button" class="btn btn-success w-p40" data-bs-toggle="modal" data-bs-target="#modal-buy">BUY</button>
+								<button type="button" class="btn btn-danger w-p40">SELL</button>
 							</div>
 						</div>
 						
@@ -553,13 +580,15 @@
 
 
 
-				<!-- /.col -->
+				<!-- main -->
 
 				<div class="col-xl-9 col-lg-7">
+                   
+
                     <div class="row">
 						<div class="box">
                             <div class="box-header with-border">
-                              <h4 class="box-title"><strong>Orders</strong></h4>
+                              <h4 class="box-title"><strong>INVOICES</strong></h4>
                               <ul class="box-controls pull-right">
                                 <li><a class="box-btn-close" href="#"></a></li>
                                 <li><a class="box-btn-slide"  href="#"></a></li>	
@@ -572,14 +601,12 @@
                                   <div class="row">
                                       <div class="col-md-6">
                                         <div class="form-group">
-                                        <h5 class="my-10">Filter by Status</h5>
+                                        <h5 class="my-10">Filter by Type</h5>
                                         <select class="selectpicker">
                                             <option>All</option>
-                                            <option>Pending</option>
-                                            <option>Saved</option>
-                                            <option>Full Executed</option>
-                                            <option>Expired</option>
-                                            <option>Canceld</option>
+                                            <option>Buy</option>
+                                            <option>Sell</option>
+                                           
                                         </select>
                                        </div>
 
@@ -609,97 +636,89 @@
                                   <table id="example" class="table table-bordered table-hover text-center">
                                     <thead class="headery">
                                         <tr>
-                                            <th>Order</th>
+                                            <th>Invoice</th>
                                             <th>Type</th>
-                                            <th>Stock</th>
-                                            <th>Ticker</th>
-                                            <th>Date&Time</th>
-                                            <th>Quantity</th>
-                                            <th>Exec.Qty</th>
-                                            <th>Price</th>
-                                            <th>Expiry</th>
+                                            <th>Code</th>
+                                            <th>Name</th>
+                                            <th>Currency</th>
                                             <th>Custodian</th>
-                                            <th>Status</th>
-                                            <th data-orderable="false">Modify</th>
-                                            <th data-orderable="false">Cancel</th>
+                                            <th>Quantity</th>
+                                            <th>Exec.Price</th>
+                                            <th>Value</th>                                          
+                                            <th>Sattlement Date</th>
+                                         
+                                           
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>10089653</td>
                                             <td class="text-danger">Sell</td>
+                                           
+                                            <td><strong>ABCD</strong></td>
                                             <td>Porto Group</td>
-											<td><strong>ABCD</strong></td>
-                                            <td>2011/04/25 10:15 AM</td>
+                                            <td>EGP</td>
+                                            <td>QNB</td>
                                             <td>50,000</td>
-                                            <td>0</td>
+                                            <td>11,563.88</td>
                                             <td>450.000</td>
                                             <td>2011/04/25</td>
-                                            <td>QNB</td>
-                                            <td>Pending</td>
-                                            <td><button class="btn btn-success-light btn-sm">Modify</button></td>
-                                            <td><button class="btn btn-danger-light btn-sm">Cancel</button></td>
+                                           
+                                          
+                                           
                                             
                                         </tr>
                                         <tr>
                                             <td>10089653</td>
-                                            <td class="text-success">Buy</td>
+                                            <td class="text-danger">Sell</td>
+                                           
+                                            <td><strong>ABCD</strong></td>
                                             <td>Porto Group</td>
-											<td><strong>ABCD</strong></td>
-                                            <td>2011/04/25 10:15 AM</td>
+                                            <td>EGP</td>
+                                            <td>QNB</td>
                                             <td>50,000</td>
-                                            <td>0</td>
+                                            <td>11,563.88</td>
                                             <td>450.000</td>
                                             <td>2011/04/25</td>
-                                            <td>QNB</td>
-                                            <td>Pending</td>
-                                            <td><button class="btn btn-success-light btn-sm">Modify</button></td>
-                                            <td><button class="btn btn-danger-light btn-sm">Cancel</button></td>
                                         </tr>
                                         <tr>
                                             <td>10089653</td>
                                             <td class="text-success">Buy</td>
+                                           
+                                            <td><strong>ABCD</strong></td>
                                             <td>Porto Group</td>
-											<td><strong>ABCD</strong></td>
-                                            <td>2011/04/25 10:15 AM</td>
+                                            <td>EGP</td>
+                                            <td>QNB</td>
                                             <td>50,000</td>
-                                            <td>0</td>
+                                            <td>11,563.88</td>
                                             <td>450.000</td>
                                             <td>2011/04/25</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10089653</td>
+                                            <td class="text-success">Buy</td>
+                                           
+                                            <td><strong>ABCD</strong></td>
+                                            <td>Porto Group</td>
+                                            <td>EGP</td>
                                             <td>QNB</td>
-                                            <td>Pending</td>
-                                            <td><button class="btn btn-success-light btn-sm">Modify</button></td>
-                                            <td><button class="btn btn-danger-light btn-sm">Cancel</button></td>
+                                            <td>50,000</td>
+                                            <td>11,563.88</td>
+                                            <td>450.000</td>
+                                            <td>2011/04/25</td>
                                         </tr>
                                         <tr>
                                             <td>10089653</td>
                                             <td class="text-danger">Sell</td>
+                                           
+                                            <td><strong>ABCD</strong></td>
                                             <td>Porto Group</td>
-											<td><strong>ABCD</strong></td>
-                                            <td>2011/04/25 10:15 AM</td>
+                                            <td>EGP</td>
+                                            <td>QNB</td>
                                             <td>50,000</td>
-                                            <td>0</td>
+                                            <td>11,563.88</td>
                                             <td>450.000</td>
                                             <td>2011/04/25</td>
-                                            <td>QNB</td>
-                                            <td>Pending</td>
-                                            <td><button class="btn btn-success-light btn-sm">Modify</button></td>
-                                            <td><button class="btn btn-danger-light btn-sm">Cancel</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>10089653</td>
-                                            <td class="text-success">Buy</td>
-                                            <td>Porto Group</td>
-											<td><strong>ABCD</strong></td>
-                                            <td>2011/04/25 10:15 AM</td>
-                                            <td>50,000</td>
-                                            <td>0</td>
-                                            <td>450.000</td>
-                                            <td>2011/04/25</td>
-                                            <td>QNB</td>
-                                            <td>Pending</td>
-                                            <td><button class="btn btn-success-light btn-sm">Modify</button></td>
-                                            <td><button class="btn btn-danger-light btn-sm">Cancel</button></td>
                                         </tr>
                                         
                                     </tbody>				  
@@ -711,9 +730,7 @@
                           </div>
 					</div>
 
-
-				  
-
+				 
 				</div>
 			</div>
 		</section>
@@ -781,13 +798,275 @@
 		
 	
 
-</div>
-</div>
-</div>
+    </div>
+  </div>
+        </div>
 
      
 	  
       <!-- /.modal login-->
+
+
+
+	  <!-- Modal buy-->
+  <div class="modal modal-fill fade" data-backdrop="false" id="modal-buy" tabindex="-1">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title">Modal title</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="box body">
+			<div class="row container-fluid">
+				<div class="col-md-9 ">
+					<div class="p-20 mt-20 buy bt-4 border-success">
+						<div class="box body box bg-banknote-white">
+
+						<div class="flexbox align-items-center mt-3 ps-10">
+							<div class="d-md-flex justify-content-between align-items-center d-inline-block">
+								<h4 class="my-0"><i class="fa fa-money me-5"></i> Avilable Cash:<span class="text-primary"> 316198547</span></h4>
+								
+							</div>
+	  
+							<div class="gap-items-4">
+								<div class="search-bx mx-5 px-0  bg-success ">
+									<form>
+										<div class="input-group">
+										  <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+										  <div class="input-group-append">
+											<button class="btn-group d-lg-inline-flex d-none" type="submit" id="button-addon3"><i data-feather="search"></i></button>
+										  </div>
+										</div>
+									</form>
+								</div>
+								
+							</div>
+						</div>
+					  
+
+						<div><hr></div>
+
+						<ul class="flexbox flex-justified text-center my-10">
+							<li class="be-1">
+							  <div class="fs-16">Value</div>
+							  <h4 class="mt-10"> 7369</h4>
+							</li>
+
+							<li class="be-1">
+							  <div class="fs-16">Change</div>
+							  <h4 class="text-danger mt-10"><i class="fa fa-caret-down"></i> -14.1</h4>
+							</li>
+
+							<li class="be-0">
+							  <div class="fs-16">Today's Range</div>
+							  <form class="form-horizontal px-10">
+								<div class="form-group row">
+								   
+									<div class="col-sm-12">
+										<input type="text" id="range_01">
+									</div>
+								</div>
+							</form>
+							</li>
+
+							
+						  </ul>
+						 </div>
+
+						   <div><hr></div>
+					   
+							<div class="row">
+								<div class="col-xl-6 col-12">
+									
+
+									<form class="dash-form">
+										<div class="form-group row">
+										  <label class="col-md-4 col-form-label text-nowrap pr-10">Type</label>
+										  <div class="col-md-8">
+											<select class="form-select">
+												<option>Limit</option>
+												<option>Market</option>
+											   
+											  </select>
+											
+										  </div>
+										</div>
+										<div class="form-group row">
+										  <label class="col-md-4 col-form-label text-nowrap pr-10">Quantity</label>
+										  <div class="col-md-8">
+											<input class="form-control" type="text" value="0.03240000" maxlength="25">
+										 
+										  </div>
+										</div>
+										<div class="form-group row">
+											<label class="col-md-4 col-form-label text-nowrap pr-10">Custodian</label>
+											<div class="col-md-8">
+											  <input class="form-control" type="text" value="QNB" maxlength="25" disabled>
+										   
+											</div>
+										  </div>
+										 
+														   
+								</div>
+								<div class="col-xl-6 col-12">
+								   
+								
+										<div class="form-group row">
+											<label class="col-md-4 col-form-label text-nowrap pr-10">Price</label>
+											<div class="col-md-8">
+											  <input class="form-control" type="text"  maxlength="25">
+											  
+											</div>
+										  </div>
+										  <div class="form-group row">
+											<label class="col-md-4 col-form-label text-nowrap pr-10">Validity</label>
+											<div class="col-md-8">
+											  <input class="form-control" type="text" value="0.03240000" maxlength="25">
+										   
+											</div>
+										  </div>
+										  <div class="form-group row">
+											  <label class="col-md-4 col-form-label text-nowrap pr-10">Exec.Rule</label>
+											  <div class="col-md-8">
+												<select class="form-select">
+													<option>MF</option>
+													<option>Fill or Kill</option>
+												   
+												  </select>
+											 
+											  </div>
+											</div>
+											<div class="form-group row">
+											  <label class="col-md-4 col-form-label text-nowrap pr-10">My Qty</label>
+											  <div class="col-md-8">
+												<input class="form-control" type="text" value="0.03240000" maxlength="25">
+											   
+											 
+											  </div>
+											</div>
+										<button type="submit" class="btn btn-success btn-block w-p40">Buy</button>
+									</form>							
+								</div>
+							</div>
+					  
+					  
+					</div>				
+
+				</div>
+
+				<div class="col-md-3">
+					<div class="preview">
+						<a href="#" class="show-code" title="click to show css class name" data-bs-toggle="collapse" 
+						data-bs-target="#collapseExample" 
+						aria-expanded="false" 
+						aria-controls="collapseExample"><i class="si-menu si"></i></a>
+						</div> 
+
+						<div class="collapse collapse show" id="collapseExample">    
+
+					<div class="box-body pt-0" >
+						<div class="table-responsive">
+							<table class="table table-bordered no-margin">
+							  <thead class="headery">
+								<tr>
+								 
+								  <th scope="col">Size</th>
+								  <th scope="col">Ask</th>
+								</tr>
+							  </thead>
+							  <tbody>
+								<tr>
+								  <td class="text-danger">7845</td>                                                    
+								  <td class="text-danger">5245</td>
+								  
+								</tr>
+								<tr>
+								
+									<td class="text-danger">7845</td>                                                    
+									<td class="text-danger">5245</td>
+								</tr>
+								<tr>
+							  
+									<td class="text-danger">7845</td>                                                    
+									<td class="text-danger">5245</td>
+								</tr>
+								<tr>
+								 
+									<td class="text-danger">7845</td>                                                    
+									<td class="text-danger">5245</td>
+								</tr>
+								<tr>
+								
+									<td class="text-danger">7845</td>                                                    
+									<td class="text-danger">5245</td>
+								</tr>
+								
+							  </tbody>
+							</table>
+						</div>
+					</div>
+					
+					<div class="box-body pt-0">
+						<div class="table-responsive">
+							<table class="table table-bordered no-margin">
+								<thead class="headery">
+								<tr>
+								 
+									<th scope="col">Size</th>
+									<th scope="col">Ask</th>
+								</tr>
+							  </thead>
+							  <tbody>
+								<tr>
+							  
+								  <td class="text-success">9763</td>
+								  <td class="text-success">2000</td>
+								</tr>
+								<tr>
+								
+									<td class="text-success">9763</td>
+									<td class="text-success">2000</td>
+								</tr>
+								<tr>
+							  
+									<td class="text-success">9763</td>
+									<td class="text-success">2000</td>
+								</tr>
+								<tr>
+								 
+									<td class="text-success">9763</td>
+									<td class="text-success">2000</td>
+								</tr>
+								<tr>
+								
+									<td class="text-success">9763</td>
+									<td class="text-success">2000</td>
+								</tr>
+								
+							  </tbody>
+							</table>
+						</div>
+					</div> 
+
+				   </div> 
+
+
+				</div>
+
+
+			</div>
+			
+
+	   
+	   </div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary float-end">Save changes</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+<!-- /.modal buy -->
 
 	  
 
@@ -1329,6 +1608,9 @@
   <script src="assets/vendor_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
   <script src="assets/vendor_plugins/timepicker/bootstrap-timepicker.min.js"></script>
   <script src="assets/vendor_plugins/iCheck/icheck.min.js"></script>
+	
+			
+	
 	
 </div>
 </body>
