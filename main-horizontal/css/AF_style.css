@@ -203,7 +203,7 @@
     background-color: rgb(246 78 96 / 32%) !important;
 }
 
-.my-10:hover{
+.gry:hover{
     filter: grayscale(100%);
   
 }
@@ -217,6 +217,14 @@
     background: rgb(4 12 18 / 75%);
     transition: left .25s;
     box-shadow: none;
+}
+
+.vtabs .tabs-vertical {
+    width: 234px;
+ 
+}
+.taby{
+    background-color: #566f9e;
 }
 .btn-toggle.btn-xs.active > .handle {
     left: 3.2875rem;
