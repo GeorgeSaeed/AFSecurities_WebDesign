@@ -16,9 +16,9 @@
     
  
 }
-.dark-skin .form-control, .dark-skin .form-select.sub {
-    background-color: #20304c;
-    color: #ef4545;
+.errormsg{
+    padding: 0;
+    color:#ef4545;
 }
 
 .dark-skin .form-control, .dark-skin .form-select {

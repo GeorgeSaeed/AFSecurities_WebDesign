@@ -19,15 +19,7 @@
     <link rel="stylesheet" href="css/Af_style.css">
 
 	<link rel="stylesheet" href="css/skin_color.css">	
-  <script>
-    function submitForm(form) {
-      $('#sa-title').click(function(){
-        swal("Duplicated Account!", "This email is linked with more than one account, kindly contact with our support to update your data.")
-   
-      });
-      return false;
-    }
-  </script>
+  
 </head>
 <body class="layout-top-nav dark-skin theme-warning fixed">
 	
@@ -193,7 +185,7 @@
                     </li>
 
                   <li class="btn-group nav-item d-lg-inline-flex d-none">
-                    <a href="#modal-register" class="waves-effect waves-light dropdown-toggle btn-danger-light" data-bs-toggle="modal" data-bs-target="#modal-register" title="Login">
+                    <a href="#modal-login" class="waves-effect waves-light dropdown-toggle btn-danger-light" data-bs-toggle="modal" data-bs-target="#modal-login" title="Login">
                       <i class="fa fa-sign-in"></i>
                     </a>
                    
@@ -699,7 +691,7 @@ Reach out to us and we will take care of it.
 
 	   <!-- /.modal login email-->
 
-       <div class="modal center-modal fade" id="modal-login" tabindex="-1" onsubmit="return submitForm(this);">
+       <div class="modal center-modal fade" id="modal-login" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content bg-transparent">
             
@@ -721,6 +713,7 @@ Reach out to us and we will take care of it.
                                                     <div class="input-group mb-3 controls" >
                                                         <span class="input-group-text"><i class=" ti-user"></i></span>
                                                         <input type="email" name="email" class="form-control ps-15 bg-transparent " placeholder="Email" required data-validation-required-message="This field is required" style="border-color:rgb(181 181 195);color:#898992;">
+                                                        <p class="errormsg">This email is linked with more than one account, kindly contact with our support to update your data.</p>
                                                     </div>
                                                 </div>
                                                 
