@@ -21,7 +21,15 @@
     color: #ef4545;
 }
 
+.dark-skin .form-control, .dark-skin .form-select {
+    background-color: #0c1a32;
+    color: #898992;
+}
 
+    .dark-skin .form-control, .dark-skin .form-select {
+        background-color: #0c1a32;
+        color: #b5b5c3;
+    }    
 #chat-circle{
     color: #ffff !important;
     background-color: #4eb968;
