@@ -78,20 +78,18 @@
                     </button>
                 </li>  
                 
-                  <li class="btn-group d-lg-inline-flex d-none">
-                      <div class="app-menu">
-                          <div class="search-bx mx-5">
-                              <form>
-                                  <div class="input-group">
-                                    <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
-                                    <div class="input-group-append">
-                                      <button class="btn" type="submit" id="button-addon3"><i data-feather="search"></i></button>
-                                    </div>
-                                  </div>
-                              </form>
-                          </div>
-                      </div>
-                  </li>
+                <li class="btn-group d-lg-inline-flex d-none">
+                  <form class="dash-form">
+                  <div class="form-group app-menu">
+                    <select class="form-select sub b-0">
+                    <option>OlfatKamel - 0199336</option>
+                    <option>MahmoudSalahEldin - 02345678</option>
+                    <option>AbdElrahmanAhmedMohammed- 0123456</option>
+                 
+                    </select>
+                  </form>
+                  </div>
+                </li>
                   <li class="btn-group nav-item d-lg-inline-flex d-none">
                       <a href="#" data-provide="fullscreen" class="waves-effect waves-light nav-link full-screen btn-danger-light" title="Full Screen">
                           <i data-feather="maximize"></i>
@@ -255,12 +253,16 @@
 		<li><a href="#"><i data-feather="target"></i>Open An Account</a>
 			
 		</li>
-    <li><a href="#"><i data-feather="mail"></i>Contacts</a>
+    <li class=" float-end market p-15"><i data-feather="clock"></i>Market will open 01:22:30
 			
 		</li>
 	
 	  </ul>
+
+   
 	</nav>
+
+    
     
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -917,9 +919,11 @@ Reach out to us and we will take care of it.
 						<p>ArabFinance.com was formed to meet a growing demand for online trading, transparent financial information, and financial services in Egypt and the Arab world. As a customer-centric organization, both structurally and functionally,
                         </p>
 						<div class="user-social-acount">
-                            <button class="btn btn-circle btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></button>
-                            <button class="btn btn-circle btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></button>
-                            <button class="btn btn-circle btn-social-icon btn-instagram"><i class="fa fa-instagram"></i></button>
+              <a href="https://www.facebook.com/ArabFinanceEn" class="btn btn-circle btn-social-icon btn-facebook"><i class="fa fa-facebook text-white"></i></a>
+              <a href="https://twitter.com/arab_finance" class="btn btn-circle btn-social-icon btn-twitter"><i class="fa fa-twitter text-white"></i></a>
+              <a href="https://www.instagram.com/arab_finance/" class="btn btn-circle btn-social-icon btn-instagram"><i class="fa fa-instagram text-white"></i></a>
+              <a href="https://www.linkedin.com/company/arab-finance-brokerage/" class="btn btn-circle btn-social-icon btn-linkedin"><i class="fa fa-linkedin text-white"></i></a>
+              <a href="https://www.youtube.com/channel/UCzYBO-Vc29CJO-rokiFRRgw" class="btn btn-circle btn-social-icon btn-youtube"><i class="fa fa-youtube text-white"></i></a>
                         </div>
 					</div>
 				</div>
@@ -961,7 +965,7 @@ Reach out to us and we will take care of it.
                         <li>
 							<a href="shop.html">Our Team</a>
 						</li>
-						<li>
+						<li >
 							<a href="contact.html">Contact Us</a>
 						</li>
 					</ul>
@@ -971,8 +975,8 @@ Reach out to us and we will take care of it.
 						<h3>Download Our App</h3>
 					</div>
                     <div class="app-download-btns mb-4">
-                        <a href="#" class="col-md-6"><img src="images/footer-google-btn.png" alt=""></a>
-                        <a href="#" class="col-md-6"><img src="images/footer-app-btn.png" alt=""></a>
+                        <a href="https://play.google.com/store/apps/details?id=arabfinance.com.borsa&hl=ar" class="col-md-6"><img src="images/footer-google-btn.png" alt=""></a>
+                        <a href="https://apps.apple.com/eg/app/arab-finance/id367345158" class="col-md-6"><img src="images/footer-app-btn.png" alt=""></a>
                     </div>
                     <div class="box text-center b-1">
                         <div class="box-body">
@@ -1276,23 +1280,41 @@ Reach out to us and we will take care of it.
 <!-- ./wrapper -->
 	
 	<!-- ./side demo panel -->
-	<div class="sticky-toolbar">	    
-	    <a href="https://themeforest.net/item/crypto-admin-responsive-bootstrap-4-admin-html-templates/21604673" data-bs-toggle="tooltip" data-bs-placement="left" title="Buy Now" class="waves-effect waves-light btn btn-danger-light btn-flat mb-5 btn-sm" target="_blank">
-			<span class="icon-Money"><span class="path1"></span><span class="path2"></span></span>
-		</a>
-	    <a href="https://themeforest.net/user/multipurposethemes/portfolio" data-bs-toggle="tooltip" data-bs-placement="left" title="Portfolio" class="waves-effect waves-light btn btn-danger-light btn-flat mb-5 btn-sm" target="_blank">
-			<span class="icon-Image"></span>
-		</a>
-	    <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Live Chat" class="waves-effect waves-light btn btn-danger-light btn-flat btn-sm">
-			<span class="icon-Group-chat"><span class="path1"></span><span class="path2"></span></span>
-		</a>
-	</div>
+  <div class="sticky-toolbar">	    
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Portfolio Status" class="waves-effect waves-light btn btn-danger-light btn-flat mb-5 btn-sm" target="_blank">
+    <span class="fa fa-handshake-o"><span class="path1"></span><span class="path2"></span></span>
+  </a>
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Stocks" class="waves-effect waves-light btn btn-danger-light btn-flat mb-5 btn-sm" >
+    <span class="fa fa-line-chart"></span>
+  </a>
+    <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Orders" class="waves-effect waves-light btn btn-danger-light btn-flat btn-sm">
+    <span class="fa fa-file-text-o"><span class="path1"></span><span class="path2"></span></span>
+  </a>
+  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Account Statements" class="waves-effect waves-light btn btn-danger-light btn-flat btn-sm mt-5">
+    <span class="fa fa-money"><span class="path1"></span><span class="path2"></span></span>
+  </a>
+  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Invoices" class="waves-effect waves-light btn btn-danger-light btn-flat btn-sm mt-5">
+    <span class="fa fa-dollar"><span class="path1"></span><span class="path2"></span></span>
+  </a>
+  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Screen" class="waves-effect waves-light btn btn-danger-light btn-flat btn-sm mt-5">
+    <span class="fa fa-tv"><span class="path1"></span><span class="path2"></span></span>
+  </a>
+  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Requests" class="waves-effect waves-light btn btn-danger-light btn-flat btn-sm mt-5">
+    <span class="fa fa-hand-pointer-o"><span class="path1"></span><span class="path2"></span></span>
+  </a>
+  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Buy" class="waves-effect waves-light btn btn-danger-light btn-flat btn-sm mt-5 ">
+    <span class="fa text-success">B<span class="path1"></span><span class="path2"></span></span>
+  </a>
+  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Sell" class="waves-effect waves-light btn btn-danger-light btn-flat btn-sm mt-5">
+    <span class="fa text-danger"><span class="path1">S</span><span class="path2"></span></span>
+  </a>
+</div>
 	<!-- Sidebar -->
 	
 	<div id="chat-box-body">
-		<div id="chat-circle" class="waves-effect waves-circle btn btn-circle btn-lg btn-danger l-h-50">
+		<div id="chat-circle" class="waves-effect waves-circle btn btn-circle btn-md btn-danger l-h-50">
             <div id="chat-overlay"></div>
-            <span class="icon-Group-chat fs-40"><img src="images/WhatsApp_icon.png" alt="..."></span>
+            <span class="icon-Group-chat fs-30"><img src="images/WhatsApp_icon.png" alt="..."></span>
 		</div>
 
 		<div class="chat-box">

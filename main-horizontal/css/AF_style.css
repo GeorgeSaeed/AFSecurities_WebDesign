@@ -9,12 +9,27 @@
     border-color: transparent;
 }
 
+.form-control, .form-select.sub{
+    border-radius:10px;
+    
+    padding: 0.875rem 2.2rem 0.875rem 0.75rem;
+    
+ 
+}
+.dark-skin .form-control, .dark-skin .form-select.sub {
+    background-color: #20304c;
+    color: #ef4545;
+}
 
 
 #chat-circle{
     color: #ffff !important;
     background-color: #4eb968;
     border-color: transparent;   
+}
+
+#chat-box-body #chat-circle{
+    left: 50px;
 }
 .green{
     color: #ffff !important;
@@ -32,6 +47,7 @@
   
   
 }
+
 .card .about{
 
     
@@ -151,10 +167,10 @@
 }
 
  .table > thead > tr > td, .table > thead > tr > th {
-     padding: 0.5rem;
+     padding: 0.1rem;
       }
  .table > tbody > tr > td, .table > tbody > tr > th {
-    padding: 0.5rem;
+    padding: 0.1rem;
 }
 .no {
     padding: 0.9rem;
@@ -222,6 +238,58 @@
 .vtabs .tabs-vertical {
     width: 234px;
  
+}
+
+.btn.btn-flat {
+      width: 40px;
+}
+.theme-warning .btn-flat.btn-danger-light {
+    color: #b4b5c3 !important;}
+    .sticky-toolbar {
+        width: 50px;
+   
+        top: 30%;
+        left: 0;
+        border-top-right-radius: .42rem;
+        border-bottom-right-radius: .42rem;
+        padding: 10px;
+    }    
+
+.sticky-toolbar a span:hover {
+   color: #008920;
+    
+}
+
+.market {
+    color: #b5b5c3;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: inherit;
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+.market svg {
+    width: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #b5b5c3;
+    text-align: center;
+    margin-right: 10px;
+    fill: rgba(27, 46, 75, 0.06);
+}
+
+table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_desc_disabled:before {
+    right: 1em;
+    content: "\2191";
+    top: 0.1em;
+}
+
+table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after {
+    right: 0.5em;
+    content: "\2193";
+    top: 0.1em;
 }
 .taby{
     background-color: #566f9e;
