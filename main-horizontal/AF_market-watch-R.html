@@ -26,12 +26,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
 
-<style>
-
-.dataTables_filter, .dataTables_info, .dataTables_filter, .dt-buttons, .pagination { display: none; 
-}
- 
-</style>
 </head>
 <body class="layout-top-nav dark-skin theme-warning fixed">
 	
@@ -86,10 +80,11 @@
                 <form class="dash-form">
                 <div class="form-group app-menu">
                   <select class="form-select sub b-0">
-                  <option>OlfatKamel - 0199336</option>
-                  <option>MahmoudSalahEldin - 02345678</option>
-                  <option>AbdElrahmanAhmedMohammed- 0123456</option>
-               
+                  <option>Olfat - 01</option>
+                  <option>Olfat - 02</option>
+                  <option>Olfat - 03</option>
+                  <option>Olfat - 04</option>
+                  <option>Olfat - 05</option>
                   </select>
                 </form>
                 </div>
@@ -284,8 +279,8 @@
 							  <a href="#"><i class="cc ICN-alt" title="BTC"></i></a>
 							</div>
 							<div>
-							  <h3 class="no-margin text-bold" style="padding-top:1.2rem;">Turnover: <span class="text-info">258411888</span></h3>
-                        
+							  <h3 class="no-margin text-bold" style="padding-top:1.2rem;">Turnover</h3>
+                              <p class="text-info fw-800 mt-1">258411888</p>
 
 							</div>
 						  </div>
@@ -735,10 +730,22 @@
                     </div>
 
 
-                    <div class="box-body boxy p-0" >
+                    <div class="box-body boxy" >
                 <div class="row">
                     <div class="col-md-4">
-                     
+                        <div class="box-body tab-content p-0">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs nav-pill border-bottom-0" role="tablist">
+                              <li class="nav-item">
+                                <a class="nav-link active no-radius" data-bs-toggle="tab" href="#tab-one" role="tab">Shoose An Indices</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link no-radius" data-bs-toggle="tab" href="#tab-two" role="tab">Shoose A Sector</a>
+                              </li>
+                         
+                            </ul>
+                        </div>
+  
                         <!-- Tab panes -->
                         <div class="box-body tab-content  p-0">
                           <div class="tab-pane fade active show" id="tab-one">
@@ -789,8 +796,8 @@
                      <div class="col-md-4">
                                 <ul class="flexbox flex-justified text-center my-20">
                                     <li class="be-1">
-                                      <div class="fs-16">Value:  <h5> 7369</h5></div>
-                                     
+                                      <div class="fs-16">Value</div>
+                                      <h4> 7369</h4>
                                     </li>
         
                                     <li class="be-1">
@@ -846,8 +853,8 @@
             
                   
                 <div class="table-responsive text-center">
-                          <table id="example" class="table table-bordered table-hover display nowrap margin-top-10 w-p100 "filter="false">
-                            <thead class="headery">
+                          <table id="example" class="table table-bordered table-hover display nowrap margin-top-10 w-p100">
+                            <thead class="headery thfont pp">
                                 <tr style="border-bottom:solid 2px;">   
                                     <th>Ticker</th>
                                     <th>Name</th>
@@ -868,14 +875,14 @@
                                     <th>High</th>
                                     <th>Turnover</th>
                                     <th>Open  </th>
-                                    <th>52 WL. </th>
-                                    <th>52 WH.</th>
+                                    <th>52 Week Low. </th>
+                                    <th>52 Week High.</th>
                                 
                                     <th>Change</th>
                                    
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="tdfont">
                                 <tr>
                                     <td>  <div class="dropdown d-inline-block w-p-50">
                                       <a class="text-fade" href="#" data-bs-toggle="dropdown"><i class="ti-more-alt rotate-90"></i></a>
@@ -1760,14 +1767,18 @@
 	<!-- Vendor JS -->
 	<script src="js/vendors.min.js"></script>
 	<script src="js/pages/chat-popup.js"></script>
-    <script src="assets/icons/feather-icons/feather.min.js"></script>
-   
+    <script src="../assets/icons/feather-icons/feather.min.js"></script>
+    <script src="../assets/vendor_components/datatable/datatables.min.js"></script>
+    <script src="js/pages/data-table.js"></script>
   
 	
 	<!-- Crypto Admin App -->
     <script src="js/vendors.min.js"></script>
 	<script src="js/pages/chat-popup.js"></script>
     <script src="assets/icons/feather-icons/feather.min.js"></script>
+    <script src="assets/vendor_components/datatable/datatables.min.js"></script>
+    <script src="js/pages/data-table.js"></script>
+  
 	
 	<script src="http://www.amcharts.com/lib/3/amcharts.js" type="text/javascript"></script>
 	<script src="http://www.amcharts.com/lib/3/gauge.js" type="text/javascript"></script>
@@ -1779,12 +1790,9 @@
 	<script src="http://www.amcharts.com/lib/3/plugins/export/export.min.js" type="text/javascript"></script>
 	<script src="http://www.amcharts.com/lib/3/themes/patterns.js" type="text/javascript"></script>
 	<script src="http://www.amcharts.com/lib/3/themes/light.js" type="text/javascript"></script>	
-	<script src="assets/vendor_components/Web-Ticker-master/jquery.webticker.min.js"></script>
-	<script src="assets/vendor_components/chart.js-master/Chart.min.js"></script>
+	<script src="../assets/vendor_components/Web-Ticker-master/jquery.webticker.min.js"></script>
+	<script src="../assets/vendor_components/chart.js-master/Chart.min.js"></script>
 	<script src="js/pages/chartjs-int2.js"></script>
-  <script src="assets/vendor_components/datatable/datatables.min.js"></script>
-  <script src="js/pages/data-table.js"></script>
- 
 	
 	<!-- Crypto Admin App -->
 	<script src="js/jquery.smartmenus.js"></script>

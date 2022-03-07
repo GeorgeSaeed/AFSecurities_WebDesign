@@ -16,13 +16,18 @@ if ($('.buy-sall-table').length) {
         },1000);
         function setRandomClass() {
             var tbody = $(".buy-sall-table table tbody");
-            var items = tbody.find("tr");
+            var items = tbody.find("td");
             var number = items.length;
             var random1 = Math.floor((Math.random() * number));
             var random2 = Math.floor((Math.random() * number));
-            items.removeClass("bg-primary");
-            items.eq(random1).addClass("bg-primary");
-            items.eq(random2).addClass("bg-primary");
+            var random3 = Math.floor((Math.random() * number));
+            var random4 = Math.floor((Math.random() * number));
+            items.removeClass("flashg");
+            items.removeClass("flashr");
+            items.eq(random1).addClass("flashg");
+            items.eq(random2).addClass("flashg");
+            items.eq(random3).addClass("flashr");
+            items.eq(random4).addClass("flashr");
         }
     }
 	

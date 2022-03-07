@@ -9,350 +9,422 @@
     <link rel="icon" href="images/favicon.ico">
 
     <title>AF Securities</title>
-  
-	<!-- Vendors Style-->
-	<link rel="stylesheet" href="css/vendors_css.css">
-	  
-	<!-- Style-->    
-	<link rel="stylesheet" href="css/horizontal-menu.css"> 
-	<link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/Af_style.css">
-
-	<link rel="stylesheet" href="css/skin_color.css">	
-  
-</head>
-<body class="layout-top-nav dark-skin theme-warning fixed">
-	
-<div class="wrapper">
-	<div id="loader"></div>
-
- <header class="main-header">
-        <div class="inside-header">
-          <div class="d-flex align-items-center logo-box justify-content-start">
-              <!-- Logo -->
-              <a href="index.html" class="logo">
-                <!-- logo-->
-                <div class="logo-lg">
-                    <span class="light-logo"><img src="images/logo-dark.svg" alt="logo"  width="225" height="50"></span>
-                    <span class="dark-logo"><img src="images/logo-light.svg" alt="logo" width="225" height="50"></span>
-                </div>
-              </a>	
-          </div>  
-          <!-- Header Navbar -->
-          <nav class="navbar navbar-static-top">
-            <div class="app-menu">
-              <ul class="header-megamenu nav">
-                  <li class="btn-group nav-item d-none d-xl-inline-block">
-                      <a href="contact_app_chat.html" class="waves-effect waves-light nav-link svg-bt-icon btn-danger-light" title="Chat">
-                          <i data-feather="message-circle"></i>
-                      </a>
-                  </li>
-                  <li class="btn-group nav-item d-none d-xl-inline-block">
-                      <a href="mailbox.html" class="waves-effect waves-light nav-link svg-bt-icon btn-danger-light" title="Mailbox">
-                          <i data-feather="at-sign"></i>
-                      </a>
-                  </li>
-                  <li class="btn-group nav-item d-none d-xl-inline-block">
-                      <a href="extra_taskboard.html" class="waves-effect waves-light nav-link svg-bt-icon btn-danger-light" title="Taskboard">
-                          <i data-feather="clipboard"></i>
-                      </a>
-                  </li>
-              </ul> 
-            </div>
-  
-            <div class="navbar-custom-menu r-side">
-              <ul class="nav navbar-nav">
-                <li class="btn-group nav-item d-lg-inline-flex d-none">
-                    <button href="#" class="full-screen btn-xs btn-toggle" title="Full Screen bg-transparent" style="width:auto;" data-bs-toggle="button" aria-pressed="false">
-                        <i class="flag-icon flag-icon-eg"></i>
-                        <i class="flag-icon flag-icon-us"></i>
-                        <div class="handle"></div>
-                    </button>
-                </li>  
-                
-                <li class="btn-group d-lg-inline-flex d-none">
-                  <form class="dash-form">
-                  <div class="form-group app-menu">
-                    <select class="form-select sub b-0">
-                    <option>OlfatKamel - 0199336</option>
-                    <option>MahmoudSalahEldin - 02345678</option>
-                    <option>AbdElrahmanAhmedMohammed- 0123456</option>
-                    <option>OlfatKamel - 0199336</option>
-                 
-                    </select>
-                  </div>
-                  </form>
-                 
-                </li>
-                  <li class="btn-group nav-item d-lg-inline-flex d-none">
-                      <a href="#" data-provide="fullscreen" class="waves-effect waves-light nav-link full-screen btn-danger-light" title="Full Screen">
-                          <i data-feather="maximize"></i>
-                      </a>
-                  </li>
-                <!-- Notifications -->
-                <li class="dropdown notifications-menu">
-                  <a href="#" class="waves-effect waves-light dropdown-toggle btn-danger-light" data-bs-toggle="dropdown" title="Notifications">
-                    <i data-feather="bell"></i>
-                  </a>
-                  <ul class="dropdown-menu animated bounceIn">
-  
-                    <li class="header">
-                      <div class="p-20">
-                          <div class="flexbox">
-                              <div>
-                                  <h4 class="mb-0 mt-0">Notifications</h4>
-                              </div>
-                              <div>
-                                  <a href="#" class="text-danger">Clear All</a>
-                              </div>
-                          </div>
-                      </div>
-                    </li>
-  
-                    <li>
-                      <!-- inner menu: contains the actual data -->
-                      <ul class="menu sm-scrol">
-                        <li>
-                          <a href="#">
-                            <i class="fa fa-users text-info"></i> Curabitur id eros quis nunc suscipit blandit.
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa fa-warning text-warning"></i> Duis malesuada justo eu sapien elementum, in semper diam posuere.
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa fa-users text-danger"></i> Donec at nisi sit amet tortor commodo porttitor pretium a erat.
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa fa-shopping-cart text-success"></i> In gravida mauris et nisi
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa fa-user text-danger"></i> Praesent eu lacus in libero dictum fermentum.
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa fa-user text-danger"></i> Nunc fringilla lorem 
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa fa-user text-success"></i> Nullam euismod dolor ut quam interdum, at scelerisque ipsum imperdiet.
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="footer">
-                        <a href="#">View all</a>
-                    </li>
-                  </ul>
-                </li>	
-  
-                <!-- User Account-->
-                <li class="dropdown user user-menu">
-                  <a href="#" class="waves-effect waves-light dropdown-toggle btn-danger-light" data-bs-toggle="dropdown" title="User">
-                    <i data-feather="user"></i>
-                  </a>
-                  <ul class="dropdown-menu animated flipInX">
-                    <li class="user-body">
-                     <a class="dropdown-item" href="#"><i class="ti-user text-muted me-2"></i> Profile</a>
-                     
-                     <div class="dropdown-divider"></div>
-                     <a class="dropdown-item" href="#"><i class="ti-lock text-muted me-2"></i> Logout</a>
-                    </li>
-                  </ul>
-                  </li>
-
-                  <li class="dropdown user user-menu">
-                    <a href="#" class="waves-effect waves-light dropdown-toggle btn-danger-light" data-bs-toggle="dropdown" title="trade">
-                      <i data-feather="activity"></i>
-                    </a>
-                    <ul class="dropdown-menu animated flipInX">
-                      <li class="user-body">
-                       <a class="dropdown-item text-success" href="#"><i class="ti-plus text-muted me-2"></i> Buy</a>
-                       
-                       <div class="dropdown-divider"></div>
-                       <a class="dropdown-item text-danger" href="#"><i class="ti-minus text-muted me-2"></i> Sell</a>
-                      </li>
-                    </ul>
-                    </li>
-
-                  <li class="btn-group nav-item d-lg-inline-flex d-none">
-                    <a href="#modal-login" class="waves-effect waves-light dropdown-toggle btn-danger-light" data-bs-toggle="modal" data-bs-target="#modal-login" title="Login">
-                      <i class="fa fa-sign-in"></i>
-                    </a>
-                   
-                </li>
-                <!-- Control Sidebar Toggle Button -->
-                <li>
-                    <a href="#" data-toggle="control-sidebar" title="Setting" class="waves-effect waves-light btn-danger-light">
-                      <i data-feather="settings"></i>
-                    </a>
-                </li>
-  
-              </ul>
-            </div>
-          </nav> 
-       </div>
-     
-       
-</header>
-  
-  <!-- Left side column. contains the logo and sidebar -->
-  <nav class="main-nav" role="navigation">
-
-	  <!-- Mobile menu toggle button (hamburger/x icon) -->
-	  <input id="main-menu-state" type="checkbox" />
-	  <label class="main-menu-btn" for="main-menu-state">
-		<span class="main-menu-btn-icon"></span> Toggle main menu visibility
-	  </label>
-
-	  <!-- Sample menu definition -->
-	  <ul id="main-menu" class="sm sm-blue">
-		
-		<li><a href="#"><i data-feather="home"></i>Home</a>
-		 
-		</li>
-		<li><a href="#"><i data-feather="award"></i>About AF Securities</a>
-		
-		</li>
-		<li><a href="#"><i data-feather="users"></i>Join Us</a>
-			<ul> 
-				<li><a href="members/index.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Board Members</a></li>
-				<li><a href="team/index.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Our Team</a></li>
-			
-			</ul>
-		</li>
-		<li>
-      <a href="banks/index.html"><i data-feather="credit-card"></i>Our Banks</a>
-    </li>
-		<li><a href="#"><i data-feather="gift"></i>For You</a>
-			<ul> 
-				<li><a href="#"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Dividend Banks</a></li>
-				<li><a href="#"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Special Stocks</a></li>
-        <li><a href="#"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Indices</a></li>
-
-			</ul>
-		</li>
-		<li><a href="#"><i data-feather="monitor"></i>Dashboard</a>
-		
-		</li>
-		<li><a href="#"><i data-feather="target"></i>Open An Account</a>
-			
-		</li>
-    <li class=" float-end market p-15"><i data-feather="clock"></i>Market will open 01:22:30
-			
-		</li>
-	
-	  </ul>
-
-   
-	</nav>
-
-    
-    
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-	  <div class="container-full">
-		<!-- Content Header (Page header) -->	  
-		
-        <div class="class=row align-items-center ">
-				
-                        
-                       
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                   
-                    
-                <div class="carousel-item active" data-bs-interval="10000">
-                   
-                  <video class="img-fluid" autoplay loop muted>
-                    <source src="images/bannerv2.mp4" type="video/mp4" />
-                  </video>
-                
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2 class="mob-title text-danger" >We are leader in
-                            online trading</h2>
-                        <br/>
-                     	<!-- Content Header (Page header)   <p class="py-15 fs-18">ArabFinance.com was formed to meet a growing demand for online trading, transparent financial information, and financial services in Egypt and the Arab world. As a customer-centric organization, both structurally and functionally, Arab Finance will continually strive to meet our changing users needs in order to create and maintain a loyal customer base.</p> -->	  
-                        <button type="button" class="btn btn-danger">Read more..</button>
-                       
-                      </div>
-                    
-                  </div>
+  <section class="content">
+    <div class="row">  
+              <div class="col-12">
+                  <div class="box">
                   
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <div class="col-md-6 wow mob s1 fadeInLeft" data-wow-delay="0.3s">
-                        <img src="images/app-screens.png" alt="" class="mw-100">
-                    </div>
-                    <div class="col-md-6 mt-md-0 mt-4 s2 wow fadeInRight " data-wow-delay="0.3s">
-                        <h2 class="mob-title" >The latest technology in stock trading in the palm of your hands</h2>
-                        <p class="text-white">From live feed, to market performance, technical analysis, company profiles, financials, chat, and so much more, our trading app will help you make the best decision in the right time.</p>
-                        <div class="app-download-btns mt-4">
-                            <a href="#" class="me-3"><img src="images/google-btn.png" alt=""></a>
-                            <a href="#"><img src="images/app-btn.png" alt=""></a>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#EGX30" role="tab"><span class="hidden-sm-up"><i class="ion-home"></i></span> <span class="hidden-xs-down">EGX30</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#EGX70" role="tab"><span class="hidden-sm-up"><i class="ion-person"></i></span> <span class="hidden-xs-down">EGX70 EWI</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#EGX100" role="tab"><span class="hidden-sm-up"><i class="ion-email"></i></span> <span class="hidden-xs-down">EGX100 EWI</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#EGX30Capped" role="tab"><span class="hidden-sm-up"><i class="ion-email"></i></span> <span class="hidden-xs-down">EGX30 Capped</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#EGX50EWI" role="tab"><span class="hidden-sm-up"><i class="ion-email"></i></span> <span class="hidden-xs-down">EGX50 EWI</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#EGX30TR" role="tab"><span class="hidden-sm-up"><i class="ion-email"></i></span> <span class="hidden-xs-down">EGX30 TR</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#TAMAYUZ" role="tab"><span class="hidden-sm-up"><i class="ion-email"></i></span> <span class="hidden-xs-down">TAMAYUZ</span></a> </li>
+
+
+
+
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content tabcontent-border">
+                            <div class="tab-pane active headery" id="EGX30" role="tabpanel">
+                                <div class="p-15">
+                                  <div class="col-12">
+                                      <p>Last Update Date: 03/03/2022
+                                      </p>
+                                      <div class="box">
+                                        
+                                          <!-- /.box-header -->
+                                          <div class="box-body headery boxy">
+                                           
+                                              <div class="row"> 
+                                              <div class="col-12">
+                                                  <div class="box">                    
+                                                      <div class="box-body">
+                                                          <div class="table-responsive">
+                                                              <table class="table table-striped table-hover corp">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>ISIN</th>
+                                                                        <th>REUTERS CODE</th>
+                                                                        <th>COMPANY NAME</th>
+                                                                        <th>WEIGHT (%)</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>EGS38191C010	</td>
+                                                                        <td>ABUK.CA	</td>
+                                                                        <td>Abou Kir Fertilizers	</td>
+                                                                        <td>4.92</td>
+                                                                    </tr>
+                                                                
+                                                        
+                                                                </tbody>
+                                                                </table>
+                                                            </div>
+                                                      </div>
+                                                      <!-- /.box-body -->
+                                                    </div>			
+                                                </div> 
+                                               
+                                              </div> 
+                                         
+                                          </div>
+                                          <!-- /.box-body -->
+                                        </div>
+                                    </div>  
+                                    
+                                </div>
+                            </div>
+                            <div class="tab-pane headery" id="EGX70" role="tabpanel">
+                              <div class="p-15">
+                                  <div class="col-12">
+                                      <p>Last Update Date: 03/03/2022
+                                      </p>
+                                      <div class="box">
+                                        
+                                          <!-- /.box-header -->
+                                          <div class="box-body headery boxy">
+                                           
+                                              <div class="row"> 
+                                              <div class="col-12">
+                                                  <div class="box">                    
+                                                      <div class="box-body">
+                                                          <div class="table-responsive">
+                                                              <table class="table table-striped table-hover corp">
+                                                                <thead>
+                                                                    <tr class="corp">
+                                                                        <th>ISIN</th>
+                                                                        <th>REUTERS CODE</th>
+                                                                        <th>COMPANY NAME</th>
+                                                                        <th>WEIGHT (%)</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="corp">
+                                                                    <tr class="corp">
+                                                                        <td>EGS38191C010	</td>
+                                                                        <td>ABUK.CA	</td>
+                                                                        <td>Abou Kir Fertilizers	</td>
+                                                                        <td>4.92</td>
+                                                                    </tr>
+                                                                    <tr class="corp">
+                                                                      <td>EGS38191C010	</td>
+                                                                      <td>ABUK.CA	</td>
+                                                                      <td>Abou Kir Fertilizers	</td>
+                                                                      <td>4.92</td>
+                                                                  </tr>
+                                                        
+                                                                </tbody>
+                                                                </table>
+                                                            </div>
+                                                      </div>
+                                                      <!-- /.box-body -->
+                                                    </div>			
+                                                </div> 
+                                               
+                                              </div> 
+                                         
+                                          </div>
+                                          <!-- /.box-body -->
+                                        </div>
+                                    </div>  
+                                    
+                                </div>
+                            </div>
+                            <div class="tab-pane headery" id="EGX100" role="tabpanel">
+                              <div class="p-15">
+                                  <div class="col-12">
+                                      <p>Last Update Date: 03/03/2022
+                                      </p>
+                                      <div class="box">
+                                        
+                                          <!-- /.box-header -->
+                                          <div class="box-body headery boxy">
+                                           
+                                              <div class="row"> 
+                                              <div class="col-12">
+                                                  <div class="box">                    
+                                                      <div class="box-body">
+                                                          <div class="table-responsive">
+                                                              <table class="table table-striped table-hover corp">
+                                                                <thead>
+                                                                    <tr class="corp">
+                                                                        <th>ISIN</th>
+                                                                        <th>REUTERS CODE</th>
+                                                                        <th>COMPANY NAME</th>
+                                                                        <th>WEIGHT (%)</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="corp">
+                                                                    <tr class="corp">
+                                                                        <td>EGS38191C010	</td>
+                                                                        <td>ABUK.CA	</td>
+                                                                        <td>Abou Kir Fertilizers	</td>
+                                                                        <td>4.92</td>
+                                                                    </tr>
+                                                                    <tr class="corp">
+                                                                      <td>EGS38191C010	</td>
+                                                                      <td>ABUK.CA	</td>
+                                                                      <td>Abou Kir Fertilizers	</td>
+                                                                      <td>4.92</td>
+                                                                  </tr>
+                                                        
+                                                                </tbody>
+                                                                </table>
+                                                            </div>
+                                                      </div>
+                                                      <!-- /.box-body -->
+                                                    </div>			
+                                                </div> 
+                                               
+                                              </div> 
+                                         
+                                          </div>
+                                          <!-- /.box-body -->
+                                        </div>
+                                    </div>  
+                                    
+                                </div>
+                            </div>
+                            <div class="tab-pane headery" id="EGX30Capped" role="tabpanel">
+                              <div class="p-15">
+                                  <div class="col-12">
+                                      <p>Last Update Date: 03/03/2022
+                                      </p>
+                                      <div class="box">
+                                        
+                                          <!-- /.box-header -->
+                                          <div class="box-body headery boxy">
+                                           
+                                              <div class="row"> 
+                                              <div class="col-12">
+                                                  <div class="box">                    
+                                                      <div class="box-body">
+                                                          <div class="table-responsive">
+                                                              <table class="table table-striped table-hover corp">
+                                                                <thead>
+                                                                    <tr class="corp">
+                                                                        <th>ISIN</th>
+                                                                        <th>REUTERS CODE</th>
+                                                                        <th>COMPANY NAME</th>
+                                                                        <th>WEIGHT (%)</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="corp">
+                                                                    <tr class="corp">
+                                                                        <td>EGS38191C010	</td>
+                                                                        <td>ABUK.CA	</td>
+                                                                        <td>Abou Kir Fertilizers	</td>
+                                                                        <td>4.92</td>
+                                                                    </tr>
+                                                                    <tr class="corp">
+                                                                      <td>EGS38191C010	</td>
+                                                                      <td>ABUK.CA	</td>
+                                                                      <td>Abou Kir Fertilizers	</td>
+                                                                      <td>4.92</td>
+                                                                  </tr>
+                                                        
+                                                                </tbody>
+                                                                </table>
+                                                            </div>
+                                                      </div>
+                                                      <!-- /.box-body -->
+                                                    </div>			
+                                                </div> 
+                                               
+                                              </div> 
+                                         
+                                          </div>
+                                          <!-- /.box-body -->
+                                        </div>
+                                    </div>  
+                                    
+                                </div>
+                            </div>
+                            <div class="tab-pane headery" id="EGX50EWI" role="tabpanel">
+                              <div class="p-15">
+                                  <div class="col-12">
+                                      <p>Last Update Date: 03/03/2022
+                                      </p>
+                                      <div class="box">
+                                        
+                                          <!-- /.box-header -->
+                                          <div class="box-body headery boxy">
+                                           
+                                              <div class="row"> 
+                                              <div class="col-12">
+                                                  <div class="box">                    
+                                                      <div class="box-body">
+                                                          <div class="table-responsive">
+                                                              <table class="table table-striped table-hover corp">
+                                                                <thead>
+                                                                    <tr class="corp">
+                                                                        <th>ISIN</th>
+                                                                        <th>REUTERS CODE</th>
+                                                                        <th>COMPANY NAME</th>
+                                                                        <th>WEIGHT (%)</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="corp">
+                                                                    <tr class="corp">
+                                                                        <td>EGS38191C010	</td>
+                                                                        <td>ABUK.CA	</td>
+                                                                        <td>Abou Kir Fertilizers	</td>
+                                                                        <td>4.92</td>
+                                                                    </tr>
+                                                                    <tr class="corp">
+                                                                      <td>EGS38191C010	</td>
+                                                                      <td>ABUK.CA	</td>
+                                                                      <td>Abou Kir Fertilizers	</td>
+                                                                      <td>4.92</td>
+                                                                  </tr>
+                                                        
+                                                                </tbody>
+                                                                </table>
+                                                            </div>
+                                                      </div>
+                                                      <!-- /.box-body -->
+                                                    </div>			
+                                                </div> 
+                                               
+                                              </div> 
+                                         
+                                          </div>
+                                          <!-- /.box-body -->
+                                        </div>
+                                    </div>  
+                                    
+                                </div>
+                            </div>
+                            <div class="tab-pane headery" id="EGX30TR" role="tabpanel">
+                              <div class="p-15">
+                                  <div class="col-12">
+                                      <p>Last Update Date: 03/03/2022
+                                      </p>
+                                      <div class="box">
+                                        
+                                          <!-- /.box-header -->
+                                          <div class="box-body headery boxy">
+                                           
+                                              <div class="row"> 
+                                              <div class="col-12">
+                                                  <div class="box">                    
+                                                      <div class="box-body">
+                                                          <div class="table-responsive">
+                                                              <table class="table table-striped table-hover corp">
+                                                                <thead>
+                                                                    <tr class="corp">
+                                                                        <th>ISIN</th>
+                                                                        <th>REUTERS CODE</th>
+                                                                        <th>COMPANY NAME</th>
+                                                                        <th>WEIGHT (%)</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="corp">
+                                                                    <tr class="corp">
+                                                                        <td>EGS38191C010	</td>
+                                                                        <td>ABUK.CA	</td>
+                                                                        <td>Abou Kir Fertilizers	</td>
+                                                                        <td>4.92</td>
+                                                                    </tr>
+                                                                    <tr class="corp">
+                                                                      <td>EGS38191C010	</td>
+                                                                      <td>ABUK.CA	</td>
+                                                                      <td>Abou Kir Fertilizers	</td>
+                                                                      <td>4.92</td>
+                                                                  </tr>
+                                                        
+                                                                </tbody>
+                                                                </table>
+                                                            </div>
+                                                      </div>
+                                                      <!-- /.box-body -->
+                                                    </div>			
+                                                </div> 
+                                               
+                                              </div> 
+                                         
+                                          </div>
+                                          <!-- /.box-body -->
+                                        </div>
+                                    </div>  
+                                    
+                                </div>
+                            </div>
+                            <div class="tab-pane headery" id="TAMAYUZ" role="tabpanel">
+                              <div class="p-15">
+                                  <div class="col-12">
+                                      <p>Last Update Date: 03/03/2022
+                                      </p>
+                                      <div class="box">
+                                        
+                                          <!-- /.box-header -->
+                                          <div class="box-body headery boxy">
+                                           
+                                              <div class="row"> 
+                                              <div class="col-12">
+                                                  <div class="box">                    
+                                                      <div class="box-body">
+                                                          <div class="table-responsive">
+                                                              <table class="table table-striped table-hover corp">
+                                                                <thead>
+                                                                    <tr class="corp">
+                                                                        <th>ISIN</th>
+                                                                        <th>REUTERS CODE</th>
+                                                                        <th>COMPANY NAME</th>
+                                                                        <th>WEIGHT (%)</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="corp">
+                                                                    <tr class="corp">
+                                                                        <td>EGS38191C010	</td>
+                                                                        <td>ABUK.CA	</td>
+                                                                        <td>Abou Kir Fertilizers	</td>
+                                                                        <td>4.92</td>
+                                                                    </tr>
+                                                                    <tr class="corp">
+                                                                      <td>EGS38191C010	</td>
+                                                                      <td>ABUK.CA	</td>
+                                                                      <td>Abou Kir Fertilizers	</td>
+                                                                      <td>4.92</td>
+                                                                  </tr>
+                                                        
+                                                                </tbody>
+                                                                </table>
+                                                            </div>
+                                                      </div>
+                                                      <!-- /.box-body -->
+                                                    </div>			
+                                                </div> 
+                                               
+                                              </div> 
+                                         
+                                          </div>
+                                          <!-- /.box-body -->
+                                        </div>
+                                    </div>  
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <img src="images/slider/banner2.jpg" class="d-block" alt="...">
-                    
+                    <!-- /.box-body -->
                   </div>
-                  <div class="carousel-item">
-                    <img src="images/slider/banner3.jpg" class="d-block" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2 class="mob-title" >Open An Account Now</h2>
-                        <br/>
-                        <button type="button" class="btn green">Follow These Steps</button>
-
-                    </div>
-                  </div>
+                  <!-- /.box -->
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-                       
-       
-     
-<!-- banner--->	
-            
-            
-                
-            </div>
-
-          
-      
-        </div>
-      
-	<!---------------------------------------- My content -------------------------------------->
-
-		<!-- Main content -->
-		<section class="content">
+          </div>
+    <!-- /.row -->  
+  </section>*
 			<div class="row">
-                <div class="col-12 ">
-                    
-                      
+                <div class="col-12 ">                    
                         <h2 class="page-header text-center no-border fw-600 fs-40 mt-50 mb-60">Services</h2>
-                      
-                   
-                   </div>
-
-
+                  </div>
                   <!-- online trading--> 
                 <div class="col-xl-3">
                     <div class="box bg-hexagons-white pull-up">
@@ -362,20 +434,14 @@
                                 <p class="py-15 fs-16">
                                     Being the very first online trading platform in Egypt gives us a unique edge up to an outstanding trading experience through our multiple platforms. 
                                 </p>
-                                <a href="#modal-1" class="btn green" data-bs-toggle="modal" data-bs-target="#modal-1"> What is it?</a>
-                                
+                                <a href="#modal-1" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal-1"> What is it?</a>
                             </div>
-                            
                         </div>
-                        
-                    </div>
-
-
-                  
+                    </div>               
                 </div> <!-- end col-->
 
                 <!--  Over the Counter (OTC)--> 
-				<div class="col-xl-3">
+			         	<div class="col-xl-3">
                     <div class="box pull-up">
                         <div class="box-body d-flex p-0">
                             <div class="flex-grow-1 box-light px-30 pt-50 pb-100 flex-grow-1 bg-img min-h-350" style="background-position: right bottom; background-size: 38% auto; background-image: url(images/svg-icon/color-svg/custom-3.svg)">
@@ -383,9 +449,8 @@
                                 <p class="py-15 fs-16">
                                     You want someone to manage the process of buying/selling shares in a company that is not listed on the EGX? 
 We got you covered!
-
                                 </p>
-                                <a href="#modal-2" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-2">What is it?</a>
+                                <a href="#modal-2" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-2">What is it?</a>
                             </div>
                         </div>
                     </div>
@@ -400,20 +465,14 @@ We got you covered!
                                 <p class="py-15 fs-16">
                                     Institutional settlement<br/> through us can’t be<br/> any smoother.
                                 </p>
-                                <a href="#modal-3" class="btn green" data-bs-toggle="modal" data-bs-target="#modal-3">What is it?</a>
+                                <a href="#modal-3" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal-3">What is it?</a>
                             </div>
                         </div>
                     </div>
                 </div> <!-- end col-->
 
-
-                
-               
-
-               
-
                 <!--  Margin Lending--> 
-				<div class="col-xl-3">
+			        	<div class="col-xl-3">
                     <div class="box pull-up">
                         <div class="box-body d-flex p-0">
                             <div class="flex-grow-1 box-light px-30 pt-50 pb-100 flex-grow-1 bg-img min-h-350" style="background-position: right bottom; background-size: 23% auto; background-image: url(images/svg-icon/color-svg/custom-6.svg)">
@@ -421,14 +480,13 @@ We got you covered!
                                 <p class="py-15 fs-16">
                                     With the lowest interest on margin<br/> lending we provide a 1:1 <br/>funding through <br/>the company. 
                                 </p>
-                                <a href="#modal-4" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-4">What is it?</a>
+                                <a href="#modal-4" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-4">What is it?</a>
                             </div>
                         </div>
                     </div>
                 </div> <!-- end col-->
 
-
-				             <!--  Short Selling--> 
+				        <!--  Short Selling--> 
 							 <div class="col-xl-3">
 								<div class="box pull-up">
 									<div class="box-body d-flex p-0">
@@ -437,17 +495,14 @@ We got you covered!
 											<p class="py-15 fs-16">
 												Only very few brokerage companies in Egypt got the short selling license; luckily<br/> we're one of them!
 											</p>
-											<a href="#modal-6" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-6">What is it?</a>
+											<a href="#modal-6" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-6">What is it?</a>
 										</div>
 									</div>
 								</div>
 							</div> <!-- end col-->
-			
-
-                 
 
                  <!--  MCSD Listing--> 
-                 <div class="col-xl-3">
+               <div class="col-xl-3">
                     <div class="box bg-hexagons-white pull-up">
                         <div class="box-body d-flex p-0">
                             <div class="flex-grow-1 px-30 pt-50 pb-100 flex-grow-1 bg-img min-h-350" style="background-position: right bottom; background-size: 30% auto; background-image: url(images/svg-icon/color-svg/custom-4.svg)">
@@ -457,16 +512,14 @@ We got you covered!
 Reach out to us and we will take care of it. 
 
                                 </p>
-                                <a href="#modal-5" class="btn green" data-bs-toggle="modal" data-bs-target="#modal-5">What is it?</a>
+                                <a href="#modal-5" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal-5">What is it?</a>
                             </div>
                         </div>
                     </div>
                 </div> <!-- end col-->
 
-
-
-				 <!--  Technical Analysis--> 
-				 <div class="col-xl-3">
+				      <!--  Technical Analysis--> 
+				        <div class="col-xl-3">
                     <div class="box pull-up">
                         <div class="box-body d-flex p-0">
                             <div class="flex-grow-1 box-light px-30 pt-50 pb-100 flex-grow-1 bg-img min-h-350" style="background-position: right bottom; background-size: 37% auto; background-image: url(images/svg-icon/color-svg/custom-10.svg)">
@@ -474,21 +527,14 @@ Reach out to us and we will take care of it.
                                 <p class="py-15 fs-16">
                                     You will be craving for our morning super detailed daily technical analysis report. 
                                 </p>
-                                <a href="#modal-8" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-8">What is it?</a>
+                                <a href="#modal-8" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-8">What is it?</a>
                             </div>
                         </div>
                     </div>
                 </div> <!-- end col-->
 
-
-   
-
-
-
-               
-                
                  <!--  Same Day Trading--> 
-				<div class="col-xl-3">
+			        	<div class="col-xl-3">
                     <div class="box bg-hexagons-white pull-up">
                         <div class="box-body d-flex p-0">
                             <div class="flex-grow-1 px-30 pt-50 pb-100 flex-grow-1 bg-img min-h-350" style="background-position: right bottom; background-size: 70% auto; background-image: url(images/svg-icon/color-svg/custom-15.svg)">
@@ -498,190 +544,156 @@ Reach out to us and we will take care of it.
                                     by buying and selling<br>
                                     in the same day.
                                 </p>
-                                <a href="#modal-7" class="btn green" data-bs-toggle="modal" data-bs-target="#modal-7">What is it?</a>
+                                <a href="#modal-7" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal-7">What is it?</a>
                             </div>
                         </div>
                     </div>
                 </div> <!-- end col-->
-				
-				
-               
-				
 			</div>
 		</section>
 
 
-      <!-- /.modal 1-->
+      <!-- services modals-->
+       <!-- modal 1-->
       <div class="modal center-modal fade" id="modal-1" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-warning">Online Trading </h5>
+              <h5 class="modal-title text-primary">Online Trading </h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <p>Online trading is a fairly popular method of transacting stocks online. 
                 Traditionally, when a buyer wants to invest money in stocks, he calls his brokerage firm and asks for putting in a request to buy stocks of a given company for a specified amount.
                 </p>
-
                 <p>The broker would then let him know the market price of the stocks and confirm the order.</p>
                 <p>After the user confirms his trading account, the broker's fees and the time period required for the order, the order gets placed on the stock exchange</p>
                 <p>As obvious, this method had multiple steps, online trading platforms have taken over the entire trading experience, when a user places an order for buying a particular stock on an online platform, the order gets saved in the database of the trading platform and the exchange platform. If the price matches the order gets executed.</p>
                 <p>Online platforms provide a far more inexpensive, self-learning experience. It is faster & more  accurate, which attracts a majority of traders and investors</p>
-               
-
             </div>
-            
           </div>
         </div>
       </div>     
       <!-- /.modal 1-->
 
-      <!-- /.modal 2-->
+      <!-- modal 2-->
       <div class="modal center-modal fade" id="modal-2" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-warning">Over the Counter (OTC) </h5>
+              <h5 class="modal-title text-primary">Over the Counter (OTC) </h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body ">
               <p>The transfer of ownership mechanism of unlisted securities through the OTC mechanism; This is the mechanism through which the pre-arranged deals are executed.
                 </p>
-
                 <p>Over the counter refers to the trading of securities outside of a formal exchange and with the supervision of the exchange regulator. </p>
                 <p>Companies trading on exchange are called listed companies unlike companies that trade OTC, they are referred to as unlisted companies. </p>
-               
-
             </div>
-            
           </div>
         </div>
       </div>     
       <!-- /.modal 2-->
-       <!-- /.modal 3-->
+
+       <!-- modal 3-->
        <div class="modal center-modal fade" id="modal-3" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-warning">Delivery versus payment (DVP)</h5>
+              <h5 class="modal-title text-primary">Delivery versus payment (DVP)</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body ">
-              
                 <p>DVP is a settlement method that guarantees the transfer of securities only happens upon payment.  </p>
                 <p>The process is meant to reduce the risk that stocks could be delivered without payment or that payments could be made without the delivery of stocks.  </p>
-               
-
             </div>
-            
           </div>
         </div>
       </div>     
       <!-- /.modal 3-->
 
-       <!-- /.modal 4-->
+       <!-- modal 4-->
        <div class="modal center-modal fade" id="modal-4" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-warning">Margin Lending</h5>
+              <h5 class="modal-title text-primary">Margin Lending</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body ">
-              
                 <p>Margin lending is a type of loan that allows you to borrow money from the brokerage company to invest by using your existing shares as a security.</p>
                 <p>Margin lending is not recommended to beginners, only professional trader and experienced clients.  </p>
                 <P>The amount you can borrow is based on your net portfolio position whether cash or shares. </P>
                 <P>If the value of your security drops in relation to the loan amount, This will trigger a margin call and you'll be required to reduce your loan amount or sell part of your investment</P>
-               
-
             </div>
-            
           </div>
         </div>
       </div>     
       <!-- /.modal 4-->
 
-       <!-- /.modal 5-->
+       <!-- modal 5-->
        <div class="modal center-modal fade" id="modal-5" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-warning">MCSD Listing</h5>
+              <h5 class="modal-title text-primary">MCSD Listing</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body ">
-              
                 <p>Central Depository activity refers to any activity related to the depository of securities, clearing and settlement of financial positions resulting from trading transactions and the relevant  pledge of securities</p>
-                
-               
-
             </div>
-            
           </div>
         </div>
       </div>     
       <!-- /.modal 5-->
 
-       <!-- /.modal 6-->
+       <!-- modal 6-->
        <div class="modal center-modal fade" id="modal-6" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-warning">Short Selling</h5>
+              <h5 class="modal-title text-primary">Short Selling</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body ">
-              
+            <div class="modal-body ">              
                 <p>Short selling is a trading strategy where the position is opened by borrowing shares of a stock that the investor believes will decrease in value, then sells them to buyers willing to pay the market price.</p>
                 <P>The investor will later purchase the same position in order to return them to the lender. If the price has fallen in the meantime, the investor will have made a profit equal to the difference.</P>
                 <P>On the contrary if the price has risen in the same period, a loss will be incurred. </P>
-               
-
             </div>
-            
           </div>
         </div>
       </div>     
       <!-- /.modal 6-->
 
-       <!-- /.modal 7-->
+       <!-- modal 7-->
        <div class="modal center-modal fade" id="modal-7" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-warning">Same Day Trading</h5>
+              <h5 class="modal-title text-primary">Same Day Trading</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body ">
-              
+            <div class="modal-body ">              
                 <p>Same day trading refers to buying then selling or selling short then buying the same security on the same day.</p>
                 <P>Same day traders depend on short-term trading strategies & intraday technical calls to capitalize on small price movements that occur in highly liquid stocks. </P>
                 <P>Among the most popular techniques for same day trading is trading based on the news such as scheduled announcements of economic statistics, corporate earnings and interest rates </P>
-               
-
             </div>
-            
           </div>
         </div>
       </div>     
       <!-- /.modal 7-->
 
-       <!-- /.modal 8-->
+       <!-- modal 8-->
        <div class="modal center-modal fade" id="modal-8" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-warning">Technical Analysis</h5>
+              <h5 class="modal-title text-primary">Technical Analysis</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body ">
-              
                 <p>Technical analysis along with fundamental analysis are ways used to determine the direction of a stock, hence estimating a target price. It is used to identify trading opportunities by analyzing statistical trends gathered from trading activity, such as price movement and volume. </p>
                 <P>This kind of analysis believes that past trading activity and price changes of a security can be valuable indicators of the security's future price movements.  </P>
-               
-
             </div>
             
           </div>
@@ -689,16 +701,12 @@ Reach out to us and we will take care of it.
       </div>     
       <!-- /.modal 8-->
 
-	   <!-- /.modal login email-->
-
+	   <!-- modal login email-->
        <div class="modal center-modal fade" id="modal-login" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content bg-transparent">
-            
-           
                 <div class=" modal-body container h-p100">
                     <div class="align-items-center justify-content-md-center h-p100">	
-                        
                         <div class="col-12">
                             <div class="justify-content-center g-0">
                                 <div class="col-lg-12 col-md-5 col-12">
@@ -716,10 +724,7 @@ Reach out to us and we will take care of it.
                                                         <p class="errormsg">This email is linked with more than one account, kindly contact with our support to update your data.</p>
                                                     </div>
                                                 </div>
-                                                
-                                              
                                                   <div class="row">
-                                                    
                                                     <!-- /.col -->
                                                     <div class="col-12">
                                                      <div class="fog-pwd text-end">
@@ -733,7 +738,6 @@ Reach out to us and we will take care of it.
                                                     <!-- /.col -->
                                                   </div>
                                             </form>	
-                                            
                                         </div>						
                                     </div>
                                    
@@ -742,29 +746,18 @@ Reach out to us and we will take care of it.
                         </div>
                     </div>
                 </div>
-
-	 
-				
-		
-		
-	
-
 </div>
 </div>
        </div>
-         <!-- /.modal login email-->
+     <!-- /.modal login email-->
 
 
-           <!-- .modal login password-->
-
+       <!-- modal login password-->
        <div class="modal center-modal fade" id="modal-loginpw" tabindex="-1" >
         <div class="modal-dialog">
-          <div class="modal-content bg-transparent">
-            
-           
+          <div class="modal-content bg-transparent">            
                 <div class=" modal-body container h-p100">
                     <div class="align-items-center justify-content-md-center h-p100">	
-                        
                         <div class="col-12">
                             <div class="justify-content-center g-0">
                                 <div class="col-lg-12 col-md-5 col-12">
@@ -780,11 +773,8 @@ Reach out to us and we will take care of it.
                                                         <span class="input-group-text"><i class=" ti-lock"></i></span>
                                                         <input type="password" name="password" class="form-control ps-15 bg-transparent " placeholder="Password" required data-validation-required-message="This field is required" style="border-color:rgb(181 181 195); color:#898992;">
                                                     </div>
-                                                </div>
-                                                
-                                              
+                                                </div>                                                
                                                   <div class="row">
-                                                    
                                                     <!-- /.col -->
                                                     <div class="col-12">
                                                      <div class="fog-pwd text-end">
@@ -798,39 +788,25 @@ Reach out to us and we will take care of it.
                                                     <!-- /.col -->
                                                   </div>
                                             </form>	
-                                            
                                         </div>						
                                     </div>
-                                   
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-	 
-				
-		
-		
-	
-
 </div>
 </div>
        </div>
+      <!-- /.modal login password-->
 
-      <!-- /.modal password-->
 
-
-        <!-- .modal register-->
-
+        <!-- modal register-->
         <div class="modal center-modal fade" id="modal-register" tabindex="-1" >
           <div class="modal-dialog">
             <div class="modal-content bg-transparent">
-              
-             
               <div class=" modal-body container h-p100">
-                <div class="align-items-center justify-content-md-center h-p100">	
-			
+                <div class="align-items-center justify-content-md-center h-p100">
                       <div class="col-12">
                         <div class="row justify-content-center g-0">
                           <div class="col-lg-12 ">
@@ -841,35 +817,25 @@ Reach out to us and we will take care of it.
                                       
                               </div>
                               <div class="p-40">
-                                <form novalidate action="index.html" method="post">
-                
-                
+                                <form novalidate action="index.html" method="post">               
                                   <div class="form-group">
                                       <div class="input-group mb-3 controls">
                                           <span class="input-group-text"><i class="ti-lock"></i></span>
                                           <input type="password" name="vcode" class="form-control ps-15 bg-transparent" placeholder=" Verification Code" required data-validation-required-message="This field is required"  style="border-color:rgb(181 181 195); color:#898992;">
                                       </div>
-                                  </div>
-                                  
-                                  
-                                  
-                                  
+                                  </div>                               
                                   <div class="form-group">
-                                  
                                     <div class="input-group mb-3 controls">
                                       <span class="input-group-text"><i class="ti-lock"></i></span>
                                       <input type="password" name="password" class="form-control ps-15 bg-transparent" placeholder="Password" required data-validation-required-message="This field is required" style="border-color:rgb(181 181 195); color:#898992;">
                                     </div>
-                                    
                                   </div>
-                                  
                                   <div class="form-group">
                                     <div class="input-group mb-3 controls">
                                       <span class="input-group-text"><i class="ti-lock"></i></span>
                                       <input type="password" name="password2" class="form-control ps-15 bg-transparent" placeholder="Retype Password" data-validation-match-match="password" required style="border-color:rgb(181 181 195); color:#898992;">
                                     </div>
                                   </div>
-                
                                   <div class="form-group">
                                     <div class="input-group mb-3 controls">
                                       <span class="input-group-text"><i class="ti-lock"></i></span>
@@ -882,9 +848,6 @@ Reach out to us and we will take care of it.
                                       <input type="password" name="password4" class="form-control ps-15 bg-transparent" placeholder="Retype Pin Code" data-validation-match-match="password3" required style="border-color:rgb(181 181 195); color:#898992;">
                                     </div>
                                   </div>
-                
-                
-                
                                     <div class="row">
                                     <div class="col-12">
                                       <div class="checkbox controls">
@@ -899,37 +862,21 @@ Reach out to us and we will take care of it.
                                     <!-- /.col -->
                                     </div>
                                 </form>				
-                                
                               </div>
                             </div>								
-                
-                            
                           </div>
                         </div>
                       </div>			
                     </div>
                   </div>
-  
-     
-          
-      
-      
-    
-  
-  </div>
-  </div>
-         </div>
-  
+          </div>
+        </div>
+     </div>
         <!-- /.modal register-->
-
-	  
-
-
-	   
-
+        
+      <!-- why us section-->
       <section style="background-image: url(images/bg-5.jpg)">
-        <div class="container">
-         
+        <div class="container">         
             <div class="row align-items-sm-end pb-40">
               <h2 class="text-center no-border fw-600 fs-40 mt-50 mb-50">Why Us?</h2>
                 <div class="col-lg-3 col-6">
@@ -999,13 +946,14 @@ Reach out to us and we will take care of it.
             </div>
         </div>
      </section>
+     <!-- why us section-->
 
 
+     <!-- important figures section-->
      <section class="bg-dark bg-hexagons-white">
-        <div class="container">
-            
+        <div class="container">            
             <div class="row align-items-sm-end">
-              <h2 class="text-center no-border fw-600 fs-40 mt-50 pb-30">Important Figures</h2>
+              <h2 class="text-center no-border fw-600 fs-40 mt-50 pb-30">Figures</h2>
                 <div class="col-lg-3 col-6">
                     <div class="stats-item text-center pb-50">
                         <span class="stats-icon">
@@ -1050,10 +998,7 @@ Reach out to us and we will take care of it.
             </div>
         </div>
      </section>
-
-  
-
-
+      <!-- /.important figures section-->
 
 
 		<!-- /.content -->
@@ -1061,7 +1006,7 @@ Reach out to us and we will take care of it.
 		<!---------------------------------------- My content -------------------------------------->
 	  
 	  
-  </div>
+   </div>
   <!-- /.content-wrapper -->
 
 
@@ -1077,11 +1022,10 @@ Reach out to us and we will take care of it.
 						<p>ArabFinance.com was formed to meet a growing demand for online trading, transparent financial information, and financial services in Egypt and the Arab world. As a customer-centric organization, both structurally and functionally,
                         </p>
 						<div class="user-social-acount">
-              <a href="https://www.facebook.com/ArabFinanceEn" class="btn btn-circle btn-social-icon btn-facebook"><i class="fa fa-facebook text-white"></i></a>
-              <a href="https://twitter.com/arab_finance" class="btn btn-circle btn-social-icon btn-twitter"><i class="fa fa-twitter text-white"></i></a>
-              <a href="https://www.instagram.com/arab_finance/" class="btn btn-circle btn-social-icon btn-instagram"><i class="fa fa-instagram text-white"></i></a>
-              <a href="https://www.linkedin.com/company/arab-finance-brokerage/" class="btn btn-circle btn-social-icon btn-linkedin"><i class="fa fa-linkedin text-white"></i></a>
-              <a href="https://www.youtube.com/channel/UCzYBO-Vc29CJO-rokiFRRgw" class="btn btn-circle btn-social-icon btn-youtube"><i class="fa fa-youtube text-white"></i></a>
+              <a href="https://www.facebook.com/afsecurities/" class="btn btn-circle btn-social-icon btn-facebook"><i class="fa fa-facebook text-white"></i></a>
+              <a href="https://instagram.com/af_securities?utm_medium=copy_link" class="btn btn-circle btn-social-icon btn-instagram"><i class="fa fa-instagram text-white"></i></a>
+              <a href="https://www.linkedin.com/company/af-securities/" class="btn btn-circle btn-social-icon btn-linkedin"><i class="fa fa-linkedin text-white"></i></a>
+              <a href="https://youtube.com/channel/UCc0CQxqOEK7iDTxaU4-O9oQ" class="btn btn-circle btn-social-icon btn-youtube"><i class="fa fa-youtube text-white"></i></a>
                         </div>
 					</div>
 				</div>
@@ -1439,32 +1383,32 @@ Reach out to us and we will take care of it.
 	
 	<!-- ./side demo panel -->
   <div class="sticky-toolbar">	    
-    <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Portfolio Status" class="waves-effect waves-light btn btn-danger-light btn-flat mb-5 btn-sm" target="_blank">
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Portfolio Status" class="waves-effect waves-light btn btn-primary-light btn-flat mb-5 btn-sm" target="_blank">
     <span class="fa fa-handshake-o"><span class="path1"></span><span class="path2"></span></span>
   </a>
-    <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Stocks" class="waves-effect waves-light btn btn-danger-light btn-flat mb-5 btn-sm" >
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Stocks" class="waves-effect waves-light btn btn-primary-light btn-flat mb-5 btn-sm" >
     <span class="fa fa-line-chart"></span>
   </a>
-    <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Orders" class="waves-effect waves-light btn btn-danger-light btn-flat btn-sm">
+    <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Orders" class="waves-effect waves-light btn btn-primary-light btn-flat btn-sm">
     <span class="fa fa-file-text-o"><span class="path1"></span><span class="path2"></span></span>
   </a>
-  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Account Statements" class="waves-effect waves-light btn btn-danger-light btn-flat btn-sm mt-5">
+  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Account Statements" class="waves-effect waves-light btn btn-primary-light btn-flat btn-sm mt-5">
     <span class="fa fa-money"><span class="path1"></span><span class="path2"></span></span>
   </a>
-  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Invoices" class="waves-effect waves-light btn btn-danger-light btn-flat btn-sm mt-5">
+  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Invoices" class="waves-effect waves-light btn btn-primary-light btn-flat btn-sm mt-5">
     <span class="fa fa-dollar"><span class="path1"></span><span class="path2"></span></span>
   </a>
-  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Screen" class="waves-effect waves-light btn btn-danger-light btn-flat btn-sm mt-5">
+  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Screen" class="waves-effect waves-light btn btn-primary-light btn-flat btn-sm mt-5">
     <span class="fa fa-tv"><span class="path1"></span><span class="path2"></span></span>
   </a>
-  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Requests" class="waves-effect waves-light btn btn-danger-light btn-flat btn-sm mt-5">
+  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Requests" class="waves-effect waves-light btn btn-primary-light btn-flat btn-sm mt-5">
     <span class="fa fa-hand-pointer-o"><span class="path1"></span><span class="path2"></span></span>
   </a>
-  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Buy" class="waves-effect waves-light btn btn-danger-light btn-flat btn-sm mt-5 ">
-    <span class="fa text-success">B<span class="path1"></span><span class="path2"></span></span>
+  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Buy" class="waves-effect waves-light btn btn-primary-light btn-flat btn-sm mt-5 b ">
+    <span class="fa text-white">B<span class="path1"></span><span class="path2"></span></span>
   </a>
-  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Sell" class="waves-effect waves-light btn btn-danger-light btn-flat btn-sm mt-5">
-    <span class="fa text-danger"><span class="path1">S</span><span class="path2"></span></span>
+  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Sell" class="waves-effect waves-light btn btn-primary-light btn-flat btn-sm mt-5 s">
+    <span class="fa text-white"><span class="path1">S</span><span class="path2"></span></span>
   </a>
 </div>
 	<!-- Sidebar -->

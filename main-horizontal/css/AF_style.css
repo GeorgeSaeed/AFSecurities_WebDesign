@@ -4,44 +4,65 @@
 
 
 .sticky-toolbar a{
-    color: #ef4545 !important;
+    padding: 0.65rem 0.65rem;
+    color: #ffffff !important;
     background-color: #f3f6f9;
     border-color: transparent;
 }
 
-.form-control, .form-select.sub{
+.theme-warning .btn-flat.btn-primary-light:focus {
+    color: #ffffff !important;
+}
+.sub{
     border-radius:10px;
-    
+    background-color: #20304c !important;
     padding: 0.875rem 2.2rem 0.875rem 0.75rem;
     
  
 }
+
+.mw {
+   
+  padding: 0.1rem 2.25rem 0.1rem 0.75rem;
+  background-color: #566f9e !important; 
+  color: #fff !important; 
+    
+}
+.thfont{
+    margin-right: 0;
+    font-size:12px;
+   
+
+}
+.tdfont{
+    font-size:13px;
+
+}
+table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_desc, table.dataTable thead>tr>th.sorting, table.dataTable thead>tr>td.sorting_asc, table.dataTable thead>tr>td.sorting_desc, table.dataTable thead>tr>td.sorting.pp{
+    padding-right: 32px;
+}
+
 .errormsg{
     padding: 0;
     color:#ef4545;
 }
 
-.dark-skin .form-control, .dark-skin .form-select {
-    background-color: #0c1a32;
-    color: #898992;
-}
 
-    .dark-skin .form-control, .dark-skin .form-select {
-        background-color: #0c1a32;
-        color: #b5b5c3;
-    }    
 #chat-circle{
     color: #ffff !important;
     background-color: #4eb968;
     border-color: transparent;   
 }
 
-#chat-box-body #chat-circle{
-    left: 50px;
-}
+
 .green{
     color: #ffff !important;
     background-color: #4eb968;
+}
+
+.footercolor{
+    color: #ffff !important;
+    background-color: #566f9e;
 }
 .serv{
    width:20em;
@@ -153,10 +174,11 @@
 }
 
 .bankslogo{
-    padding: 0.1rem;
+    padding: 0.7rem;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     border-radius: 10px;
+    height:80px;
  }
 .userbtn{
 
@@ -174,12 +196,17 @@
     margin-bottom: 0px;
 }
 
- .table > thead > tr > td, .table > thead > tr > th {
-     padding: 0.1rem;
+ .table > thead > tr > td, .table > thead > tr > th{
+     padding: 0.01rem;
       }
- .table > tbody > tr > td, .table > tbody > tr > th {
-    padding: 0.1rem;
+ .table > tbody > tr > td, .table > tbody > tr > td{
+    padding: 0;
 }
+
+
+table.corp td, th{
+    padding: 0.5rem !important;
+ }
 .no {
     padding: 0.9rem;
     font-size: 16px;}
@@ -190,6 +217,18 @@
 .ask{
     background-color: rgb(246 78 96 / 48%) !important;
     
+}
+
+.flashr{
+    color:#ffffff !important;
+    background-color: #ff0a24 !important;
+  
+}
+
+.flashg{
+    color:#ffffff !important;
+    background-color: #0acc24 !important;
+  
 }
 
 .lastb {
@@ -249,24 +288,29 @@
 }
 
 .btn.btn-flat {
-      width: 40px;
+      width: 41px;
+      height: 41px;
 }
-.theme-warning .btn-flat.btn-danger-light {
-    color: #b4b5c3 !important;}
-    .sticky-toolbar {
+.dark-skin .btn-flat.b {
+   
+    background-color: #4eb968 !important;
+} 
+.dark-skin .btn-flat.s {
+  
+    background-color: #ef4545 !important;
+} 
+.sticky-toolbar {
         width: 50px;
+        
    
         top: 30%;
         left: 0;
         border-top-right-radius: .42rem;
         border-bottom-right-radius: .42rem;
-        padding: 10px;
-    }    
+        padding: 10px;   
+ }    
 
-.sticky-toolbar a span:hover {
-   color: #008920;
-    
-}
+
 
 .market {
     color: #b5b5c3;
