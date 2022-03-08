@@ -9,18 +9,21 @@
     background-color: #f3f6f9;
     border-color: transparent;
 }
-
+#chat-circle:hover{
+    background-color: transparent !important;
+    border:0;
+}
 .theme-warning .btn-flat.btn-primary-light:focus {
     color: #ffffff !important;
 }
 .sub{
     border-radius:10px;
     background-color: #20304c !important;
-    padding: 0.875rem 2.2rem 0.875rem 0.75rem;
+    padding: 0.875rem 1.1rem 0.875rem 0.75rem;
     
  
 }
-
+select.option.sub{border:0;}
 .mw {
    
   padding: 0.1rem 2.25rem 0.1rem 0.75rem;
@@ -80,7 +83,7 @@ table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_des
 .card .about{
 
     
-    min-height: 285px;
+    min-height: 200px;
    
 }
 .box-light{
