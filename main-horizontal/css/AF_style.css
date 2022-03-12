@@ -189,6 +189,10 @@ table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_des
      max-height:60px;
    
  }
+ 
+ .media-list-hover .active{
+    background-color: #112547 !important;
+}
 .userbtn{
 
       width: auto;
