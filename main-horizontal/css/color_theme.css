@@ -9277,22 +9277,22 @@ Theme Warning Color
     color: #ffa800; } }
 /*---Main Nav---*/
 .theme-warning .sm-blue li.current > a, .theme-warning .sm-blue li.highlighted > a {
-  background: #ffa800;
-  color: #ffffff !important; }
+  background: transparent;
+  color: #ffa800 !important; }
   .theme-warning .sm-blue li.current > a:hover, .theme-warning .sm-blue li.current > a:active, .theme-warning .sm-blue li.current > a:focus, .theme-warning .sm-blue li.highlighted > a:hover, .theme-warning .sm-blue li.highlighted > a:active, .theme-warning .sm-blue li.highlighted > a:focus {
-    background: #ffa800;
+    background: transparent;
     color: #ffffff !important; }
     .theme-warning .sm-blue li.current > a:hover svg, .theme-warning .sm-blue li.current > a:active svg, .theme-warning .sm-blue li.current > a:focus svg, .theme-warning .sm-blue li.highlighted > a:hover svg, .theme-warning .sm-blue li.highlighted > a:active svg, .theme-warning .sm-blue li.highlighted > a:focus svg {
       color: #ffffff;
       fill: rgba(1, 104, 250, 0); }
   .theme-warning .sm-blue li.current > a svg, .theme-warning .sm-blue li.highlighted > a svg {
-    color: #ffffff;
+    color: #ffa800;
     fill: rgba(1, 104, 250, 0); }
 .theme-warning .sm-blue a.current, .theme-warning .sm-blue a.highlighted {
   background: #ffa800;
   color: #ffffff !important; }
 .theme-warning .sm-blue a:hover, .theme-warning .sm-blue a:active, .theme-warning .sm-blue a:focus {
-  background: #ffa800;
+  background: transparent;
   color: #ffffff !important; }
   .theme-warning .sm-blue a:hover svg, .theme-warning .sm-blue a:active svg, .theme-warning .sm-blue a:focus svg {
     color: #ffffff;
@@ -9305,10 +9305,10 @@ Theme Warning Color
   color: #ffa800 !important; }
 
 .dark-skin.theme-warning .sm-blue a.current, .dark-skin.theme-warning .sm-blue a.highlighted {
-  background: #ffa800;
+  background: transparent;
   color: #ffffff !important; }
 .dark-skin.theme-warning .sm-blue a:hover, .dark-skin.theme-warning .sm-blue a:active, .dark-skin.theme-warning .sm-blue a:focus {
-  background: #ffa800;
+  background: transparent;
   color: #ffffff !important; }
 .dark-skin.theme-warning .sm-blue ul a:hover, .dark-skin.theme-warning .sm-blue ul a:active, .dark-skin.theme-warning .sm-blue ul a:focus {
   background: #29354b;
@@ -10647,8 +10647,8 @@ Theme Warning Color
 
 /*---Tabs---*/
 .theme-warning .tabs-vertical li .nav-link:hover, .theme-warning .tabs-vertical li .nav-link:active, .theme-warning .tabs-vertical li .nav-link:focus, .theme-warning .tabs-vertical li .nav-link.active {
-  background-color: #ffa800;
-  color: #ffffff; }
+  background-color: #112547;
+  color: #ffa800; }
 .theme-warning .customvtab .tabs-vertical li .nav-link:hover, .theme-warning .customvtab .tabs-vertical li .nav-link:active, .theme-warning .customvtab .tabs-vertical li .nav-link:focus, .theme-warning .customvtab .tabs-vertical li .nav-link.active {
   border-right: 2px solid #ffa800;
   color: #ffa800; }

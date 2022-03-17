@@ -170,8 +170,7 @@ body.dark-skin {
     color: #b5b5c3;
     background-color: #112547; }
 
-.dark-skin h1, .dark-skin h2, .dark-skin h3, .dark-skin h4, .dark-skin h5, .dark-skin h6 {
-  color: rgba(255, 255, 255, 0.85); }
+
 .dark-skin a {
   color: #b5b5c3; }
   .dark-skin a.bg-light:hover, .dark-skin a.bg-light:focus {
@@ -619,7 +618,7 @@ body.dark-skin {
     border-color: rgba(255, 255, 255, 0.12);
     color: #b5b5c3; }
     .dark-skin .nav-tabs .nav-link.active {
-      color: #ffffff !important; }
+      color: #ffa800 !important; }
 .dark-skin .nav-pills > li > a {
   color: #b5b5c3; }
   .dark-skin .nav-pills > li > a.active {

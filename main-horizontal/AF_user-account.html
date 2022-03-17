@@ -19,7 +19,14 @@
     <link rel="stylesheet" href="css/Af_style.css">
 
 	<link rel="stylesheet" href="css/skin_color.css">	
-
+	<style>
+		.dataTables_filter,
+		.dataTables_info,
+		.dataTables_filter,
+		.pagination {
+		  display: none;
+		}
+	  </style>
 </head>
 <body class="layout-top-nav dark-skin theme-warning fixed">
 	
@@ -349,50 +356,59 @@
 
                     <div class="row">
 						<div class="box">
-                            <div class="box-header with-border">
-                              <h4 class="box-title"><i class="fa fa-money me-10"></i> <strong>Account Statements</strong></h4>
+                            <div class="box-header boxy pb-0 b-0">
+								
+                              <h4 class="box-title mt-20"><i class="fa fa-money me-10"></i> <strong>Account Statements</strong></h4>
                               <ul class="box-controls pull-right">
-                                <li><a class="box-btn-close" href="#"></a></li>
-                                <li><a class="box-btn-slide"  href="#"></a></li>	
                                 <li><a class="box-btn-fullscreen" href="#"></a></li>
+								<li><h4 class="accstmt mt-0 px-10 text-primary pull-right">Close Balance: 255,85,963</h4></li>
                               </ul>
+							 
+							  <div class="callout callout-warning mb-0 pull-right" role="alert">
+								<div class="row">
+								  <div class="col-md-6">
+									<div class="form-group">
+									  <select class="selectpicker">
+										<option>All</option>
+										<option>Buy</option>
+										<option>Sell</option>
+										<option>Cash In</option>
+										<option>Cash Out</option>
+									  </select>
+									</div>
+			
+								  </div>
+								  <div class="col-md-6">
+									<!-- Date range -->
+									<div class="form-group">
+									  <div class="input-group">
+										<div class="input-group-addon">
+										  <i class="fa fa-calendar"></i>
+										</div>
+										<input type="text" class="form-control pull-right" id="reservation">
+									  </div>
+									  <!-- /.input group -->
+									</div>
+									<!-- /.form group -->
+			
+								  </div>
+			
+			
+								</div>
+							  </div>
                             </div>
           
-                            <div class="box-body">
-                              <div class="callout callout-warning mb-0" role="alert">
-                                  <div class="row">
-                                      <div class="col-md-6">
-                                        <h4 class="my-30 ps-20 text-primary">Close Balance: 255,85,963</h5>
-                                        </div>
-                                      <div class="col-md-6">
-                                           <!-- Date range -->
-				  <div class="form-group">
-                    <h5 class="my-10">Filter by Date</h5>
-
-					<div class="input-group">
-					  <div class="input-group-addon">
-						<i class="fa fa-calendar"></i>
-					  </div>
-					  <input type="text" class="form-control pull-right" id="reservation">
-					</div>
-					<!-- /.input group -->
-				  </div>
-				  <!-- /.form group -->
-
-                                    </div>
-
-
-                                </div>
-                              </div>
-                              <div class="box-body">
+                       
+                          
+                              <div class="box px-10">
                                 <div class="table-responsive">
-                                  <table id="example" class="table table-bordered table-hover text-center">
-                                    <thead class="headery">
+                                  <table id="example" data-page-length='1000' class="table table-bordered table-hover text-center">
+                                    <thead class="headery thfont">
                                         <tr>
                                             <th>Date</th>
                                             <th>Type</th>
                                             <th>Description</th>
-                                            <th>Depit</th>
+                                            <th>Debit</th>
                                             <th>Credit</th>
                                             <th>Balance</th>
                                                
@@ -435,7 +451,7 @@
                                 </table>
                                 </div>              
                             </div>
-                            </div>
+                          
                           </div>
 					</div>
 
