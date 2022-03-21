@@ -1,7 +1,8 @@
 .w-30 {
     width: 160px !important;
 }
-
+  .dataTables_filter, .dataTables_info, .dataTables_filter, .pagination { display: none; 
+        }
 
 .sticky-toolbar a{
     padding: 0.65rem 0.65rem;
@@ -122,7 +123,7 @@ table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_des
 
 
 .mob-title{
-    color: #008920;
+    color: #ffffff;
     font-size: 40px;
     font-weight: 700;
     text-transform: capitalize;
@@ -205,6 +206,7 @@ table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_des
     font-size: 0.9rem;
 }
  .media-list-hover .active{
+
     background-color: #112547 !important;
     color:#ffa800 !important;
 }
@@ -346,11 +348,11 @@ table.corp td, th{
 }
 .dark-skin .btn-flat.b {
    
-    background-color: #4eb968 !important;
+    background-color: #1cc51b !important;
 } 
 .dark-skin .btn-flat.s {
   
-    background-color: #ef4545 !important;
+    background-color: #ff0a24 !important;
 } 
 .sticky-toolbar {
         width: 50px;
@@ -362,13 +364,29 @@ table.corp td, th{
         border-bottom-right-radius: .42rem;
         padding: 10px;   
  }    
-
+.bebo{
+   border-right: 2px;
+}
  .btn.tic {
   
     font-size: 1.2rem;
     font-weight: bold;
 }
 
+/*
+.btn-toggle.btn-xs:hover {
+  
+    background-image: url('/images/ar.svg'); 
+}
+*/
+.btn-toggle.btn-xs:hover {
+background-color: #20304c;
+}
+.main-header .push-btn img, .main-header .full-screen img, .main-header .svg-bt-icon img {
+    height: 25px;
+    width: 25px;
+    margin-top: 0.5px;
+}
 .market {
     color: #b5b5c3;
     font-family: 'Nunito Sans', sans-serif;
@@ -506,7 +524,7 @@ footer{
 }
 .theme-warning .nav-tabs .nav-link.active {
     border-bottom-color: transparent !important;
-    background-color: #112547 !important;
+    background-color: transparent  !important;
     color: #ffa800;
 }
 
@@ -514,7 +532,7 @@ footer{
     color: #ffffff !important;
 }
 .dark-skin.theme-warning .sm-blue a:hover, .dark-skin.theme-warning .sm-blue a:active, .dark-skin.theme-warning .sm-blue a:focus {
-    background:#ffa800 !important;
+    background:transparent !important;
     color: #ffa800 !important;
 }
 .dark-skin.theme-warning .sm-blue a:hover, .dark-skin.theme-warning .sm-blue a:active, .dark-skin.theme-warning .sm-blue a:hover {
@@ -524,6 +542,258 @@ footer{
 .dark-skin .vtabs .tabs-vertical li .nav-link:hover {
     color: #ffa800;
 }
+
+.theme-warning .sm-blue li.current > a:hover, .theme-warning .sm-blue li.current > a:active, .theme-warning .sm-blue li.current > a:focus, .theme-warning .sm-blue li.highlighted > a:hover, .theme-warning .sm-blue li.highlighted > a:active, .theme-warning .sm-blue li.highlighted > a:focus {
+    background: transparent;
+    color: #ffa800 !important;
+}
+.theme-warning .sm-blue li.current > a:hover, .theme-warning .sm-blue li.current > a:active, .theme-warning .sm-blue li.current > a:focus, .theme-warning .sm-blue li.highlighted > a:hover, .theme-warning .sm-blue li.highlighted > a:active, .theme-warning .sm-blue li.highlighted > svg a:focus {
+    background: transparent;
+    color: #ffa800 !important;
+}
+.theme-warning .sm-blue li.current > a:hover svg, .theme-warning .sm-blue li.current > a:active svg, .theme-warning .sm-blue li.current > a:focus svg, .theme-warning .sm-blue li.highlighted > a:hover svg, .theme-warning .sm-blue li.highlighted > a:active svg, .theme-warning .sm-blue li.highlighted > a:focus svg {
+    color: #ffa800;
+    fill: rgba(1, 104, 250, 0);
+}
+
+.dark-skin .theme-warning a.current .sm-blue a.highlighted {
+    color: #b5b5c3 !important;
+}
+
+
+.Portfolio {
+    position: relative;
+    top:5px;
+    left:0;
+
+    width:22px;
+    height:22px;
+    background-image: url('/images/u-icons/Portfolio.svg');
+}
+.Portfolio:hover,.Portfolio:hover{
+    background-image: url('/images/icon-orange/Portfolio.svg');
+}
+.Orders {
+    position: relative;
+    top:5px;
+    left:0;
+
+    width:25px;
+    height:25px;
+    background-image: url('/images/u-icons/Orders.svg');
+}
+.Orders:hover,.Orders:hover{
+    background-image: url('/images/icon-orange/Orders.svg');
+}
+.Stocks {
+    position: relative;
+    top:5px;
+    left:0;
+
+    width:25px;
+    height:25px;
+    background-image: url('/images/u-icons/Stocks.svg');
+}
+.Stocks:hover,.Stocks:hover{
+    background-image: url('/images/icon-orange/Stocks.svg');
+}
+
+.Statment {
+    position: relative;
+    top:5px;
+    left:0;
+
+    width:25px;
+    height:25px;
+    background-image: url('/images/u-icons/Statment.svg');
+}
+.Statment:hover,.Statment:hover{
+    background-image: url('/images/icon-orange/Statment.svg');
+}
+
+.Screen {
+    position: relative;
+    top:5px;
+    left:0;
+
+    width:25px;
+    height:25px;
+    background-image: url('/images/u-icons/Screen.svg');
+}
+.Screen:hover,.Screen:hover{
+    background-image: url('/images/icon-orange/Screen.svg');
+}
+.Invoices {
+    position: relative;
+    top:5px;
+    left:0;
+
+    width:20px;
+    height:20px;
+    background-image: url('/images/u-icons/Invoices.svg');
+}
+.Invoices:hover,.Invoices:hover{
+    background-image: url('/images/icon-orange/Invoices.svg');
+}
+
+
+.Statment {
+    position: relative;
+    top:5px;
+    left:0;
+
+    width:25px;
+    height:25px;
+    background-image: url('/images/u-icons/Statment.svg');
+}
+.Statment:hover,.Statment:hover{
+    background-image: url('/images/icon-orange/Statment.svg');
+}
+
+.Requests {
+    position: relative;
+    top:5px;
+    left:0;
+
+    width:25px;
+    height:25px;
+    background-image: url('/images/u-icons/Requests.svg');
+}
+.Requests:hover,.Requests:hover{
+    background-image: url('/images/icon-orange/Requests.svg');
+}
+/* Stickey */ 
+
+.Portfolio2 {
+    position: relative;
+    top:0;
+    left:0;
+
+    width:25px;
+    height:25px;
+  
+    background-image: url('/images/icon-orange/Portfolio.svg');
+}
+.Portfolio2:hover,.Portfolio2:hover{
+    background-image: url('/images/u-icons/Portfolio.svg');
+    
+}
+.Orders2 {
+    position: relative;
+    top:0;
+    left:0;
+
+    width:25px;
+    height:25px;
+  
+    background-image: url('/images/icon-orange/Orders.svg');
+}
+.Orders2:hover,.Orders2:hover{
+    background-image: url('/images/u-icons/Orders.svg');
+}
+.Stocks2 {
+    position: relative;
+    top:0;
+    left:0;
+
+    width:25px;
+    height:25px;
+    background-image: url('/images/icon-orange/Stocks.svg');
+}
+.Stocks2:hover,.Stocks2:hover{
+  
+    background-image: url('/images/u-icons/Stocks.svg');
+}
+
+.Statment2 {
+    position: relative;
+    top:0;
+    left:0;
+
+    width:25px;
+    height:25px;
+    background-image: url('/images/icon-orange/Statment.svg');
+}
+.Statment2:hover,.Statment2:hover{
+  
+    background-image: url('/images/u-icons/Statment.svg');
+}
+
+.Screen2 {
+    position: relative;
+    top:0;
+    left:0;
+
+    width:25px;
+    height:25px;
+  
+    background-image: url('/images/icon-orange/Screen.svg');
+}
+.Screen2:hover,.Screen2:hover{
+    background-image: url('/images/u-icons/Screen.svg');
+    
+}
+.Invoices2 {
+    position: relative;
+    top:0;
+    left:0;
+
+    width:25px;
+    height:25px;
+    
+    background-image: url('/images/icon-orange/Invoices.svg');
+}
+.Invoices2:hover,.Invoices2:hover{
+    background-image: url('/images/u-icons/Invoices.svg');
+  
+}
+
+
+.Statment2 {
+    position: relative;
+    top:0;
+    left:0;
+
+    width:25px;
+    height:25px;
+ 
+    background-image: url('/images/icon-orange/Statment.svg');
+}
+.Statment2:hover,.Statment2:hover{
+    background-image: url('/images/u-icons/Statment.svg');
+   
+}
+
+.Requests2 {
+    position: relative;
+    top:0;
+    left:0;
+
+    width:25px;
+    height:25px;
+   
+    background-image: url('/images/icon-orange/Requests.svg');
+}
+.Requests2:hover,.Requests:hover{
+    background-image: url('/images/u-icons/Requests.svg');
+   
+}
+.sidelink{
+    width:200px;
+}
+.dark-skin.theme-warning .sm-blue a:hover, .dark-skin.theme-warning .sm-blue a:active, .sm-blue a.highlighted svg , .dark-skin.theme-warning .sm-blue a.highlighted {
+    background: transparent;
+    color: #ffa800 !important;
+}
+.bb{
+    background-color:#1cc51b ;
+    color: #ffffff !important;
+}
+.sb{
+    background-color: #ff0a24;
+    color: #ffffff !important;
+}
+
 @media (max-width: 767px) {
     .callout-warning{
         width:100%;
@@ -538,5 +808,13 @@ footer{
     h5.buytic{
         font-size: 0.8428571428571428rem;
     }
-    
+    .powery {
+        font-size: 12px;
+    }
+    .tickery{
+        font-size: 0.7428571428571428rem
+    }.
+    .bebo{
+        visibility: hidden;
+    }
     }

@@ -375,7 +375,7 @@
               <div class="row">
                 <div class="box">
                   <div class="box-header with-border">
-                    <h4 class="box-title"><i class="fa fa-hand-pointer-o me-10"></i> <strong>Requests</strong></h4>
+                    <h4 class="box-title"><i class="fa me-10 "><img src="/images/u-icons/Requests.svg" width="25px" height="25px"></i> <strong>REQUESTS</strong></h4>
                     <ul class="box-controls pull-right">
                       <li><a class="box-btn-fullscreen" href="#"></a></li>
                     </ul>
@@ -401,7 +401,7 @@
                                   role="tab"><span><i class="fa fa-bullseye me-15"></i>Activate Dormant
                                     Account</span></a> </li>
                               <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#req8"
-                                  role="tab"><span><i class="fa fa-bullseye me-15"></i>Information Update</span></a>
+                                  role="tab"><span><i class="fa fa-bullseye me-15"></i>Data Update</span></a>
                               </li>
                               <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#req2"
                                   role="tab"><span><i class="fa fa-bullseye me-15"></i>Block Shares</span></a> </li>
@@ -428,7 +428,6 @@
                                           <label class="col-md-4 col-form-label text-nowrap pr-10">Account</label>
                                           <div class="col-md-8">
                                             <select class="form-select">
-                                              <option>Choose an Account</option>
                                               <option>01</option>
                                               <option>02</option>
                                             </select>
@@ -438,7 +437,6 @@
                                           <label class="col-md-4 col-form-label text-nowrap pr-10">Currency</label>
                                           <div class="col-md-8">
                                             <select class="form-select">
-                                              <option>Choose Currency</option>
                                               <option>EGP</option>
                                               <option>USD</option>
                                             </select>
@@ -447,13 +445,16 @@
                                         <div class="form-group row">
                                           <label class="col-md-4 col-form-label text-nowrap pr-10">Bank Name</label>
                                           <div class="col-md-8">
-                                            <select class="form-select">
-                                              <option>Choose a Bank</option>
-                                              <option>QNB</option>
-                                              <option>Blom</option>
-                                            </select>
+                                            <input class="form-control" type="text" value="QNB" >
                                           </div>
                                         </div>
+                                        <div class="form-group row">
+                                          <label class="col-md-4 col-form-label text-nowrap pr-10">Bank Account #</label>
+                                          <div class="col-md-8">
+                                            <input class="form-control" type="text" >
+                                          </div>
+                                        </div>
+                                        
                                       </div>
                                       <div class="col-xl-6 col-12">
                                         <div class="form-group row">
@@ -469,13 +470,20 @@
                                         <div class="form-group row">
                                           <label class="col-md-4 col-form-label text-nowrap pr-10">Amount</label>
                                           <div class="col-md-8">
-                                            <input class="form-control" type="text" value="0.03240000" maxlength="25">
+                                            <input class="form-control" type="text" value="40 000" maxlength="25">
                                           </div>
                                         </div>
+                                      
                                         <div class="form-group row">
                                           <label class="col-md-4 col-form-label text-nowrap pr-10">Branch Name</label>
                                           <div class="col-md-8">
                                             <input class="form-control" type="text" value="Nasr City" maxlength="25">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-md-4 col-form-label text-nowrap pr-10">IBAN #</label>
+                                          <div class="col-md-8">
+                                            <input class="form-control" type="text">
                                           </div>
                                         </div>
                                       </div>
@@ -505,7 +513,6 @@
                                           <label class="col-md-4 col-form-label text-nowrap pr-10">Account</label>
                                           <div class="col-md-8">
                                             <select class="form-select">
-                                              <option>Choose an Account</option>
                                               <option>01</option>
                                               <option>02</option>
                                             </select>
@@ -514,10 +521,7 @@
                                         <div class="form-group row">
                                           <label class="col-md-4 col-form-label text-nowrap pr-10">Custodian</label>
                                           <div class="col-md-8">
-                                            <select class="form-select">
-                                              <option>QNB</option>
-                                              <option>Blom</option>
-                                            </select>
+                                            <input class="form-control" type="text" value="QNB" >
                                           </div>
                                         </div>
                                       </div>
@@ -525,10 +529,7 @@
                                         <div class="form-group row">
                                           <label class="col-md-4 col-form-label text-nowrap pr-10">Ticker</label>
                                           <div class="col-md-8">
-                                            <select class="form-select">
-                                              <option>COMI</option>
-                                              <option>GMT</option>
-                                            </select>
+                                            <input class="form-control" type="text" value="COMI" >
                                           </div>
                                         </div>
                                         <div class="form-group row">
@@ -539,9 +540,14 @@
                                         </div>
                                       </div>
                                       <div>
+                                        
                                         <hr>
+                                        
                                       </div>
-                                      <div class="text-end">
+                                      <div class="col-md-10 text-start">
+                                        <h6>Customer support will contact you once you submit your request. 
+                                        </h6></div>
+                                      <div class=" col-md-2 text-end">
                                         <button type="submit" class="btn btn-primary btn-block w-p21">Send</button>
                                       </div>
                                     </div>
@@ -623,7 +629,10 @@
                                       <div>
                                         <hr>
                                       </div>
-                                      <div class="text-end">
+                                      <div class="col-md-10 text-start">
+                                        <h6>Request has to be submitted 4 days prior to the general assembly.  
+                                        </h6></div>
+                                      <div class=" col-md-2 text-end">
                                         <button type="submit" class="btn btn-primary btn-block w-p21">Send</button>
                                       </div>
                                     </div>
@@ -646,7 +655,6 @@
                                           <label class="col-md-4 col-form-label text-nowrap pr-10">From Account</label>
                                           <div class="col-md-8">
                                             <select class="form-select" required class="form-select">
-                                              <option>Choose an Account</option>
                                               <option>01</option>
                                               <option>02</option>
                                             </select>
@@ -656,7 +664,6 @@
                                           <label class="col-md-4 col-form-label text-nowrap pr-10">Currency</label>
                                           <div class="col-md-8">
                                             <select class="form-select">
-                                              <option>Choose Currency</option>
                                               <option>EGB</option>
                                               <option>USD</option>
                                             </select>
@@ -668,7 +675,6 @@
                                           <label class="col-md-4 col-form-label text-nowrap pr-10">To Account</label>
                                           <div class="col-md-8">
                                             <select class="form-select">
-                                              <option>Choose an Account</option>
                                               <option>01</option>
                                               <option>02</option>
                                             </select>
@@ -707,7 +713,6 @@
                                           <label class="col-md-4 col-form-label text-nowrap pr-10">From Account</label>
                                           <div class="col-md-8">
                                             <select class="form-select">
-                                              <option>Choose an Account</option>
                                               <option>01</option>
                                               <option>02</option>
                                             </select>
@@ -717,7 +722,6 @@
                                           <label class="col-md-4 col-form-label text-nowrap pr-10">Ticker</label>
                                           <div class="col-md-8">
                                             <select class="form-select">
-                                              <option>Choose a Ticker</option>
                                               <option>COMI</option>
                                               <option>GMT</option>
                                             </select>
@@ -730,7 +734,6 @@
                                           <label class="col-md-4 col-form-label text-nowrap pr-10">To Account</label>
                                           <div class="col-md-8">
                                             <select class="form-select">
-                                              <option>Choose an Account</option>
                                               <option>01</option>
                                               <option>02</option>
                                             </select>
@@ -774,7 +777,7 @@
                                     <div class="row">
 
                                       <div class="col-xl-12 px-20 text-white">
-                                        <p>Dear Arab Finance,</p>
+                                        <p>Dear AF Securities,</p>
                                         <p>Please follow the required steps and procedures to activate my account in
                                           your company, Egyptian stock exchange, and Misr for central clearing,
                                           depository and registry (MCDR), and these instructions doesn’t have any
@@ -790,7 +793,7 @@
                                         <hr>
                                       </div>
                                       <div class="form-group row">
-                                        <label class="col-md-3 col-form-label text-nowrap pr-10">attach Credit Slip
+                                        <label class="col-md-3 col-form-label text-nowrap pr-10">Attach ID
                                          </label>
                                         <div class="col-md-7">
                                           <input class="form-control " id="formFileSm" type="file">
@@ -849,7 +852,7 @@
                               <div class="tab-pane taby" id="req8" role="tabpanel">
                                 <div class="box p-15 text-center bg-transparent">
                                   <i class="fa fa-info fs-20 pb-5 text-white"></i>
-                                  <h4>Information Update</h4>
+                                  <h4>Data Update</h4>
                                   <div>
                                     <hr>
                                   </div>
@@ -860,7 +863,7 @@
                                           class="hidden-xs-down">Modify Data</span></a> </li>
                                     <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#add"
                                         role="tab"><span class="hidden-sm-up"><i class="ion-person"></i></span> <span
-                                          class="hidden-xs-down">Add Additional Data </span></a> </li>
+                                          class="hidden-xs-down">Additional Data </span></a> </li>
                                   </ul>
                                   <!-- Tab panes -->
                                   <div class="tab-content tabcontent-border">
@@ -927,8 +930,7 @@
                                             <hr>
                                           </div>
                                           <div class="form-group row">
-                                            <label class="col-md-3 col-form-label text-nowrap pr-10">Click here to
-                                              attach file</label>
+                                            <label class="col-md-3 col-form-label text-nowrap pr-10">Attach ID</label>
                                             <div class="col-md-7">
                                               <input class="form-control " id="formFileSm" type="file">
 
@@ -1011,8 +1013,7 @@
                                             <hr>
                                           </div>
                                           <div class="form-group row">
-                                            <label class="col-md-3 col-form-label text-nowrap pr-10">Click here to
-                                              attach file</label>
+                                            <label class="col-md-3 col-form-label text-nowrap pr-10">Attach ID</label>
                                             <div class="col-md-7">
                                               <input class="form-control " id="formFileSm" type="file">
 
