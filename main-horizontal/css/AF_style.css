@@ -419,7 +419,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
 }
 .callout-warning{
     position: relative;
-    z-index: 999;
+    z-index: 2;
     top:55px;
     width:60%;
     left: 5px;
@@ -809,7 +809,13 @@ footer{
     color: #ffffff !important;
 
 }
-
+.modal.fade .modal-dialog .service{
+    background-color: #566f9e;
+    
+}
+.modal.fade .modal-dialog .service h3{
+    color:#20304c;
+}
 @media (max-width: 767px) {
     .callout-warning{
         width:100%;
@@ -830,9 +836,7 @@ footer{
     .tickery{
         font-size: 0.7428571428571428rem
     }
-    .bebo{
-        visibility: hidden;
-    }
+    
     .toptic{
         font-size: 0.9rem;
         
@@ -849,5 +853,8 @@ footer{
         padding-right: 30px;
         margin-left:10px;
         margin-right:10px;
+    }
+    .mob-title{
+        visibility: hidden;
     }
     }
