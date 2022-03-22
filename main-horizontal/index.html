@@ -22,21 +22,13 @@
 
     <link rel="stylesheet" href="css/skin_color.css">
     <script src="js/loader.g.js"></script>
-    <script>
-        $('.main-nav a').click(function(){
-            $(".main-nav").collapse('hide');
-        });
-    </script>
+    
 </head>
 <body class="layout-top-nav dark-skin theme-warning fixed">
 <div class="wrapper">
 	<div id="loader"></div>
 <x- src="/Shared/MainHeader.html"></x->
 <x- src="/Shared/nav.html"></x->
-
-
-        
-       
 
 <div class="content-wrapper">
     <div class="container-full">
@@ -59,19 +51,40 @@
 
 
         <!-- Vendor JS -->
+        <script src="js/vendors.min.js"></script>
+        <script src="js/pages/chat-popup.js"></script>
+        <script src="/js/pages/validation.js"></script>
+        <script src="/js/pages/form-validation.js"></script>
+     
+
         <script src="assets/icons/feather-icons/feather.min.js"></script>
         <script src="assets/vendor_components/sweetalert/sweetalert.min.js"></script>
         <script src="assets/vendor_components/sweetalert/jquery.sweet-alert.custom.js"></script>
-        <script src="js/vendors.min.js"></script>
-        <script src="js/pages/chat-popup.js"></script>
+       
         <script src="assets/vendor_components/chart.js-master/Chart.min.js"></script>
         <script src="js/pages/widget-charts2.js"></script>
-        <script src="/assets/vendor_components/Flot/jquery.flot.js"></script>
-		<script src="/assets/vendor_components/Flot/jquery.flot.resize.js"></script>
-		<script src="/assets/vendor_components/Flot/jquery.flot.pie.js"></script>
-		<script src="/assets/vendor_components/Flot/jquery.flot.categories.js"></script>
-        <script src="assets/vendor_components/datatable/datatables.min.js"></script>
-	<script src="js/pages/data-table.js"></script>
+
+        <!-- data table -->
+        <script src="/assets/vendor_components/datatable/datatables.min.js"></script>
+	    <script src="/js/pages/data-table.js"></script>
+
+        <!-- today's range -->
+        <script src="/assets/vendor_components/ion-rangeSlider/js/ion.rangeSlider.min.js"></script>
+        <script src="/js/pages/range-sliders.init.js"></script>
+
+      
+   
+      <!-- date range -->
+      <script src="/js/pages/advanced-form-element.js"></script>
+    <script src="/assets/vendor_components/select2/dist/js/select2.full.js"></script>
+    <script src="/assets/vendor_plugins/input-mask/jquery.inputmask.js"></script>
+    <script src="/assets/vendor_components/moment/min/moment.min.js"></script>
+    <script src="/assets/vendor_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+   
+  
+   
+    
+        
 
        
 
@@ -82,8 +95,7 @@
         <script src="js/menus.js"></script>
         <script src="js/template.js"></script>
 
-        <script src="js/pages/validation.js"></script>
-        <script src="js/pages/form-validation.js"></script>
+      
         <script src="js/pages/custom-scroll.js"></script>
 
  </div>

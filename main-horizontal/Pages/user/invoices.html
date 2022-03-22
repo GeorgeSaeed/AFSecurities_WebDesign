@@ -1,0 +1,211 @@
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <!-- sidebar -->
+        <div class="col-xl-3">
+            <!-- profile -->
+            <div class="box">
+                <div class="box-body box-profile">
+                    <img class="rounded-circle bg-success-light  mx-auto d-block max-w-100"
+                        src="/images/avatar/avatar-5.png" alt="User Avatar">
+                    <h3 class="profile-username text-center my-10">Olfat Kamel</h3>
+                    <h4 class="text-center mt-0"><i class="fa fa-envelope-o me-10"></i>olfat@yahoo.com
+                    </h4>
+                    <form>
+                        <div class="form-group w-p-60 text-center">
+                            <label class="me-15 form-label">Sub-Accounts: 01</label>
+                        </div>
+                    </form>
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- links -->
+                            <div class="media-list media-list-hover media-list-divided w-p100 mt-20">
+                            
+                                <a href="/?c=Pages/user/portfolio" class="media media-single p-15  active">
+                                    <h5>
+                                        <i class="fa me-10 Portfolio "></i><span class="title">Portfolio
+                                            </span>
+                                    </h5>
+                                </a>
+                                <a href="/?c=Pages/user/stocks" class="media media-single p-15">
+                                    <h5>
+                                        <i class="fa me-10 Stocks "></i><span
+                                            class="title">Stocks</span>
+                                    </h5>
+                                </a>
+                                <a href="#" class="media media-single p-15">
+                                    <h5>
+                                        <i class="fa me-10 Screen "></i><span class="title">Market Screen</span>
+                                    </h5>
+                                </a>
+                                <a href="/?c=Pages/user/orders" class="media media-single p-15">
+                                    <h5>
+                                        <i class="fa me-10 Orders"></i><span
+                                            class="title">Orders</span>
+                                    </h5>
+                                </a>
+                                <a href="/?c=Pages/user/statement" class="media media-single p-15">
+                                    <h5>
+                                        <i class="fa me-10 Statment "></i> <span class="title">Account
+                                            Statement</span>
+                                    </h5>
+                                </a>
+                                <a href="/?c=Pages/user/invoices" class="media media-single p-15">
+                                    <h5>
+                                        <i class="fa me-10 Invoices"></i><span
+                                            class="title">Invoices</span>
+                                    </h5>
+                                </a>
+                                <a href="/?c=Pages/user/requests" class="media media-single p-15">
+                                    <h5>
+                                        <i class="fa me-10 Requests "></i></i><span
+                                            class="title">Requests</span>
+                                    </h5>
+                                </a>
+                            </div>
+                            <!--/ links -->
+                            <!-- buy & sell buttons -->
+                            <div class="d-flex justify-content-between pt-40 ">
+                                <a href="/?c=Pages/user/buy" class="btn  w-p40 bb"><b>BUY</b></a>
+                                <a href="/?c=Pages/user/sell"  class="btn  w-p40 sb"><b>SELL</b></a>
+                            </div>
+                            <!--/ buy & sell buttons -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ sidebar -->
+        <!-- right side -->
+        <div class="col-xl-9">
+            <div class="row">
+                <div class="box">
+                    <div class="box-header boxy pb-0 b-0">
+                        <h4 class="box-title mt-20"><i class="fa me-10 "><img src="/images/u-icons/Invoices.svg" width="20px" height="20px"></i>
+                            <strong>INVOICES</strong>
+                        </h4>
+                        <ul class="box-controls pull-right">
+                            <li><a class="box-btn-fullscreen" href="#"></a></li>
+                        </ul>
+                      <!-- Buttons & Filters -->
+                        <div class="callout callout-warning mb-0 pull-right" role="alert">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select class="form-select">
+                                            <option>All</option>
+                                            <option>Buy</option>
+                                            <option>Sell</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- Date range -->
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <input type="text" class="form-control pull-right" id="reservation">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Buttons & Filters -->
+                    </div>
+                     <!-- table -->
+                    <div class="box px-10">
+                        <div class="table-responsive">
+                            <table id="example" data-page-length='1000'
+                                class="table table-bordered table-hover text-center">
+                                <thead class="headery">
+                                    <tr>
+                                        <th>Invoice #</th>
+                                        <th>Type</th>
+                                        <th>Ticker</th>
+                                        <th>Security Name</th>
+                                        <th>Currency</th>
+                                        <th>Custodian</th>
+                                        <th>Quantity</th>
+                                        <th>Net Price</th>
+                                        <th>Value</th>
+                                        <th>Sattlement Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#modal-invoice" data-bs-toggle="modal" data-bs-target="#modal-invoice">10089653</a></td>
+                                        <td class="text-danger">Sell</td>
+                                        <td><strong>ABCD</strong></td>
+                                        <td>Porto Group</td>
+                                        <td>EGP</td>
+                                        <td>QNB</td>
+                                        <td>50,000</td>
+                                        <td>11,563.88</td>
+                                        <td>450.000</td>
+                                        <td>2011/04/25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10089653</td>
+                                        <td class="text-danger">Sell</td>
+                                        <td><strong>ABCD</strong></td>
+                                        <td>Porto Group</td>
+                                        <td>EGP</td>
+                                        <td>QNB</td>
+                                        <td>50,000</td>
+                                        <td>11,563.88</td>
+                                        <td>450.000</td>
+                                        <td>2011/04/25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10089653</td>
+                                        <td class="text-success">Buy</td>
+                                        <td><strong>ABCD</strong></td>
+                                        <td>Porto Group</td>
+                                        <td>EGP</td>
+                                        <td>QNB</td>
+                                        <td>50,000</td>
+                                        <td>11,563.88</td>
+                                        <td>450.000</td>
+                                        <td>2011/04/25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10089653</td>
+                                        <td class="text-success">Buy</td>
+                                        <td><strong>ABCD</strong></td>
+                                        <td>Porto Group</td>
+                                        <td>EGP</td>
+                                        <td>QNB</td>
+                                        <td>50,000</td>
+                                        <td>11,563.88</td>
+                                        <td>450.000</td>
+                                        <td>2011/04/25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10089653</td>
+                                        <td class="text-danger">Sell</td>
+                                        <td><strong>ABCD</strong></td>
+                                        <td>Porto Group</td>
+                                        <td>EGP</td>
+                                        <td>QNB</td>
+                                        <td>50,000</td>
+                                        <td>11,563.88</td>
+                                        <td>450.000</td>
+                                        <td>2011/04/25</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                     <!-- /table -->
+                </div>
+            </div>
+        </div>
+        <!--/ right side -->
+    </div>
+</section>
+<!-- / Main content -->
