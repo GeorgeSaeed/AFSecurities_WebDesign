@@ -160,15 +160,15 @@
                             <hr>
                           </div>
                            <!-- ticket form -->
-                          <form class="dash-form novalidate">
+                           <form class="dash-form">
                             <div class="row">
                               <div class="col-xl-6 col-12">
                                 <div class="form-group row">
                                   <label class="col-md-4 col-form-label text-nowrap pr-10">Type</label>
                                   <div class="col-md-8">
                                     <select class="form-select">
-                                      <option>Market</option>
                                       <option>Limit</option>
+                                      <option>Market</option>
                                     </select>
                                   </div>
                                 </div>
@@ -176,6 +176,34 @@
                                   <label class="col-md-4 col-form-label text-nowrap pr-10">Quantity</label>
                                   <div class="col-md-8">
                                     <input class="form-control" type="text" value="14226" maxlength="25">
+                                  </div>
+                                </div>
+                                <div class="form-group row ">
+                                  <label class="col-md-4 col-form-label text-nowrap pr-10">Validity</label>
+                                  <div class="col-md-8">
+                                    <select class="form-select">
+                                      <option>Day</option>
+                                      <option>Good Till Week</option>
+                                      <option>Good Till Month</option>
+                                      <option>Good Till Date</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="form-group row ">
+                                  <label class="col-md-4 col-form-label text-nowrap pr-10"></label>
+                                  <div class="col-md-8">
+                                    <div class="controls">
+                                      <input type="date" name="date" class="form-control" required data-validation-required-message="This field is required"> 
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                              <div class="col-xl-6 col-12">
+                                <div class="form-group row">
+                                  <label class="col-md-4 col-form-label text-nowrap pr-10">Price</label>
+                                  <div class="col-md-8">
+                                    <input class="form-control" type="text" maxlength="25">
                                   </div>
                                 </div>
                                 <div class="form-group row ">
@@ -187,25 +215,7 @@
                                     </select>
                                   </div>
                                 </div>
-                              </div>
-                              <div class="col-xl-6 col-12">
-                                <div class="form-group row">
-                                  <label class="col-md-4 col-form-label text-nowrap pr-10">Price</label>
-                                  <div class="col-md-8">
-                                    <input class="form-control" type="text" maxlength="25" placeholder="7369">
-                                  </div>
-                                </div>
-                                <div class="form-group row ">
-                                  <label class="col-md-4 col-form-label text-nowrap pr-10">Validity</label>
-                                  <div class="col-md-8">
-                                    <select class="form-select">
-                                      <option>Day</option>
-                                      <option>Good Till Date</option>
-                                      <option>Good Till Week</option>
-                                      <option>Good Till Month</option>
-                                    </select>
-                                  </div>
-                                </div>
+                            
                                 <div class="form-group row">
                                   <label class="col-md-4 col-form-label text-nowrap pr-10">Exec.Rule</label>
                                   <div class="col-md-8">
@@ -229,15 +239,14 @@
                                 <hr>
                               </div>
                               <div class="d-flex justify-content-around ">
-                                <button type="button" class="btn btn-warning btn-block tic">Save</button>
-                                <button type="button" class="btn bb btn-block tic" data-bs-toggle="modal"
-                                  data-bs-target="#modal-m">Buy</button>
-                                <button type="button" class="btn btn-info btn-block tic">Cancel</button>
+                                <button type="submit" class="btn btn-warning btn-block  tic">Save</button>
+                                <button type="submit" class="btn  btn-block tic bb">Buy</button>
+                                <button type="submit" class="btn btn-info btn-block tic">Cancel</button>
                               </div>
                               <div>
                                 <hr>
                               </div>
-                              <h4 class="text-center  pt-10">Order Value: <span> 365878</span></h4>
+                              <h4 class="text-center pt-10">Order Value: <span> 365878</span></h4>
                             </div>
                           </form>
                            <!--/ ticket form -->
