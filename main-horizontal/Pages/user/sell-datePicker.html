@@ -94,12 +94,12 @@
                         <div class="p-20 mt-5 sell bt-4 border-danger">
                               <!-- top ticket -->
                           <div class="box body box bg-banknote-white">
-                            <div class="align-items-center mt-3 ps-10">
-                              <div class="text-center mt-5 tickery pull-left">
+                            <div class="flexbox align-items-center mt-3 ps-10">
+                              <div class="text-center mt-5 tickery">
                                 <h5 class="tickery"> Orascom Investment Holding - OIH</h5>
                               </div>
                               <div class="gap-items-4">
-                                <div class="search-bx mx-5 px-0 pull-right">
+                                <div class="search-bx mx-5 px-0 text-end">
                                   <form>
                                     <div class="input-group">
                                       <input type="search" class="form-control" placeholder="Search" aria-label="Search"
@@ -168,6 +168,7 @@
                                   <label class="col-md-4 col-form-label text-nowrap pr-10">Custodian</label>
                                   <div class="col-md-8">
                                     <select class="form-select">
+                                      <option>Choose a Bank</option>
                                       <option>QNB</option>
                                       <option>Blom</option>
                                     </select>
@@ -184,8 +185,13 @@
                                 <div class="form-group row ">
                                   <label class="col-md-4 col-form-label text-nowrap pr-10">Validity</label>
                                   <div class="col-md-8">
-                                    <div class="controls">
-                                      <input type="date" name="date" class="form-control" required data-validation-required-message="This field is required"> 
+                                    <div class="input-group">
+                                      <button type="button" class="form-select" id="daterange-btn">
+                                      <span>
+                                        <i class="fa fa-calendar"></i> Date range picker
+                                      </span>
+                                     
+                                      </button>
                                     </div>
                                   </div>
                                 </div>
@@ -194,6 +200,7 @@
                                   <div class="col-md-8">
                                     <select class="form-select">
                                       <option>Regular</option>
+                                      <option>Minimum Fill</option>
                                       <option>All or None</option>
                                       <option>Minimum Fill</option>
                                       <option>Fill or Kill</option>
