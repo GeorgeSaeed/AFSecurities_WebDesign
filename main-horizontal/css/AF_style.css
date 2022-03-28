@@ -2,6 +2,8 @@ p{
     font-size: 1.05em;
 }
 
+.mapouter{position:relative;text-align:right;height:280px;width:490px;}
+.gmap_canvas {overflow:hidden;background:none!important;height:280px;width:490px;}
 .myBox {
    
     height: 1640px;
@@ -917,7 +919,8 @@ footer{
         margin-left:10px;
         margin-right:10px;
     }
-    .mob-title{
+    .mob,.mob-title{
         visibility: hidden;
     }
+    
     }
