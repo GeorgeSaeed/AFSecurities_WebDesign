@@ -20,9 +20,9 @@
                                 </a>
                             </div>
                             <div class="blog-right">
-                                <h3 class="baby"><a href="#myModal" data-toggle="modal">Professionals</a></h3>
+                                <h3 class="baby"><a href="#job-form" data-bs-toggle="modal" data-bs-target="#job-form">Professionals</a></h3>
                                 <p>Discover the opportunity for you.</p>
-                                <a class="w3more" href="#myModal" data-toggle="modal"><i class="fa fa-mail-forward"
+                                <a class="w3more" href="#job-form" data-bs-toggle="modal" data-bs-target="#job-form"><i class="fa fa-mail-forward"
                                         aria-hidden="true"></i> More</a>
                             </div>
                             <div class="clearfix"></div>
@@ -31,14 +31,14 @@
                         <div class="col-md-6 w3lsblog-grid">
 
                             <div class="blog-left">
-                                <a href="#myModal" data-toggle="modal" class="wthree-almub wthree-almub2">
+                                <a href="#job2" data-toggle="modal" class="wthree-almub wthree-almub2">
                                 </a>
                             </div>
                             <div class="blog-right">
-                                <h3 class="baby"><a href="#myModal" data-toggle="modal">Students and Graduates</a></h3>
+                                <h3 class="baby"><a href="#job2-form" data-bs-toggle="modal" data-bs-target="#job2-form">Students and Graduates</a></h3>
                                 <p>Whether you're a university student or recent graduate, explore a broad range of
                                     entry routes tailored to you.</p>
-                                <a class="w3more" href="#myModal" data-toggle="modal"><i class="fa fa-mail-forward"
+                                <a class="w3more" href="#job2-form" data-bs-toggle="modal" data-bs-target="#job2-form"><i class="fa fa-mail-forward"
                                         aria-hidden="true"></i> More</a>
                             </div>
                             <div class="clearfix"></div>
@@ -190,8 +190,8 @@
     </div>
     <!-- /.modal job-->
 
-     <!-- modal students form-->
-     <div class="modal fade bs-example-modal-lg" id="pro-form" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+     <!-- modal professionals form-->
+     <div class="modal fade bs-example-modal-lg" id="job-form" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
      aria-hidden="true" style="display: none;">
      <div class="modal-dialog modal-lg">
          <div class="modal-content">
@@ -205,17 +205,39 @@
 
                          <div class="col-md-12">
                              <div class="box-body">
-                                 <h5 class="baby">Job Description</h5>
+                               
                                  <form class="dash-form">
                                     <div class="row">
                                       <div class="col-xl-6 col-12">
                                         <div class="form-group row">
-                                          <label class="col-md-4 col-form-label text-nowrap pr-10">Account</label>
+                                            <label class="col-md-4 col-form-label text-nowrap pr-10">Full Name</label>
+                                            <div class="col-md-8">
+                                              <input class="form-control" type="text">
+  
+                                            </div>
+                                          </div>
+  
+                                        <div class="form-group row">
+                                          <label class="col-md-4 col-form-label text-nowrap pr-10">Department</label>
                                           <div class="col-md-8">
                                             <select class="form-select">
-
-                                              <option>01</option>
-                                              <option>02</option>
+                                                <option>	Information Technology	</option>
+                                                <option>	Human Resources 	</option>
+                                                <option>	Accounting	</option>
+                                                <option>	Sales	</option>
+                                                <option>	Marketing	</option>
+                                                <option>	Trading	</option>
+                                                <option>	Operation 	</option>
+                                                <option>	Auditing	</option>
+                                                <option>	Compliance	</option>
+                                                <option>	Risk	</option>
+                                                <option>	Margin 	</option>
+                                                <option>	Customer Support 	</option>
+                                                <option>	Money Laundry	</option>
+                                                <option>	Technical Analysis	</option>
+                                                <option>	Instituation Desk 	</option>
+                                                <option>	Research 	</option>
+                                                
                                             </select>
 
                                           </div>
@@ -223,12 +245,32 @@
 
 
                                         <div class="form-group row">
-                                          <label class="col-md-4 col-form-label text-nowrap pr-10">Currency</label>
+                                          <label class="col-md-4 col-form-label text-nowrap pr-10">Position </label>
                                           <div class="col-md-8">
                                             <select class="form-select">
-
-                                              <option>EGP</option>
-                                              <option>USD</option>
+                                                <option>	Head of Technical Analysis	</option>
+                                                <option>	Junior Technical Analyst 	</option>
+                                                <option>	Senior Compliance officer	</option>
+                                                <option>	Compliance Officer 	</option>
+                                                <option>	Finance Manager	</option>
+                                                <option>	Senior Accountant	</option>
+                                                <option>	Accountant	</option>
+                                                <option>	Head of Brokers	</option>
+                                                <option>	Broker	</option>
+                                                <option>	Margin Lending Officer 	</option>
+                                                <option>	Account Manager	</option>
+                                                <option>	Customer Support Officer	</option>
+                                                <option>	Head Of Operations 	</option>
+                                                <option>	Operation Officer	</option>
+                                                <option>	Sales Institutional Desk	</option>
+                                                <option>	Retail Sales 	</option>
+                                                <option>	IT Manager	</option>
+                                                <option>	Managing Director	</option>
+                                                <option>	HR  Manager	</option>
+                                                <option>	HR Supervisor	</option>
+                                                <option>	Head of risk	</option>
+                                                <option>	Research Analyst 	</option>
+                                                
                                             </select>
                                           </div>
                                         </div>
@@ -238,29 +280,38 @@
 
                                       </div>
                                       <div class="col-xl-6 col-12">
+                                        <div class="form-group row">
+                                            <label class="col-md-4 col-form-label text-nowrap pr-10">Email</label>
+                                            <div class="col-md-8">
+                                              <input class="form-control" type="text">
+  
+                                            </div>
+                                          </div>
 
                                         <div class="form-group row ">
-                                          <label class="col-md-4 col-form-label text-nowrap pr-10">Bank Name</label>
+                                          <label class="col-md-4 col-form-label text-nowrap pr-10">Location</label>
                                           <div class="col-md-8">
                                             <select class="form-select">
 
-                                              <option>QNB</option>
-                                              <option>Blom</option>
+                                              <option> Cairo</option>
+                                              <option>Alexandria </option>
                                             </select>
 
                                           </div>
                                         </div>
 
 
-
-                                        <div class="form-group row">
-                                          <label class="col-md-4 col-form-label text-nowrap pr-10">Amount</label>
-                                          <div class="col-md-8">
-                                            <input class="form-control" type="text" value="0.00" maxlength="25">
-
+                                        <div class="form-group row ">
+                                            <label class="col-md-4 col-form-label text-nowrap pr-10">Availbility</label>
+                                            <div class="col-md-8">
+                                              <select class="form-select">
+  
+                                                <option> Full Time </option>
+                                                <option>Part Time</option>
+                                              </select>
+  
+                                            </div>
                                           </div>
-                                        </div>
-
 
                                       </div>
 
@@ -268,18 +319,18 @@
                                         <hr>
                                       </div>
                                       <div class="form-group row">
-                                        <label class="col-md-3 col-form-label text-nowrap pr-10">Attach Credit Slip
+                                        <label class="col-md-2 col-form-label text-nowrap pr-10">Attach CV
                                         </label>
-                                        <div class="col-md-7">
+                                        <div class="col-md-10">
                                           <input class="form-control " id="formFileSm" type="file">
 
                                         </div>
-                                        <div class="col-md-2 text-end">
-
-                                          <button type="submit" class="btn btn-primary btn-block w-p21">Send</button>
-
-                                        </div>
+                                      
                                       </div>
+                                      <div class="form-group">
+                                        <textarea rows="5" class="form-control" placeholder="Message.."></textarea>
+                                      </div>
+
 
 
 
@@ -293,8 +344,7 @@
              </div>
              <div class="modal-footer">
                  <button type="button" class="btn btn-info text-start" data-bs-dismiss="modal">Close</button>
-                 <a type="button" class="btn btn-primary">
-                   <i class="fa fa-share-square-o"></i> Apply</a>
+                 <button type="submit" class="btn btn-primary btn-block w-p21">Send</button>
 
              </div>
          </div>
@@ -302,6 +352,170 @@
      </div>
      <!-- /.modal-dialog -->
  </div>
- <!-- /.modal job-->
+ <!-- /.modal professionals form-->
+
+  <!-- modal students form-->
+  <div class="modal fade bs-example-modal-lg" id="job2-form" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+  aria-hidden="true" style="display: none;">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header ">
+              <h4 class="text-center" id="myLargeModalLabel">Students and Graduates</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="box overflow-hidden">
+                  <div class="row g-0">
+
+                      <div class="col-md-12">
+                          <div class="box-body">
+                            
+                              <form class="dash-form">
+                                 <div class="row">
+                                   <div class="col-xl-6 col-12">
+                                     <div class="form-group row">
+                                         <label class="col-md-4 col-form-label text-nowrap pr-10">Full Name</label>
+                                         <div class="col-md-8">
+                                           <input class="form-control" type="text">
+
+                                         </div>
+                                       </div>
+
+                                     <div class="form-group row">
+                                       <label class="col-md-4 col-form-label text-nowrap pr-10">Department</label>
+                                       <div class="col-md-8">
+                                         <select class="form-select">
+                                             <option>	Information Technology	</option>
+                                             <option>	Human Resources 	</option>
+                                             <option>	Accounting	</option>
+                                             <option>	Sales	</option>
+                                             <option>	Marketing	</option>
+                                             <option>	Trading	</option>
+                                             <option>	Operation 	</option>
+                                             <option>	Auditing	</option>
+                                             <option>	Compliance	</option>
+                                             <option>	Risk	</option>
+                                             <option>	Margin 	</option>
+                                             <option>	Customer Support 	</option>
+                                             <option>	Money Laundry	</option>
+                                             <option>	Technical Analysis	</option>
+                                             <option>	Instituation Desk 	</option>
+                                             <option>	Research 	</option>
+                                             
+                                         </select>
+
+                                       </div>
+                                     </div>
+
+
+                                     <div class="form-group row">
+                                       <label class="col-md-4 col-form-label text-nowrap pr-10">Position </label>
+                                       <div class="col-md-8">
+                                         <select class="form-select">
+                                             <option>	Head of Technical Analysis	</option>
+                                             <option>	Junior Technical Analyst 	</option>
+                                             <option>	Senior Compliance officer	</option>
+                                             <option>	Compliance Officer 	</option>
+                                             <option>	Finance Manager	</option>
+                                             <option>	Senior Accountant	</option>
+                                             <option>	Accountant	</option>
+                                             <option>	Head of Brokers	</option>
+                                             <option>	Broker	</option>
+                                             <option>	Margin Lending Officer 	</option>
+                                             <option>	Account Manager	</option>
+                                             <option>	Customer Support Officer	</option>
+                                             <option>	Head Of Operations 	</option>
+                                             <option>	Operation Officer	</option>
+                                             <option>	Sales Institutional Desk	</option>
+                                             <option>	Retail Sales 	</option>
+                                             <option>	IT Manager	</option>
+                                             <option>	Managing Director	</option>
+                                             <option>	HR  Manager	</option>
+                                             <option>	HR Supervisor	</option>
+                                             <option>	Head of risk	</option>
+                                             <option>	Research Analyst 	</option>
+                                             
+                                         </select>
+                                       </div>
+                                     </div>
+
+
+
+
+                                   </div>
+                                   <div class="col-xl-6 col-12">
+                                     <div class="form-group row">
+                                         <label class="col-md-4 col-form-label text-nowrap pr-10">Email</label>
+                                         <div class="col-md-8">
+                                           <input class="form-control" type="text">
+
+                                         </div>
+                                       </div>
+
+                                     <div class="form-group row ">
+                                       <label class="col-md-4 col-form-label text-nowrap pr-10">Location</label>
+                                       <div class="col-md-8">
+                                         <select class="form-select">
+
+                                           <option> Cairo</option>
+                                           <option>Alexandria </option>
+                                         </select>
+
+                                       </div>
+                                     </div>
+
+
+                                     <div class="form-group row ">
+                                         <label class="col-md-4 col-form-label text-nowrap pr-10">Availbility</label>
+                                         <div class="col-md-8">
+                                           <select class="form-select">
+
+                                             <option> Full Time </option>
+                                             <option>Part Time</option>
+                                           </select>
+
+                                         </div>
+                                       </div>
+
+                                   </div>
+
+                                   <div>
+                                     <hr>
+                                   </div>
+                                   <div class="form-group row">
+                                     <label class="col-md-2 col-form-label text-nowrap pr-10">Attach CV
+                                     </label>
+                                     <div class="col-md-10">
+                                       <input class="form-control " id="formFileSm" type="file">
+
+                                     </div>
+                                   
+                                   </div>
+                                   <div class="form-group">
+                                     <textarea rows="5" class="form-control" placeholder="Message.."></textarea>
+                                   </div>
+
+
+
+
+
+                                 </div>
+                               </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-info text-start" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary btn-block w-p21">Send</button>
+
+          </div>
+      </div>
+      <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal students form-->
 </section>
 <!-- /.content -->
