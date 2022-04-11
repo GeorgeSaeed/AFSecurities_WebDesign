@@ -256,7 +256,7 @@
                                         <th>Expiry</th>
                                         <th>Custodian</th>
                                         <th>Status</th>
-                                        <th data-orderable="false"></th>
+                                        <th data-orderable="false" class="bg-transparent"></th>
 
                                     </tr>
                                 </thead>
@@ -274,8 +274,9 @@
                                         <td>01/04/2022</td>
                                         <td>QNB</td>
                                         <td>Pending</td>
-                                        <td><button class="btn btn-warning-light btn-sm">Modify</button><button
-                                                class="btn btn-info-light btn-sm">Cancel</button></td>
+                                        <td><button class="btn btn-warning-light btn-sm">Modify</button>
+                                            <button class="btn btn-info-light btn-sm" data-bs-toggle="modal"
+                                            data-bs-target="#modal-o">Cancel</button></td>
                                     </tr>
                                     <tr>
                                         <td>20028830</td>
@@ -306,3 +307,36 @@
     </div>
 </section>
 <!-- / Main content -->
+
+   <!--modal Order Confirmation -->
+   <div class="modal center-modal fade" id="modal-o" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content  text-center">
+        <div class="modal-header">
+          <h5 class="modal-title ">Cancel Order Confirmation</h5>
+          <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <form method="post" action="">
+           <h5>Cancel Order # 2136498</h5> 
+            <div class="form-group">
+              <div class="input-group mb-3 controls">
+                <span class="input-group-text bg-transparent"><i class=" ti-lock"></i></span>
+                <input type="password" name="password" class="form-control ps-15 bg-transparent"
+                  placeholder="Trading Password" data-validation-required-message="This field is required"
+                  required>
+              </div>
+            </div>
+
+        </div>
+        <div class="modal-footer modal-footer-uniform text-end">
+          <button type="button" class="btn btn-info" data-bs-dismiss="modal">Back</button>
+          <button type="submit" class="btn btn-primary">Confirm</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- /.modal -->

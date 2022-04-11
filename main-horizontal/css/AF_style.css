@@ -315,12 +315,17 @@ table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_des
  .demo-checkbox label {
     margin-bottom: 0px;
 }
-
+.s-t{
+    background-color:#0c1a32 ;
+}
  .table > thead > tr > td, .table > thead > tr > th{
      padding: 0.01rem;
-     background-color: #566f9e;
+  
      color:#ffffff;
       }
+.freeze{
+    background-color: #566f9e;
+}
  .table > tbody > tr > td, .table > tbody > tr > td{
     padding: 0;
 }
@@ -561,6 +566,12 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
   padding: 0 1.5rem;
 
 }
+.boxy2{
+    padding: 0 1.5rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+  
+  }
 
  .nsp{ padding: 0;}
 /*--footer--*/
