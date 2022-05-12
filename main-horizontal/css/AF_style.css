@@ -21,11 +21,24 @@ p{
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(38, 44, 94);
   }
-  
+  th.sti {
+    background-color: rgb(86 111 158) !important;
+    text-align: center;
+}
+  .theme-warning .nav-pills > li > a.active:hover, .theme-warning .nav-pills > li > a.active:focus {
+    border-top-color: #ffa800;
+    background-color: transparent !important;
+    color: #ffffff;
+}
+.nav-tabs .nav-link {
+    padding: 0.1rem 0.55rem;
+}
+.theme-warning .nav-pills > li > a.active {
+    border-top-color: transparent !important}
 .myBox {
    
-    height: 1640px;
-    overflow: scroll;
+    height: 1039px;
+    overflow: auto;
     }
     
     /* Scrollbar styles */
@@ -34,15 +47,20 @@ p{
     height: 6px;
     }
 
-   
-
 .w-30 {
     width: 160px !important;
 }
   .dataTables_filter, .dataTables_info, .dataTables_filter, .pagination { display: none; 
  }
-
- 
+ .box-header > .box-controls.ttop{
+    top: -1.3rem;
+}
+ .bblack{
+     background-color: #0c1a32;
+ }
+ .pr.dt-buttons{
+    display: none; 
+ }
 .sticky-toolbar a{
     padding: 0.65rem 0.65rem;
     color: #ffffff !important;
@@ -127,10 +145,7 @@ table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_des
 }
 
 .card .about{
-
-    
     min-height: 350px;
-   
 }
 .flex-grow-1{
     height:350px;
@@ -316,7 +331,11 @@ table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_des
     margin-bottom: 0px;
 }
 .s-t{
-    background-color:#0c1a32 ;
+    background-color:#0c1a32 !important;
+   
+}
+.s-t.active{
+    box-shadow: -3px -2px 0px 0.1rem rgb(255 168 0 / 50%);
 }
  .table > thead > tr > td, .table > thead > tr > th{
      padding: 0.01rem;
@@ -462,6 +481,7 @@ table.corp td, th{
   
     font-size: 1.2rem;
     font-weight: bold;
+    padding: 2px 16px;
 }
 
 /*
@@ -572,7 +592,16 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
     padding-right: 0.1rem;
   
   }
+.cardy{
+    padding: 0 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+    background-color: transparent !important;
+    border: 1px solid rgba(0, 0, 0, 0);
+    
+    
 
+
+}
  .nsp{ padding: 0;}
 /*--footer--*/
 footer{
@@ -621,9 +650,12 @@ footer{
 }
 .theme-warning .ranges li:hover, .theme-warning .ranges li:active, .theme-warning .ranges li.active {
     color:#ffa800;
-    background-color: transparent;
+    background-color: transparent;                                                                                                                                                                                      
 }
-
+.btny{
+        padding: 4px 8px;
+        font-size: 1.0rem;
+}
 .marketw{
     width: 95%;
 }
@@ -896,13 +928,13 @@ footer{
 .bb{
     padding-left: 40px;
     padding-right: 40px;
-    background-color:#1cc51b ;
+    background-color:#1cc51b !important;
     color: #ffffff !important;
 }
 .sb{
     padding-left: 40px;
     padding-right: 40px;
-    background-color: #ff0a24;
+    background-color: #ff0a24 !important;
     color: #ffffff !important;
 }
 
@@ -1068,6 +1100,224 @@ table {
   }
   #managerTable {
     max-height: 500px;
+    overflow: auto;
+}
+[data-tooltip] {
+  
+    position: relative;
+    z-index: 10;
+  }
+ 
+  /* Positioning and visibility settings of the tooltip */
+  [data-tooltip]:before,
+  [data-tooltip]:after {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    left: 50%;
+    bottom: calc(100% + 5px); /* 5px is the size of the arrow */
+    pointer-events: none;
+    transition: 0.2s;
+    will-change: transform;
+  }
+  
+  /* The actual tooltip with a dynamic width */
+  [data-tooltip]:before {
+    content: attr(data-tooltip);
+    padding: 4px 8px;
+    min-width: 50px;
+    max-width: 450px;
+    width: max-content;
+    width: -moz-max-content;
+    border-radius: 6px;
+    font-size: 12px;
+    background-color: rgba(59, 72, 80, 0.9);
+    background-image: linear-gradient(30deg,
+      rgba(59, 72, 80, 0.44),
+      rgba(59, 68, 75, 0.44),
+      rgba(60, 82, 88, 0.44));
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-align: justify;
+    white-space: pre-wrap;
+    transform: translate(-50%, -5px) scale(0.5);
+  }
+  
+  /* Tooltip arrow */
+  [data-tooltip]:after {
+    content: '';
+    border-style: solid;
+    border-width: 5px 5px 0px 5px; /* CSS triangle */
+    border-color: rgba(55, 64, 70, 0.9) transparent transparent transparent;
+    transition-duration: 0s; /* If the mouse leaves the element, 
+                                the transition effects for the 
+                                tooltip arrow are "turned off" */
+    transform-origin: top;   /* Orientation setting for the
+                                slide-down effect */
+    transform: translateX(-50%) scaleY(0);
+  }
+  
+  /* Tooltip becomes visible at hover */
+  [data-tooltip]:hover:before,
+  [data-tooltip]:hover:after {
+    visibility: visible;
+    opacity: 1;
+  }
+  /* Scales from 0.5 to 1 -> grow effect */
+  [data-tooltip]:hover:before {
+    transition-delay: 0.3s;
+    transform: translate(-50%, -5px) scale(1);
+  }
+  /* 
+    Arrow slide down effect only on mouseenter (NOT on mouseleave)
+  */
+  [data-tooltip]:hover:after {
+    transition-delay: 0.5s; /* Starting after the grow effect */
+    transition-duration: 0.2s;
+    transform: translateX(-50%) scaleY(1);
+  }
+  /*
+    That's it for the basic tooltip.
+  
+    If you want some adjustability
+    here are some orientation settings you can use:
+  */
+  
+  /* LEFT */
+  /* Tooltip + arrow */
+  [data-tooltip-location="left"]:before,
+  [data-tooltip-location="left"]:after {
+    left: auto;
+    right: calc(100% + 5px);
+    bottom: 50%;
+  }
+  
+  /* Tooltip */
+  [data-tooltip-location="left"]:before {
+    transform: translate(-5px, 50%) scale(0.5);
+  }
+  [data-tooltip-location="left"]:hover:before {
+    transform: translate(-5px, 50%) scale(1);
+  }
+  
+  /* Arrow */
+  [data-tooltip-location="left"]:after {
+    border-width: 5px 0px 5px 5px;
+    border-color: transparent transparent transparent rgba(55, 64, 70, 0.9);
+    transform-origin: left;
+    transform: translateY(50%) scaleX(0);
+  }
+  [data-tooltip-location="left"]:hover:after {
+    transform: translateY(50%) scaleX(1);
+  }
+  
+  
+  
+  /* RIGHT */
+  [data-tooltip-location="right"]:before,
+  [data-tooltip-location="right"]:after {
+    left: calc(100% + 5px);
+    bottom: 50%;
+  }
+  
+  [data-tooltip-location="right"]:before {
+    transform: translate(5px, 50%) scale(0.5);
+  }
+  [data-tooltip-location="right"]:hover:before {
+    transform: translate(5px, 50%) scale(1);
+  }
+  
+  [data-tooltip-location="right"]:after {
+    border-width: 5px 5px 5px 0px;
+    border-color: transparent rgba(55, 64, 70, 0.9) transparent transparent;
+    transform-origin: right;
+    transform: translateY(50%) scaleX(0);
+  }
+  [data-tooltip-location="right"]:hover:after {
+    transform: translateY(50%) scaleX(1);
+  }
+  
+  
+  
+  /* BOTTOM */
+  [data-tooltip-location="bottom"]:before,
+  [data-tooltip-location="bottom"]:after {
+    top: calc(100% + 5px);
+    bottom: auto;
+  }
+  
+  [data-tooltip-location="bottom"]:before {
+    transform: translate(-50%, 5px) scale(0.5);
+  }
+  [data-tooltip-location="bottom"]:hover:before {
+    transform: translate(-50%, 5px) scale(1);
+  }
+  
+  [data-tooltip-location="bottom"]:after {
+    border-width: 0px 5px 5px 5px;
+    border-color: transparent transparent rgba(55, 64, 70, 0.9) transparent;
+    transform-origin: bottom;
+  }
+  #managerTable2 {
+    height: 135px;
+    overflow: auto;
+}
+  
+  
+h5.buytic{
+    font-size: 0.8428571428571428rem;
+}
+.powery {
+    font-size: 1rem;
+    font-weight:400;
+}
+.tickery{
+    font-size: 1rem
+}
+
+.toptic{
+    font-size: 1rem;
+    
+  
+}
+.toptic h5{
+    font-size: 1rem;
+    
+  
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th {
+    padding: 0rem !important;
+    vertical-align: middle;
+}
+hr {
+    margin: 0.5rem 0;
+}
+
+.col-form-label.pno {
+    padding-top: calc(0.075rem + 1px);
+    padding-bottom: calc(0.075rem + 1px);
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: 1.5;
+}
+.progress:before, .progress:after {
+    content: "";
+    width: 0px;
+    height: 20px;
+    border-radius: 10%;
+    
+}
+.progress {
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: #1bc5bd !important;
+    border-radius: 0.25rem;
+}
+.managerTable3 {
+    max-height: 330px;
     overflow: auto;
 }
 @media (max-width: 767px) {
