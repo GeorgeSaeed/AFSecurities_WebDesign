@@ -1,0 +1,2128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.ico">
+
+    <title>AF Securities</title>
+  
+	<!-- Vendors Style-->
+	<link rel="stylesheet" href="css/vendors_css.css">
+	  
+	<!-- Style-->    
+	<link rel="stylesheet" href="css/horizontal-menu.css"> 
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Af_style.css">
+
+	<link rel="stylesheet" href="css/skin_color.css">
+    
+    <!-- Olfat Scripts-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+ 
+<style>
+
+.dataTables_filter, .dataTables_info, .dataTables_filter, .dt-buttons, .pagination { display: none; 
+}
+ 
+</style>
+</head>
+<body class="layout-top-nav dark-skin theme-warning fixed">
+	
+<div class="wrapper">
+	<div id="loader"></div>
+
+  <header class="main-header">
+    <div class="inside-header">
+      <div class="d-flex align-items-center logo-box justify-content-start">
+          <!-- Logo -->
+          <a href="index.html" class="logo">
+            <!-- logo-->
+            <div class="logo-lg">
+                <span class="light-logo"><img src="images/logo-dark.svg" alt="logo"  width="225" height="50"></span>
+                <span class="dark-logo"><img src="images/logo-light.svg" alt="logo" width="225" height="50"></span>
+            </div>
+          </a>	
+      </div>  
+      <!-- Header Navbar -->
+      <nav class="navbar navbar-static-top">
+        <div class="app-menu">
+          <ul class="header-megamenu nav">
+              <li class="btn-group nav-item d-none d-xl-inline-block">
+                  <a href="contact_app_chat.html" class="waves-effect waves-light nav-link svg-bt-icon btn-danger-light" title="Chat">
+                      <i data-feather="message-circle"></i>
+                  </a>
+              </li>
+              <li class="btn-group nav-item d-none d-xl-inline-block">
+                  <a href="mailbox.html" class="waves-effect waves-light nav-link svg-bt-icon btn-danger-light" title="Mailbox">
+                      <i data-feather="at-sign"></i>
+                  </a>
+              </li>
+              <li class="btn-group nav-item d-none d-xl-inline-block">
+                  <a href="extra_taskboard.html" class="waves-effect waves-light nav-link svg-bt-icon btn-danger-light" title="Taskboard">
+                      <i data-feather="clipboard"></i>
+                  </a>
+              </li>
+          </ul> 
+        </div>
+
+        <div class="navbar-custom-menu r-side">
+          <ul class="nav navbar-nav">
+            <li class="btn-group nav-item d-lg-inline-flex d-none">
+                <button href="#" class="full-screen btn-xs btn-toggle" title="Full Screen bg-transparent" style="width:auto;" data-bs-toggle="button" aria-pressed="false">
+                    <i class="flag-icon flag-icon-eg"></i>
+                    <i class="flag-icon flag-icon-us"></i>
+                    <div class="handle"></div>
+                </button>
+            </li>  
+            
+              <li class="btn-group d-lg-inline-flex d-none">
+                <form class="dash-form">
+                <div class="form-group app-menu">
+                  <select class="form-select sub b-0">
+                  <option>OlfatKamel - 0199336</option>
+                  <option>MahmoudSalahEldin - 02345678</option>
+                  <option>AbdElrahmanAhmedMohammed- 0123456</option>
+               
+                  </select>
+                </form>
+                </div>
+              </li>
+              <li class="btn-group nav-item d-lg-inline-flex d-none">
+                  <a href="#" data-provide="fullscreen" class="waves-effect waves-light nav-link full-screen btn-danger-light" title="Full Screen">
+                      <i data-feather="maximize"></i>
+                  </a>
+              </li>
+            <!-- Notifications -->
+            <li class="dropdown notifications-menu">
+              <a href="#" class="waves-effect waves-light dropdown-toggle btn-danger-light" data-bs-toggle="dropdown" title="Notifications">
+                <i data-feather="bell"></i>
+              </a>
+              <ul class="dropdown-menu animated bounceIn">
+
+                <li class="header">
+                  <div class="p-20">
+                      <div class="flexbox">
+                          <div>
+                              <h4 class="mb-0 mt-0">Notifications</h4>
+                          </div>
+                          <div>
+                              <a href="#" class="text-danger">Clear All</a>
+                          </div>
+                      </div>
+                  </div>
+                </li>
+
+                <li>
+                  <!-- inner menu: contains the actual data -->
+                  <ul class="menu sm-scrol">
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-users text-info"></i> Curabitur id eros quis nunc suscipit blandit.
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-warning text-warning"></i> Duis malesuada justo eu sapien elementum, in semper diam posuere.
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-users text-danger"></i> Donec at nisi sit amet tortor commodo porttitor pretium a erat.
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-shopping-cart text-success"></i> In gravida mauris et nisi
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-user text-danger"></i> Praesent eu lacus in libero dictum fermentum.
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-user text-danger"></i> Nunc fringilla lorem 
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-user text-success"></i> Nullam euismod dolor ut quam interdum, at scelerisque ipsum imperdiet.
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer">
+                    <a href="#">View all</a>
+                </li>
+              </ul>
+            </li>	
+
+            <!-- User Account-->
+            <li class="dropdown user user-menu">
+              <a href="#" class="waves-effect waves-light dropdown-toggle btn-danger-light" data-bs-toggle="dropdown" title="User">
+                <i data-feather="user"></i>
+              </a>
+              <ul class="dropdown-menu animated flipInX">
+                <li class="user-body">
+                 <a class="dropdown-item" href="#"><i class="ti-user text-muted me-2"></i> Profile</a>
+                 
+                 <div class="dropdown-divider"></div>
+                 <a class="dropdown-item" href="#"><i class="ti-lock text-muted me-2"></i> Logout</a>
+                </li>
+              </ul>
+              </li>
+
+              <li class="dropdown user user-menu">
+                <a href="#" class="waves-effect waves-light dropdown-toggle btn-danger-light" data-bs-toggle="dropdown" title="trade">
+                  <i data-feather="activity"></i>
+                </a>
+                <ul class="dropdown-menu animated flipInX">
+                  <li class="user-body">
+                   <a class="dropdown-item text-success" href="#"><i class="ti-plus text-muted me-2"></i> Buy</a>
+                   
+                   <div class="dropdown-divider"></div>
+                   <a class="dropdown-item text-danger" href="#"><i class="ti-minus text-muted me-2"></i> Sell</a>
+                  </li>
+                </ul>
+                </li>
+
+              <li class="btn-group nav-item d-lg-inline-flex d-none">
+                <a href="#modal-login" class="waves-effect waves-light dropdown-toggle btn-danger-light" data-bs-toggle="modal" data-bs-target="#modal-login" title="Login">
+                  <i class="fa fa-sign-in"></i>
+                </a>
+               
+            </li>
+
+            
+           
+
+            <!-- Control Sidebar Toggle Button -->
+            <li>
+                <a href="#" data-toggle="control-sidebar" title="Setting" class="waves-effect waves-light btn-danger-light">
+                  <i data-feather="settings"></i>
+                </a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+</header>
+
+<!-- Left side column. contains the logo and sidebar -->
+<nav class="main-nav" role="navigation">
+
+<!-- Mobile menu toggle button (hamburger/x icon) -->
+<input id="main-menu-state" type="checkbox" />
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility
+</label>
+
+<!-- Sample menu definition -->
+<ul id="main-menu" class="sm sm-blue">
+
+<li><a href="#"><i data-feather="home"></i>Home</a>
+ 
+</li>
+<li><a href="#"><i data-feather="award"></i>About AF Securities</a>
+
+</li>
+<li><a href="#"><i data-feather="users"></i>Join Us</a>
+  <ul> 
+    <li><a href="members/index.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Board Members</a></li>
+    <li><a href="team/index.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Our Team</a></li>
+  
+  </ul>
+</li>
+<li><a href="banks/index.html"><i data-feather="credit-card"></i>Our Banks</a></li>
+<li><a href="#"><i data-feather="gift"></i>For You</a>
+  <ul> 
+    <li><a href="#"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Dividend Banks</a></li>
+    <li><a href="#"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Special Stocks</a></li>
+    <li><a href="#"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Indices</a></li>
+
+  </ul>
+</li>
+<li><a href="#"><i data-feather="monitor"></i>Dashboard</a>
+
+</li>
+<li><a href="#"><i data-feather="target"></i>Open An Account</a>
+  
+</li>
+<li><a href="#"><i data-feather="mail"></i>Contacts</a>
+  
+</li>
+
+</ul>
+</nav>
+    
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+	  <div class="container-full">
+		<!-- Content Header (Page header) -->	  
+		
+       
+        
+	<!---------------------------------------- My content -------------------------------------->
+
+		<!-- Main content -->
+        <section class="content">
+			<div class="row">				
+			
+              <div class="col-lg-6 col-12">
+                <div class="box">
+                    <div class="box-header boxy b-0 mt-0 mb-1">
+                        <ul class="box-controls pull-right top-0">
+                          
+                            <li><a class="box-btn-slide" href="#"></a></li>
+                          </ul>
+                         
+                      </div>
+                    
+                      <div class="box-body px-0 py-1">
+
+                <ul class="nav nav-tabs nav-pills margin-bottom margin-top-10">
+                    <li class="nav-item "> <a href="#navpills-1" class="nav-link active no-radius" data-bs-toggle="tab" aria-expanded="false">Top Gainers</a> </li>
+                    <li class="nav-item "> <a href="#navpills-2" class="nav-link no-radius" data-bs-toggle="tab" aria-expanded="false">Top Losers</a> </li>
+                    <li class="nav-item "> <a href="#navpills-3" class="nav-link no-radius" data-bs-toggle="tab" aria-expanded="false">Volume</a> </li>
+                    <li class="nav-item "> <a href="#navpills-4" class="nav-link no-radius" data-bs-toggle="tab" aria-expanded="false">Turnover</a> </li>
+                    <li class="nav-item  "> <a href="#navpills-5" class="nav-link no-radius" data-bs-toggle="tab" aria-expanded="false">Change</a> </li>
+               
+                </ul>	
+
+                <div class="tab-content">
+                    <div id="navpills-1" class="tab-pane active">									
+                        
+                        <div class="table-responsive">
+
+                            <table class="table no-margin table-hover text-center">
+                              <thead class="thfont pp">					
+                                <tr>
+                                  <th>Quote</th>
+                                  <th>Name</th>
+                                  <th>Last Price</th>
+                                  <th>%Change</th>
+                                  <th>Volume</th>
+                                  <th>Change</th>
+                                </tr>
+                              </thead>
+                              <tbody class="tdfont">
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-success">0.21 <i class="fa fa-caret-up"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-success">0.21 <i class="fa fa-caret-up"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-success">0.21 <i class="fa fa-caret-up"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-success">0.21 <i class="fa fa-caret-up"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-success">0.21 <i class="fa fa-caret-up"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                               
+                              </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id="navpills-2" class="tab-pane">
+                        <div class="table-responsive text-center">
+
+                            <table class="table no-margin table-hover text-center">
+                              <thead class="thfont pp">					
+                                <tr>
+                                  <th>Quote</th>
+                                  <th>Name</th>
+                                  <th>Last Price</th>
+                                  <th>%Change</th>
+                                  <th>Volume</th>
+                                  <th>Change</th>
+                                </tr>
+                              </thead>
+                              <tbody class="tdfont">
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-danger">0.21 <i class="fa fa-caret-down"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Road Tourism</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-danger">0.21 <i class="fa fa fa-caret-down"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-danger">0.21 <i class="fa fa fa-caret-down"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-danger">0.21 <i class="fa fa fa-caret-down"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-danger">0.21 <i class="fa fa fa-caret-down"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                               
+                              </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id="navpills-3" class="tab-pane">									
+                        
+                        <div class="table-responsive text-center">
+
+                            <table class="table no-margin table-hover text-center">
+                              <thead class="thfont pp">					
+                                <tr>
+                                  <th>Quote</th>
+                                  <th>Name</th>
+                                  <th>Last Price</th>
+                                  <th>%Change</th>
+                                  <th>Volume</th>
+                                  <th>Change</th>
+                                </tr>
+                              </thead>
+                              <tbody class="tdfont">
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-success">0.21 <i class="fa fa-caret-up"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-success">0.21 <i class="fa fa-caret-up"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-success">0.21 <i class="fa fa-caret-up"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-success">0.21 <i class="fa fa-caret-up"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-success">0.21 <i class="fa fa-caret-up"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                               
+                              </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id="navpills-4" class="tab-pane">
+                        <div class="table-responsive text-center">
+
+                            <table class="table no-margin table-hover">
+                              <thead class="thfont pp">					
+                                <tr>
+                                  <th>Quote</th>
+                                  <th>Name</th>
+                                  <th>Last Price</th>
+                                  <th>%Change</th>
+                                  <th>Volume</th>
+                                  <th>Change</th>
+                                </tr>
+                              </thead>
+                              <tbody class="tdfont">
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-danger">0.21 <i class="fa fa-caret-down"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Road Tourism</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-danger">0.21 <i class="fa fa fa-caret-down"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-danger">0.21 <i class="fa fa fa-caret-down"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-danger">0.21 <i class="fa fa fa-caret-down"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-danger">0.21 <i class="fa fa fa-caret-down"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                               
+                              </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id="navpills-5" class="tab-pane">
+                        <div class="table-responsive text-center">
+
+                            <table class="table no-margin table-hover">
+                              <thead class="thfont pp">					
+                                <tr>
+                                  <th>Quote</th>
+                                  <th>Name</th>
+                                  <th>Last Price</th>
+                                  <th>%Change</th>
+                                  <th>Volume</th>
+                                  <th>Change</th>
+                                </tr>
+                              </thead>
+                              <tbody class="tdfont">
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-danger">0.21 <i class="fa fa-caret-down"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Road Tourism</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-danger">0.21 <i class="fa fa fa-caret-down"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-danger">0.21 <i class="fa fa fa-caret-down"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-danger">0.21 <i class="fa fa fa-caret-down"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                                <tr>
+                                    <td>ABHRT</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>225.587</td>
+                                    <td><span class="text-danger">0.21 <i class="fa fa fa-caret-down"></i></span></td>
+                                    <td>367</td>
+                                    <td>96375</td>
+                                </tr>
+                               
+                              </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+                </div>	
+
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-12">
+                <div class="box slimScrollDiv">
+                    <div class="box-header boxy b-0 mt-0 mb-1" >
+                    
+                        <ul class="box-controls pull-right top-0">
+                          
+                            <li><a class="box-btn-slide" href="#"></a></li>
+                          </ul>
+                         
+                      </div>
+                    
+                    
+                     <div class="box-body px-0 py-1">
+
+                <ul class="nav nav-tabs nav-pills margin-bottom margin-top-10">
+                    <li class="nav-item "> <a href="#navpills-6" class="nav-link active no-radius" data-bs-toggle="tab" aria-expanded="false">Bulletins</a> </li>
+                   
+                </ul>	
+
+                <div class="tab-content" >
+                    <div id="navpills-6" class="tab-pane active" >									
+                        
+                        <div class="table-responsive text-center ">
+
+                            <table class="table no-margin table-hover">
+                              <thead class="thfont pp">					
+                                <tr>
+                                  <th>Date</th>
+                                  <th>Time</th>
+                                  <th>Ticher</th>
+                                  <th>News</th>
+                                
+                                </tr>
+                              </thead>
+                              <tbody class="tdfont">
+                                <tr>
+                                    <td>02-12-2022</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>12:30</td>                                   
+                                    <td>Arab finance AF securities</td>
+                                  
+                                </tr>
+                                <tr>
+                                    <td>02-12-2022</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>12:30</td>                                   
+                                    <td>Arab finance AF securities</td>
+                                  
+                                </tr>
+                                <tr>
+                                    <td>02-12-2022</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>12:30</td>                                   
+                                    <td>Arab finance AF securities</td>
+                                
+                                </tr>
+                                <tr>
+                                    <td>02-12-2022</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>12:30</td>                                   
+                                    <td>Arab finance AF securities</td>
+                                  
+                                </tr>
+                                <tr>
+                                    <td>02-12-2022</td> 
+                                    <td>Misr Hotels</td>
+                                    <td>12:30</td>                                   
+                                    <td>Arab finance AF securities</td>
+                                </tr>
+                              
+                              
+                               
+                              </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                  
+                </div>
+                </div>	
+
+              </div>
+            </div>
+
+
+            
+            
+        <div class="col-12">
+           
+
+                <div class="box">
+                    <div class="box-header boxy b-0 mt-10 mb-1">
+                      <h4 class="box-title">Market Watch</h4>
+                      <ul class="box-controls pull-right top-0">
+                        
+                          <li><a class="box-btn-fullscreen" href="#"></a></li>
+                        </ul>
+                       
+                    </div>
+
+
+                    <div class="box-body boxy p-0" >
+                <div class="row">
+                    <div class="col-md-6">
+ <!-- test -->
+ <div class="row">
+        <div class="col-md-2 ps-30">
+        <div class="btn fade active show p-0">
+            <form class="dash-form">
+                <div class="form-group">
+                  <select class="form-select mw">
+                    <option>EGX30</option>
+                    <option>EGX70</option>
+                    <option>EGX100</option>
+                    <option>TAMAYUZ</option>
+                    <option>EGX30 Capped</option>
+                    <option>EGX50</option>
+                    <option>EGX30 TR</option>
+                  </select>
+                </div>
+            
+            </form>
+          </div>
+        
+       
+
+        </div>
+        <div class="col-md-4 ">
+            
+              <div class="btn fade show p-0">
+                <form class="dash-form">
+                    <div class="form-group">
+                      <select class="form-select mw">
+                        <option>Banks</option>
+                        <option>Basic Resources</option>
+                        <option>Health Care & Pharmaceuticals</option>
+                        <option>Industrial Goods, Services and Automobiles	</option>
+                        <option>Real Estate</option>
+                        <option>Travel & Leisure</option>
+                        <option>IT , Media & Communication Services</option>
+                        <option>Food, Beverages and Tobacco</option>
+                        <option>Energy & Support Services</option>
+                        <option>Trade & Distributors</option>
+                        <option>Shipping & Transportation Services</option>
+                        <option>Education Services	</option>
+                        <option>Non-bank financial services</option>
+                        <option>Contracting & Construction Engineering</option>
+                        <option>Textile & Durables</option>
+                        <option>Building Materials</option>
+                        <option>Paper & Packaging</option>
+                      </select>
+                    </div>
+                
+                </form>
+              </div>
+           
+    
+            </div>
+
+        <div class="col-md-6 ">
+            <ul class="flexbox flex-justified text-center">
+                <li class="be-1">
+                    <div class="fs-14">Value
+
+                    <h5 class="text-danger mb-0"><i class="fa fa-caret-down"></i> -14.1</h5></div>
+                  </li>
+
+                  <li class="be-1">
+                    <div class="fs-14">Change
+                    <h5 class="text-success mb-0"><i class="fa fa-caret-up"></i> 14.1</h5></div>
+                  </li>
+
+
+                  <li class="be-0">
+                    <div class="fs-14">%Change<h5 class="text-success mb-0"><i class="fa fa-caret-up"></i> 55% </h5></div>
+                 
+                  </li>
+
+                
+              </ul>
+
+        </div>
+  </div>      
+                        
+                     
+                        <!-- Tab panes -->
+                       
+                    </div>
+                     
+                    <div class="col-md-4 offset-md-2">
+                        <ul class="flexbox flex-justified text-center">
+                            <li class="be-1">
+                                <div class="fs-14">
+                                    Turnover<h5 class="mb-0"> 7369</h5></div>
+                               
+                              </li>
+  
+                              <li class="be-1">
+                                <div class="fs-14">Volume
+
+                                <h5 class="text-danger mb-0"><i class="fa fa-caret-down"></i> -14.1</h5></div>
+                              </li>
+
+                              <li class="be-1">
+                                <div class="fs-14">Trades
+                                <h5 class="text-success mb-0"><i class="fa fa-caret-up"></i> 14.1</h5></div>
+                              </li>
+  
+  
+                              <li class="be-0">
+                                <div class="fs-14">Breadth<h5 class="mb-0"><span class="text-success">55 </span><span class="text-danger"> 32</span> 99</h5></div>
+                             
+                              </li>
+  
+                            
+                          </ul>
+
+            </div>
+                </div>
+     
+                <div class="table-responsive text-center buy-sall-table">
+                          <table id="example"data-page-length='1000' class="table table-striped table-hover display nowrap margin-top-10 w-p100 buy-sall-table" >
+                            <thead class="headery thfont pp">
+                                <tr style="border-bottom:solid 2px;">   
+                                    <th>Ticker</th>
+                                    <th>Name</th>
+                                    <th >Last Price</th>
+                                    <th>Last Qty</th>
+                                    <th>% Chg.</th>
+                                    <th>Volume</th>
+                                    <th>VWAP</th>
+                                    <th >Bid Qty</th>
+                                    <th>B.Bid</th>
+                                    <th>B.Ask </th>
+                                    <th >Ask.Qty</th>
+                                    <th>T.Bids </th>
+                                    <th>T.Asks </th>
+                                    <th >Prev Close </th>
+                                    <th>Low</th>
+                                    <th>High</th>
+                                    <th>Turnover</th>
+                                    <th>Open  </th>
+                                    <th>52 WL. </th>
+                                    <th>52 WH.</th>
+                                
+                                    <th>Change</th>
+                                   
+                                </tr>
+                            </thead>
+                            <tbody class="tdfont">
+                                <tr> 
+                                  <td>  <div class="dropdown d-inline-block px-5">
+                                    <a class="text-fade" href="#" data-bs-toggle="dropdown"><i class="ti-more-alt rotate-90"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                      <a class="dropdown-item text-success text-center p-0" href="#"><strong>Buy</strong> </a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item text-danger text-center p-0" href="#"><strong>Sell</strong></a>
+                                     
+                                    </div>
+                                    </div>ABCD</td>
+                                    <td><strong>Misr Hotels</strong></td>
+                                    <td class="lastb">2368.547</td>
+                                    <td class="lastb">6397</td>
+                                    <td class="text-success">36.4</td>
+                                    
+                                    <td  class="text-success">0.5</td>
+                                    <td class="text-danger">63.87</td>
+                                    <td  class="bid">450.000</td>
+                                        
+                                        <td  class="bid">555</td>
+                                        <td  class="ask">3988</td>
+                                        <td  class="ask">69</td>
+                                    <td>555</td>
+                                    <td>3988</td>
+                                    <td>69</td>
+                                    <td>3988</td>
+                                    <td>69</td>
+                                    <td>69</td>
+                                    <td>10089653</td>
+                                    <td>347</td>
+                                    <td>347</td>
+
+                                    
+                                    <td>+05.15% <i class="fa fa-arrow-up text-success"></i></td>
+                                    
+                                </tr>
+                                <tr>
+                                  <td>  <div class="dropdown d-inline-block  px-5">
+                                    <a class="text-fade" href="#" data-bs-toggle="dropdown"><i class="ti-more-alt rotate-90"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                      <a class="dropdown-item text-success text-center p-0" href="#"><strong>Buy</strong> </a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item text-danger text-center p-0" href="#"><strong>Sell</strong></a>
+                                     
+                                    </div>
+                                    </div>ABCD</td>
+                                  <td><strong>Misr Hotels</strong></td>
+                                  <td class="lastb">2368.547</td>
+                                  <td class="lastb">6397</td>
+                                  <td class="text-success">36.4</td>
+                                  
+                                  <td  class="text-success">0.5</td>
+                                  <td class="text-danger">63.87</td>
+                                  <td  class="bid">450.000</td>
+                                      
+                                      <td  class="bid">555</td>
+                                      <td  class="ask">3988</td>
+                                      <td  class="ask">69</td>
+                                  <td>555</td>
+                                  <td>3988</td>
+                                  <td>69</td>
+                                  <td>3988</td>
+                                  <td>69</td>
+                                  <td>69</td>
+                                  <td>10089653</td>
+                                  <td>347</td>
+                                  <td>347</td>
+
+                                  
+                                  <td>+05.15% <i class="fa fa-arrow-up text-success"></i></td>
+                                  
+                              </tr>
+                              <tr>
+                                <td>  
+                                  <div class="dropdown d-inline-block  px-5">
+                                  <a class="text-fade" href="#" data-bs-toggle="dropdown"><i class="ti-more-alt rotate-90"></i></a>
+                                  <div class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item text-success text-center p-0" href="#"><strong>Buy</strong> </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item text-danger text-center p-0" href="#"><strong>Sell</strong></a>
+                                   
+                                  </div>
+                                  </div>ABCD</td>
+                                <td><strong>Misr Hotels</strong></td>
+                                <td class="lastb">2368.547</td>
+                                <td class="lastb">6397</td>
+                                <td class="text-success">36.4</td>
+                                
+                                <td  class="text-success">0.5</td>
+                                <td class="text-danger">63.87</td>
+                                <td  class="bid">450.000</td>
+                                    
+                                    <td  class="bid">555</td>
+                                    <td  class="ask">3988</td>
+                                    <td  class="ask">69</td>
+                                <td>555</td>
+                                <td>3988</td>
+                                <td>69</td>
+                                <td>3988</td>
+                                <td>69</td>
+                                <td>69</td>
+                                <td>10089653</td>
+                                <td>347</td>
+                                <td>347</td>
+
+                                
+                                <td>+05.15% <i class="fa fa-arrow-up text-success"></i></td>
+                                
+                            </tr>
+                                <tr>
+                                    <td>ABCD</td>
+                                    <td><strong>Misr Hotels</strong></td>
+                                    <td class="lastb">2368.547</td>
+                                    <td class="lastb">6397</td>
+                                    <td class="text-success">36.4</td>
+                                    
+                                    <td  class="text-success">0.5</td>
+                                    <td class="text-danger">63.87</td>
+                                    <td  class="bid">450.000</td>
+                                        
+                                        <td  class="bid">555</td>
+                                        <td  class="ask">3988</td>
+                                        <td  class="ask">69</td>
+                                    <td>555</td>
+                                    <td>3988</td>
+                                    <td>69</td>
+                                    <td>3988</td>
+                                    <td>69</td>
+                                    <td>69</td>
+                                    <td>10089653</td>
+                                    <td>347</td>
+                                    <td>347</td>
+
+                                    
+                                    <td>-02.01% <i class="fa fa-arrow-down text-danger"></i></td>
+                                    
+                                </tr>
+                                <tr>
+                                  <td>ABCD</td>
+                                  <td><strong>Misr Hotels</strong></td>
+                                  <td class="lastb">2368.547</td>
+                                  <td class="lastb">6397</td>
+                                  <td class="text-success">36.4</td>
+                                  
+                                  <td  class="text-success">0.5</td>
+                                  <td class="text-danger">63.87</td>
+                                  <td  class="bid">450.000</td>
+                                      
+                                      <td  class="bid">555</td>
+                                      <td  class="ask">3988</td>
+                                      <td  class="ask">69</td>
+                                  <td>555</td>
+                                  <td>3988</td>
+                                  <td>69</td>
+                                  <td>3988</td>
+                                  <td>69</td>
+                                  <td>69</td>
+                                  <td>10089653</td>
+                                  <td>347</td>
+                                  <td>347</td>
+
+                                  
+                                  <td>-02.01% <i class="fa fa-arrow-down text-danger"></i></td>
+                                  
+                              </tr>
+                              <tr>
+                                <td>ABCD</td>
+                                <td><strong>Misr Hotels</strong></td>
+                                <td class="lastb">2368.547</td>
+                                <td class="lastb">6397</td>
+                                <td class="text-success">36.4</td>
+                                
+                                <td  class="text-success">0.5</td>
+                                <td class="text-danger">63.87</td>
+                                <td  class="bid">450.000</td>
+                                    
+                                    <td  class="bid">555</td>
+                                    <td  class="ask">3988</td>
+                                    <td  class="ask">69</td>
+                                <td>555</td>
+                                <td>3988</td>
+                                <td>69</td>
+                                <td>3988</td>
+                                <td>69</td>
+                                <td>69</td>
+                                <td>10089653</td>
+                                <td>347</td>
+                                <td>347</td>
+
+                                
+                                <td>-02.01% <i class="fa fa-arrow-down text-danger"></i></td>
+                                
+                            </tr>
+                            <tr>
+                              <td>ABCD</td>
+                              <td><strong>Misr Hotels</strong></td>
+                              <td class="lastb">2368.547</td>
+                              <td class="lastb">6397</td>
+                              <td class="text-success">36.4</td>
+                              
+                              <td  class="text-success">0.5</td>
+                              <td class="text-danger">63.87</td>
+                              <td  class="bid">450.000</td>
+                                  
+                                  <td  class="bid">555</td>
+                                  <td  class="ask">3988</td>
+                                  <td  class="ask">69</td>
+                              <td>555</td>
+                              <td>3988</td>
+                              <td>69</td>
+                              <td>3988</td>
+                              <td>69</td>
+                              <td>69</td>
+                              <td>10089653</td>
+                              <td>347</td>
+                              <td>347</td>
+
+                              
+                              <td>+05.15% <i class="fa fa-arrow-up text-success"></i></td>
+                              
+                          </tr>
+                          <tr>
+                            <td>ABCD</td>
+                            <td><strong>Misr Hotels</strong></td>
+                            <td class="lastb">2368.547</td>
+                            <td class="lastb">6397</td>
+                            <td class="text-success">36.4</td>
+                            
+                            <td  class="text-success">0.5</td>
+                            <td class="text-danger">63.87</td>
+                            <td  class="bid">450.000</td>
+                                
+                                <td  class="bid">555</td>
+                                <td  class="ask">3988</td>
+                                <td  class="ask">69</td>
+                            <td>555</td>
+                            <td>3988</td>
+                            <td>69</td>
+                            <td>3988</td>
+                            <td>69</td>
+                            <td>69</td>
+                            <td>10089653</td>
+                            <td>347</td>
+                            <td>347</td>
+
+                            
+                            <td>+05.15% <i class="fa fa-arrow-up text-success"></i></td>
+                            
+                        </tr>
+                        <tr>
+                          <td>ABCD</td>
+                          <td><strong>Misr Hotels</strong></td>
+                          <td class="lastb">2368.547</td>
+                          <td class="lastb">6397</td>
+                          <td class="text-success">36.4</td>
+                          
+                          <td  class="text-success">0.5</td>
+                          <td class="text-danger">63.87</td>
+                          <td  class="bid">450.000</td>
+                              
+                              <td  class="bid">555</td>
+                              <td  class="ask">3988</td>
+                              <td  class="ask">69</td>
+                          <td>555</td>
+                          <td>3988</td>
+                          <td>69</td>
+                          <td>3988</td>
+                          <td>69</td>
+                          <td>69</td>
+                          <td>10089653</td>
+                          <td>347</td>
+                          <td>347</td>
+
+                          
+                          <td>+05.15% <i class="fa fa-arrow-up text-success"></i></td>
+                          
+                      </tr>
+                      <tr>
+                          <td>ABCD</td>
+                          <td><strong>Misr Hotels</strong></td>
+                          <td class="lastb">2368.547</td>
+                          <td class="lastb">6397</td>
+                          <td class="text-success">36.4</td>
+                          
+                          <td  class="text-success">0.5</td>
+                          <td class="text-danger">63.87</td>
+                          <td  class="bid">450.000</td>
+                              
+                              <td  class="bid">555</td>
+                              <td  class="ask">3988</td>
+                              <td  class="ask">69</td>
+                          <td>555</td>
+                          <td>3988</td>
+                          <td>69</td>
+                          <td>3988</td>
+                          <td>69</td>
+                          <td>69</td>
+                          <td>10089653</td>
+                          <td>347</td>
+                          <td>347</td>
+
+                          
+                          <td>-02.01% <i class="fa fa-arrow-down text-danger"></i></td>
+                          
+                      </tr>
+                      <tr>
+                        <td>ABCD</td>
+                        <td><strong>Misr Hotels</strong></td>
+                        <td class="lastb">2368.547</td>
+                        <td class="lastb">6397</td>
+                        <td class="text-success">36.4</td>
+                        
+                        <td  class="text-success">0.5</td>
+                        <td class="text-danger">63.87</td>
+                        <td  class="bid">450.000</td>
+                            
+                            <td  class="bid">555</td>
+                            <td  class="ask">3988</td>
+                            <td  class="ask">69</td>
+                        <td>555</td>
+                        <td>3988</td>
+                        <td>69</td>
+                        <td>3988</td>
+                        <td>69</td>
+                        <td>69</td>
+                        <td>10089653</td>
+                        <td>347</td>
+                        <td>347</td>
+
+                        
+                        <td>-02.01% <i class="fa fa-arrow-down text-danger"></i></td>
+                        
+                    </tr>
+                    <tr>
+                      <td>  <div class="dropdown d-inline-block w-p-50">
+                        <a class="text-fade" href="#" data-bs-toggle="dropdown"><i class="ti-more-alt rotate-90"></i></a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item text-success text-center p-0" href="#"><strong>Buy</strong> </a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item text-danger text-center p-0" href="#"><strong>Sell</strong></a>
+                         
+                        </div>
+                        </div>ABCD</td>
+                      <td><strong>Misr Hotels</strong></td>
+                      <td class="lastb">2368.547</td>
+                      <td class="lastb">6397</td>
+                      <td class="text-success">36.4</td>
+                      
+                      <td  class="text-success">0.5</td>
+                      <td class="text-danger">63.87</td>
+                      <td  class="bid">450.000</td>
+                          
+                          <td  class="bid">555</td>
+                          <td  class="ask">3988</td>
+                          <td  class="ask">69</td>
+                      <td>555</td>
+                      <td>3988</td>
+                      <td>69</td>
+                      <td>3988</td>
+                      <td>69</td>
+                      <td>69</td>
+                      <td>10089653</td>
+                      <td>347</td>
+                      <td>347</td>
+
+                      
+                      <td>+05.15% <i class="fa fa-arrow-up text-success"></i></td>
+                      
+                  </tr>
+                  <tr>
+                      <td>ABCD</td>
+                      <td><strong>Misr Hotels</strong></td>
+                      <td class="lastb">2368.547</td>
+                      <td class="lastb">6397</td>
+                      <td class="text-success">36.4</td>
+                      
+                      <td  class="text-success">0.5</td>
+                      <td class="text-danger">63.87</td>
+                      <td  class="bid">450.000</td>
+                          
+                          <td  class="bid">555</td>
+                          <td  class="ask">3988</td>
+                          <td  class="ask">69</td>
+                      <td>555</td>
+                      <td>3988</td>
+                      <td>69</td>
+                      <td>3988</td>
+                      <td>69</td>
+                      <td>69</td>
+                      <td>10089653</td>
+                      <td>347</td>
+                      <td>347</td>
+
+                      
+                      <td>-02.01% <i class="fa fa-arrow-down text-danger"></i></td>
+                      
+                  </tr>
+                  <tr>
+                    <td>ABCD</td>
+                    <td><strong>Misr Hotels</strong></td>
+                    <td class="lastb">2368.547</td>
+                    <td class="lastb">6397</td>
+                    <td class="text-success">36.4</td>
+                    
+                    <td  class="text-success">0.5</td>
+                    <td class="text-danger">63.87</td>
+                    <td  class="bid">450.000</td>
+                        
+                        <td  class="bid">555</td>
+                        <td  class="ask">3988</td>
+                        <td  class="ask">69</td>
+                    <td>555</td>
+                    <td>3988</td>
+                    <td>69</td>
+                    <td>3988</td>
+                    <td>69</td>
+                    <td>69</td>
+                    <td>10089653</td>
+                    <td>347</td>
+                    <td>347</td>
+
+                    
+                    <td>-02.01% <i class="fa fa-arrow-down text-danger"></i></td>
+                    
+                </tr>
+                <tr>
+                  <td>ABCD</td>
+                  <td><strong>Misr Hotels</strong></td>
+                  <td class="lastb">2368.547</td>
+                  <td class="lastb">6397</td>
+                  <td class="text-success">36.4</td>
+                  
+                  <td  class="text-success">0.5</td>
+                  <td class="text-danger">63.87</td>
+                  <td  class="bid">450.000</td>
+                      
+                      <td  class="bid">555</td>
+                      <td  class="ask">3988</td>
+                      <td  class="ask">69</td>
+                  <td>555</td>
+                  <td>3988</td>
+                  <td>69</td>
+                  <td>3988</td>
+                  <td>69</td>
+                  <td>69</td>
+                  <td>10089653</td>
+                  <td>347</td>
+                  <td>347</td>
+
+                  
+                  <td>-02.01% <i class="fa fa-arrow-down text-danger"></i></td>
+                  
+              </tr>
+              <tr>
+                <td>ABCD</td>
+                <td><strong>Misr Hotels</strong></td>
+                <td class="lastb">2368.547</td>
+                <td class="lastb">6397</td>
+                <td class="text-success">36.4</td>
+                
+                <td  class="text-success">0.5</td>
+                <td class="text-danger">63.87</td>
+                <td  class="bid">450.000</td>
+                    
+                    <td  class="bid">555</td>
+                    <td  class="ask">3988</td>
+                    <td  class="ask">69</td>
+                <td>555</td>
+                <td>3988</td>
+                <td>69</td>
+                <td>3988</td>
+                <td>69</td>
+                <td>69</td>
+                <td>10089653</td>
+                <td>347</td>
+                <td>347</td>
+
+                
+                <td>+05.15% <i class="fa fa-arrow-up text-success"></i></td>
+                
+            </tr>
+            <tr>
+              <td>ABCD</td>
+              <td><strong>Misr Hotels</strong></td>
+              <td class="lastb">2368.547</td>
+              <td class="lastb">6397</td>
+              <td class="text-success">36.4</td>
+              
+              <td  class="text-success">0.5</td>
+              <td class="text-danger">63.87</td>
+              <td  class="bid">450.000</td>
+                  
+                  <td  class="bid">555</td>
+                  <td  class="ask">3988</td>
+                  <td  class="ask">69</td>
+              <td>555</td>
+              <td>3988</td>
+              <td>69</td>
+              <td>3988</td>
+              <td>69</td>
+              <td>69</td>
+              <td>10089653</td>
+              <td>347</td>
+              <td>347</td>
+
+              
+              <td>+05.15% <i class="fa fa-arrow-up text-success"></i></td>
+              
+          </tr>
+          <tr>
+            <td>ABCD</td>
+            <td><strong>Misr Hotels</strong></td>
+            <td class="lastb">2368.547</td>
+            <td class="lastb">6397</td>
+            <td class="text-success">36.4</td>
+            
+            <td  class="text-success">0.5</td>
+            <td class="text-danger">63.87</td>
+            <td  class="bid">450.000</td>
+                
+                <td  class="bid">555</td>
+                <td  class="ask">3988</td>
+                <td  class="ask">69</td>
+            <td>555</td>
+            <td>3988</td>
+            <td>69</td>
+            <td>3988</td>
+            <td>69</td>
+            <td>69</td>
+            <td>10089653</td>
+            <td>347</td>
+            <td>347</td>
+
+            
+            <td>+05.15% <i class="fa fa-arrow-up text-success"></i></td>
+            
+        </tr>
+        <tr>
+            <td>ABCD</td>
+            <td><strong>Misr Hotels</strong></td>
+            <td class="lastb">2368.547</td>
+            <td class="lastb">6397</td>
+            <td class="text-success">36.4</td>
+            
+            <td  class="text-success">0.5</td>
+            <td class="text-danger">63.87</td>
+            <td  class="bid">450.000</td>
+                
+                <td  class="bid">555</td>
+                <td  class="ask">3988</td>
+                <td  class="ask">69</td>
+            <td>555</td>
+            <td>3988</td>
+            <td>69</td>
+            <td>3988</td>
+            <td>69</td>
+            <td>69</td>
+            <td>10089653</td>
+            <td>347</td>
+            <td>347</td>
+
+            
+            <td>-02.01% <i class="fa fa-arrow-down text-danger"></i></td>
+            
+        </tr>
+        <tr>
+          <td>ABCD</td>
+          <td><strong>Misr Hotels</strong></td>
+          <td class="lastb">2368.547</td>
+          <td class="lastb">6397</td>
+          <td class="text-success">36.4</td>
+          
+          <td  class="text-success">0.5</td>
+          <td class="text-danger">63.87</td>
+          <td  class="bid">450.000</td>
+              
+              <td  class="bid">555</td>
+              <td  class="ask">3988</td>
+              <td  class="ask">69</td>
+          <td>555</td>
+          <td>3988</td>
+          <td>69</td>
+          <td>3988</td>
+          <td>69</td>
+          <td>69</td>
+          <td>10089653</td>
+          <td>347</td>
+          <td>347</td>
+
+          
+          <td>-02.01% <i class="fa fa-arrow-down text-danger"></i></td>
+          
+      </tr>
+
+ 
+                                
+                            </tbody>				  
+                            
+                        </table>
+                 </div>              
+                    </div>
+
+                 
+
+               </div>
+
+
+
+				<!-- /.col -->
+
+				
+		</div>
+		</section>
+
+     
+
+	   <!-- /.modal login-->
+
+
+
+       <div class="modal center-modal fade" id="modal-login" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content bg-transparent">
+            
+           
+                <div class=" modal-body container h-p100">
+                    <div class="align-items-center justify-content-md-center h-p100">	
+                        
+                        <div class="col-12">
+                            <div class="justify-content-center g-0">
+                                <div class="col-lg-12 col-md-5 col-12">
+                                    <div class="bg-white rounded10 shadow-lg">
+                                        <div class="content-top-agile p-20 pb-0">
+                                            <h2 class="text-danger">Let's Get Started</h2>
+                                            <p class="mb-0">Sign in to continue to AF Securities.</p>							
+                                        </div>
+                                        <div class="p-40">
+                                            <form novalidate action="auth_register.html" method="post">
+                                                <div class="form-group">
+                                                    <div class="input-group mb-3 controls">
+                                                        <span class="input-group-text bg-transparent"><i class=" ti-user"></i></span>
+                                                        <input type="email" name="email" class="form-control ps-15 bg-transparent" placeholder="Email" required data-validation-required-message="This field is required">
+                                                    </div>
+                                                </div>
+                                                
+                                              
+                                                  <div class="row">
+                                                    
+                                                    <!-- /.col -->
+                                                    <div class="col-12">
+                                                     <div class="fog-pwd text-end">
+                                                        <a href="javascript:void(0)" class="hover-warning"><i class="ion ion-locked"></i> Forgot pwd?</a><br>
+                                                      </div>
+                                                    </div>
+                                                    <!-- /.col -->
+                                                    <div class="col-12 text-center">
+                                                      <button type="submit" class="btn btn-danger mt-10" id="sa-success">SIGN IN</button>
+                                                    </div>
+                                                    <!-- /.col -->
+                                                  </div>
+                                            </form>	
+                                            
+                                        </div>						
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+	 
+				
+		
+		
+	
+
+</div>
+</div>
+</div>
+
+     
+	  
+      <!-- /.modal login-->
+
+	  
+
+
+
+
+		<!-- /.content -->
+
+		<!---------------------------------------- My content -------------------------------------->
+	  
+	  
+  </div>
+  <!-- /.content-wrapper -->
+
+
+  	<!--footer -->
+		<footer class=" pt-50 pb-20">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="footer-title">
+              <h3>Follow Us</h3>
+            </div>
+            <div class="footer-text">
+              <p>ArabFinance.com was formed to meet a growing demand for online trading, transparent financial information, and financial services in Egypt and the Arab world. As a customer-centric organization, both structurally and functionally,
+                          </p>
+              <div class="user-social-acount">
+                              <button class="btn btn-circle btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></button>
+                              <button class="btn btn-circle btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></button>
+                              <button class="btn btn-circle btn-social-icon btn-instagram"><i class="fa fa-instagram"></i></button>
+                          </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-title">
+              <h3>Get in touch</h3>
+            </div>
+            <div class="contact-info">
+              <h4>Location :</h4>
+              <p>52 El-Batal Ahmed Abd El-Aziz,4th floor Dokki, Giza, Egypt.,
+                          </p>
+              <div class="phone">
+                <h4>Contact :</h4>
+                <p>Phone : (+20) 2 25997444</p>
+                <p>Email :
+                  <a href="mailto:info@ArabFinance.com">info@ArabFinance.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-title">
+              <h3>Quick Links</h3>
+            </div>
+            <ul class="links">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="404.html">Board Members</a>
+              </li>
+              <li>
+                <a href="shop.html">Open An Account</a>
+              </li>
+                          
+                          <li>
+                <a href="shop.html">Our Team</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-title">
+              <h3>Download Our App</h3>
+            </div>
+                      <div class="app-download-btns mb-4">
+                          <a href="#" class="col-md-6"><img src="images/footer-google-btn.png" alt=""></a>
+                          <a href="#" class="col-md-6"><img src="images/footer-app-btn.png" alt=""></a>
+                      </div>
+                      <div class="box text-center b-1">
+                          <div class="box-body">
+                            <h2 class="mt-10">Call Us</h2>
+                            <h1 class="text-bold text-primary mt-20">19717</h1>
+                           
+                            
+                          </div>
+                        </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+    <!-- //footer -->
+   
+     <div class="b-footer dark">
+      <div class="pull-right d-none d-sm-inline-block">
+          <ul class="nav nav-danger nav-dotted nav-dot-separated justify-content-center justify-content-md-end">
+        <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0)">FAQ</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Terms and Conditions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Privacy Policy </a>
+          </li>
+      </ul>
+      </div>
+      &copy; 2022 <a href="https://www.arabfinance.com/"> AF-Securities</a>. All Rights Reserved.
+    </div>
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar">
+	  
+	<div class="rpanel-title"><span class="pull-right btn btn-circle btn-danger"><i class="ion ion-close text-white" data-toggle="control-sidebar"></i></span> </div>  <!-- Create the tabs -->
+    <ul class="nav nav-tabs control-sidebar-tabs">
+      <li class="nav-item"><a href="#control-sidebar-home-tab" data-bs-toggle="tab" class="active"><i class="mdi mdi-message-text"></i></a></li>
+      <li class="nav-item"><a href="#control-sidebar-settings-tab" data-bs-toggle="tab"><i class="mdi mdi-playlist-check"></i></a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- Home tab content -->
+      <div class="tab-pane active" id="control-sidebar-home-tab">
+          <div class="flexbox">
+			<a href="javascript:void(0)" class="text-grey">
+				<i class="ti-more"></i>
+			</a>	
+			<p>Users</p>
+			<a href="javascript:void(0)" class="text-end text-grey"><i class="ti-plus"></i></a>
+		  </div>
+		  <div class="lookup lookup-sm lookup-right d-none d-lg-block">
+			<input type="text" name="s" placeholder="Search" class="w-p100">
+		  </div>
+          <div class="media-list media-list-hover mt-20">
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-success" href="#">
+				<img src="images/avatar/1.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="fs-16">
+				  <a class="hover-danger" href="#"><strong>Tyler</strong></a>
+				</p>
+				<p>Praesent tristique diam...</p>
+				  <span>Just now</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-danger" href="#">
+				<img src="images/avatar/2.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="fs-16">
+				  <a class="hover-danger" href="#"><strong>Luke</strong></a>
+				</p>
+				<p>Cras tempor diam ...</p>
+				  <span>33 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-warning" href="#">
+				<img src="images/avatar/3.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="fs-16">
+				  <a class="hover-danger" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-danger" href="#">
+				<img src="images/avatar/4.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="fs-16">
+				  <a class="hover-danger" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>			
+			
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-success" href="#">
+				<img src="images/avatar/1.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="fs-16">
+				  <a class="hover-danger" href="#"><strong>Tyler</strong></a>
+				</p>
+				<p>Praesent tristique diam...</p>
+				  <span>Just now</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-danger" href="#">
+				<img src="images/avatar/2.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="fs-16">
+				  <a class="hover-danger" href="#"><strong>Luke</strong></a>
+				</p>
+				<p>Cras tempor diam ...</p>
+				  <span>33 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-warning" href="#">
+				<img src="images/avatar/3.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="fs-16">
+				  <a class="hover-danger" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-danger" href="#">
+				<img src="images/avatar/4.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="fs-16">
+				  <a class="hover-danger" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>
+			  
+		  </div>
+
+      </div>
+      <!-- /.tab-pane -->
+      <!-- Settings tab content -->
+      <div class="tab-pane" id="control-sidebar-settings-tab">
+          <div class="flexbox">
+			<a href="javascript:void(0)" class="text-grey">
+				<i class="ti-more"></i>
+			</a>	
+			<p>Todo List</p>
+			<a href="javascript:void(0)" class="text-end text-grey"><i class="ti-plus"></i></a>
+		  </div>
+        <ul class="todo-list mt-20">
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_1" class="filled-in">
+			  <label for="basic_checkbox_1" class="mb-0 h-15"></label>
+			  <!-- todo text -->
+			  <span class="text-line">Nulla vitae purus</span>
+			  <!-- Emphasis label -->
+			  <small class="badge bg-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
+			  <!-- General tools such as edit or delete-->
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_2" class="filled-in">
+			  <label for="basic_checkbox_2" class="mb-0 h-15"></label>
+			  <span class="text-line">Phasellus interdum</span>
+			  <small class="badge bg-info"><i class="fa fa-clock-o"></i> 4 hours</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_3" class="filled-in">
+			  <label for="basic_checkbox_3" class="mb-0 h-15"></label>
+			  <span class="text-line">Quisque sodales</span>
+			  <small class="badge bg-warning"><i class="fa fa-clock-o"></i> 1 day</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_4" class="filled-in">
+			  <label for="basic_checkbox_4" class="mb-0 h-15"></label>
+			  <span class="text-line">Proin nec mi porta</span>
+			  <small class="badge bg-success"><i class="fa fa-clock-o"></i> 3 days</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_5" class="filled-in">
+			  <label for="basic_checkbox_5" class="mb-0 h-15"></label>
+			  <span class="text-line">Maecenas scelerisque</span>
+			  <small class="badge bg-danger"><i class="fa fa-clock-o"></i> 1 week</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_6" class="filled-in">
+			  <label for="basic_checkbox_6" class="mb-0 h-15"></label>
+			  <span class="text-line">Vivamus nec orci</span>
+			  <small class="badge bg-info"><i class="fa fa-clock-o"></i> 1 month</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_7" class="filled-in">
+			  <label for="basic_checkbox_7" class="mb-0 h-15"></label>
+			  <!-- todo text -->
+			  <span class="text-line">Nulla vitae purus</span>
+			  <!-- Emphasis label -->
+			  <small class="badge bg-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
+			  <!-- General tools such as edit or delete-->
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_8" class="filled-in">
+			  <label for="basic_checkbox_8" class="mb-0 h-15"></label>
+			  <span class="text-line">Phasellus interdum</span>
+			  <small class="badge bg-info"><i class="fa fa-clock-o"></i> 4 hours</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_9" class="filled-in">
+			  <label for="basic_checkbox_9" class="mb-0 h-15"></label>
+			  <span class="text-line">Quisque sodales</span>
+			  <small class="badge bg-warning"><i class="fa fa-clock-o"></i> 1 day</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_10" class="filled-in">
+			  <label for="basic_checkbox_10" class="mb-0 h-15"></label>
+			  <span class="text-line">Proin nec mi porta</span>
+			  <small class="badge bg-success"><i class="fa fa-clock-o"></i> 3 days</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+		  </ul>
+      </div>
+      <!-- /.tab-pane -->
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+  
+  <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+	
+	<!-- ./side demo panel -->
+  <div class="sticky-toolbar">	    
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Portfolio Status" class="waves-effect waves-light btn btn-danger-light btn-flat mb-5 btn-sm" target="_blank">
+    <span class="fa fa-handshake-o"><span class="path1"></span><span class="path2"></span></span>
+  </a>
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Stocks" class="waves-effect waves-light btn btn-danger-light btn-flat mb-5 btn-sm" >
+    <span class="fa fa-line-chart"></span>
+  </a>
+    <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Orders" class="waves-effect waves-light btn btn-danger-light btn-flat btn-sm">
+    <span class="fa fa-file-text-o"><span class="path1"></span><span class="path2"></span></span>
+  </a>
+  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Account Statements" class="waves-effect waves-light btn btn-danger-light btn-flat btn-sm mt-5">
+    <span class="fa fa-money"><span class="path1"></span><span class="path2"></span></span>
+  </a>
+  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Invoices" class="waves-effect waves-light btn btn-danger-light btn-flat btn-sm mt-5">
+    <span class="fa fa-dollar"><span class="path1"></span><span class="path2"></span></span>
+  </a>
+  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Screen" class="waves-effect waves-light btn btn-danger-light btn-flat btn-sm mt-5">
+    <span class="fa fa-tv"><span class="path1"></span><span class="path2"></span></span>
+  </a>
+  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Requests" class="waves-effect waves-light btn btn-danger-light btn-flat btn-sm mt-5">
+    <span class="fa fa-hand-pointer-o"><span class="path1"></span><span class="path2"></span></span>
+  </a>
+  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Buy" class="waves-effect waves-light btn btn-danger-light btn-flat btn-sm mt-5 ">
+    <span class="fa text-success">B<span class="path1"></span><span class="path2"></span></span>
+  </a>
+  <a id="chat-popup" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Sell" class="waves-effect waves-light btn btn-danger-light btn-flat btn-sm mt-5">
+    <span class="fa text-danger"><span class="path1">S</span><span class="path2"></span></span>
+  </a>
+</div>
+	<!-- Sidebar -->
+	
+	<div id="chat-box-body">
+		<div id="chat-circle" class="waves-effect waves-circle btn btn-circle btn-md btn-danger l-h-50">
+      <div id="chat-overlay"></div>
+      <span class="icon-Group-chat fs-30"><img src="images/WhatsApp_icon.png" alt="..."></span>
+</div>
+
+		<div class="chat-box">
+            <div class="chat-box-header p-15 d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button class="waves-effect waves-circle btn btn-circle btn-danger-light h-40 w-40 rounded-circle l-h-45" type="button" data-bs-toggle="dropdown">
+                      <span class="icon-Add-user fs-22"><span class="path1"></span><span class="path2"></span></span>
+                  </button>
+                  <div class="dropdown-menu min-w-200">
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Color me-15"></span>
+                        New Group</a>
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Clipboard me-15"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                        Contacts</a>
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Group me-15"><span class="path1"></span><span class="path2"></span></span>
+                        Groups</a>
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Active-call me-15"><span class="path1"></span><span class="path2"></span></span>
+                        Calls</a>
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Settings1 me-15"><span class="path1"></span><span class="path2"></span></span>
+                        Settings</a>
+                    <div class="dropdown-divider"></div>
+					<a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Question-circle me-15"><span class="path1"></span><span class="path2"></span></span>
+                        Help</a>
+					<a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Notifications me-15"><span class="path1"></span><span class="path2"></span></span> 
+                        Privacy</a>
+                  </div>
+                </div>
+                <div class="text-center flex-grow-1">
+                    <div class="text-dark fs-18">Mayra Sibley</div>
+                    <div>
+                        <span class="badge badge-sm badge-dot badge-danger"></span>
+                        <span class="text-muted fs-12">Active</span>
+                    </div>
+                </div>
+                <div class="chat-box-toggle">
+                    <button id="chat-box-toggle" class="waves-effect waves-circle btn btn-circle btn-danger-light h-40 w-40 rounded-circle l-h-45" type="button">
+                      <span class="icon-Close fs-22"><span class="path1"></span><span class="path2"></span></span>
+                    </button>                    
+                </div>
+            </div>
+            <div class="chat-box-body">
+                <div class="chat-box-overlay">   
+                </div>
+                <div class="chat-logs">
+                    <div class="chat-msg user">
+                        <div class="d-flex align-items-center">
+                            <span class="msg-avatar">
+                                <img src="images/avatar/2.jpg" class="avatar avatar-lg">
+                            </span>
+                            <div class="mx-10">
+                                <a href="#" class="text-dark hover-danger fw-bold">Mayra Sibley</a>
+                                <p class="text-muted fs-12 mb-0">2 Hours</p>
+                            </div>
+                        </div>
+                        <div class="cm-msg-text">
+                            Hi there, I'm Jesse and you?
+                        </div>
+                    </div>
+                    <div class="chat-msg self">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="mx-10">
+                                <a href="#" class="text-dark hover-danger fw-bold">You</a>
+                                <p class="text-muted fs-12 mb-0">3 minutes</p>
+                            </div>
+                            <span class="msg-avatar">
+                                <img src="images/avatar/3.jpg" class="avatar avatar-lg">
+                            </span>
+                        </div>
+                        <div class="cm-msg-text">
+                           My name is Anne Clarc.         
+                        </div>        
+                    </div>
+                    <div class="chat-msg user">
+                        <div class="d-flex align-items-center">
+                            <span class="msg-avatar">
+                                <img src="images/avatar/2.jpg" class="avatar avatar-lg">
+                            </span>
+                            <div class="mx-10">
+                                <a href="#" class="text-dark hover-danger fw-bold">Mayra Sibley</a>
+                                <p class="text-muted fs-12 mb-0">40 seconds</p>
+                            </div>
+                        </div>
+                        <div class="cm-msg-text">
+                            Nice to meet you Anne.<br>How can i help you?
+                        </div>
+                    </div>
+                </div><!--chat-log -->
+            </div>
+            <div class="chat-input">      
+                <form>
+                    <input type="text" id="chat-input" placeholder="Send a message..."/>
+                    <button type="submit" class="chat-submit" id="chat-submit">
+                        <span class="icon-Send fs-22"></span>
+                    </button>
+                </form>      
+            </div>
+		</div>
+	</div>
+	
+	<!-- Page Content overlay -->
+
+	
+	<!-- Vendor JS -->
+	<script src="js/vendors.min.js"></script>
+	<script src="js/pages/chat-popup.js"></script>
+    <script src="assets/icons/feather-icons/feather.min.js"></script>
+   
+  
+	
+	<!-- Crypto Admin App -->
+    <script src="js/vendors.min.js"></script>
+	<script src="js/pages/chat-popup.js"></script>
+    <script src="assets/icons/feather-icons/feather.min.js"></script>
+
+	<script src="http://www.amcharts.com/lib/3/amcharts.js" type="text/javascript"></script>
+	<script src="http://www.amcharts.com/lib/3/gauge.js" type="text/javascript"></script>
+	<script src="http://www.amcharts.com/lib/3/serial.js" type="text/javascript"></script>
+	<script src="http://www.amcharts.com/lib/3/amstock.js" type="text/javascript"></script>
+	<script src="http://www.amcharts.com/lib/3/pie.js" type="text/javascript"></script>
+	<script src="https://www.amcharts.com/lib/3/plugins/dataloader/dataloader.min.js"></script>
+	<script src="http://www.amcharts.com/lib/3/plugins/animate/animate.min.js" type="text/javascript"></script>
+	<script src="http://www.amcharts.com/lib/3/plugins/export/export.min.js" type="text/javascript"></script>
+	<script src="http://www.amcharts.com/lib/3/themes/patterns.js" type="text/javascript"></script>
+	<script src="http://www.amcharts.com/lib/3/themes/light.js" type="text/javascript"></script>	
+	<script src="assets/vendor_components/Web-Ticker-master/jquery.webticker.min.js"></script>
+	<script src="assets/vendor_components/chart.js-master/Chart.min.js"></script>
+	<script src="js/pages/chartjs-int2.js"></script>
+  <script src="assets/vendor_components/datatable/datatables.min.js"></script>
+  <script src="js/pages/data-table.js"></script>
+ 
+  <script src="js/pages/dashboard2.js"></script>
+	
+
+  
+  
+ 
+	<!-- Crypto Admin App -->
+	<script src="js/jquery.smartmenus.js"></script>
+	<script src="js/menus.js"></script>
+	<script src="js/template.js"></script>
+    <script src="js/pages/custom-scroll.js"></script>
+
+   
+	<script src="js/pages/dashboard23.js"></script>
+	<script src="js/pages/dashboard23-chart.js"></script>
+
+    
+    
+ 
+	
+</div>
+</body>
+</html>

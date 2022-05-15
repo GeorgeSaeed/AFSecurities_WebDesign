@@ -532,7 +532,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
 .callout-warning{
     position: relative;
     z-index: 2;
-    top:55px;
+    top:26px;
     width:60%;
     left: 5px;
 
@@ -1319,6 +1319,11 @@ hr {
 .managerTable3 {
     max-height: 330px;
     overflow: auto;
+}
+.sect{
+    width:340px;
+    padding: 1rem;
+    background-color: #112547 !important;
 }
 @media (max-width: 767px) {
 
