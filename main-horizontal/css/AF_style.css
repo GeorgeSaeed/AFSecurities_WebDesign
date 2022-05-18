@@ -31,7 +31,7 @@ p{
     color: #ffffff;
 }
 .nav-tabs .nav-link {
-    padding: 0.1rem 0.55rem;
+    padding: 0.1rem 0.45rem;
 }
 .theme-warning .nav-pills > li > a.active {
     border-top-color: transparent !important}
@@ -355,11 +355,11 @@ table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_des
    
 }
 table.corp td, th{
-    padding: 0.5rem !important;
+    padding: 0.2rem !important;
     padding-left: 0.1rem !important; ;
  }
  table.corpkaman td, th{
-    padding-left: 0.5rem !important;
+    padding-left: 0rem !important;
    
  }
 .no {
@@ -1115,6 +1115,7 @@ table {
     visibility: hidden;
     opacity: 0;
     left: 50%;
+  
     bottom: calc(100% + 5px); /* 5px is the size of the arrow */
     pointer-events: none;
     transition: 0.2s;
@@ -1126,7 +1127,7 @@ table {
     content: attr(data-tooltip);
     padding: 4px 8px;
     min-width: 50px;
-    max-width: 450px;
+    max-width: 250px;
     width: max-content;
     width: -moz-max-content;
     border-radius: 6px;
@@ -1141,6 +1142,7 @@ table {
     text-align: justify;
     white-space: pre-wrap;
     transform: translate(-50%, -5px) scale(0.5);
+   
   }
   
   /* Tooltip arrow */
@@ -1155,6 +1157,7 @@ table {
     transform-origin: top;   /* Orientation setting for the
                                 slide-down effect */
     transform: translateX(-50%) scaleY(0);
+    
   }
   
   /* Tooltip becomes visible at hover */
@@ -1162,7 +1165,9 @@ table {
   [data-tooltip]:hover:after {
     visibility: visible;
     opacity: 1;
+    
   }
+ 
   /* Scales from 0.5 to 1 -> grow effect */
   [data-tooltip]:hover:before {
     transition-delay: 0.3s;
@@ -1259,7 +1264,7 @@ table {
     transform-origin: bottom;
   }
   #managerTable2 {
-    height: 135px;
+    height: 127px;
     overflow: auto;
 }
   
@@ -1325,6 +1330,35 @@ hr {
     padding: 1rem;
     background-color: #112547 !important;
 }
+
+.lgr{
+    max-width: 500px;
+
+}
+.nav-tabs .mar {
+    margin-left: 3px;
+}
+a.acc{
+    color: #fff !important;
+    font-weight: bold !important;
+}
+
+.sm-blue a.acc svg {
+ 
+    color: #fff;
+  
+}
+.bw{
+    font-size: 1.2em;
+    color: #fff !important;
+    font-weight: bold !important;
+
+}
+.bw:hover{
+    color: #ffa800 !important;
+  
+}
+
 @media (max-width: 767px) {
 
     .main-header .navbar-custom-menu .navbar-nav > li > a.dropdown-toggle {
