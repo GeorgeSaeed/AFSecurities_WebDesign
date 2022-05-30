@@ -1563,7 +1563,14 @@ tr:nth-child(odd) {
     background-color: #20304c;
     }
 
-   
+.fa-arrow-up, .fa-arrow-down{
+    margin-top: 3px;
+        float:right;
+    }
+    .px-5 {
+        float: left;
+        margin-top: 3px;
+    }
 @media (max-width: 767px) {
 
     .main-header .navbar-custom-menu .navbar-nav > li > a.dropdown-toggle {
