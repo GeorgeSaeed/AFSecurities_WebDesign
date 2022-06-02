@@ -1,0 +1,414 @@
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <!-- sidebar -->
+        <div class="col-xl-3">
+            <!-- profile -->
+            <div class="box">
+                <div class="box-body box-profile">
+                    <img class="rounded-circle bg-success-light  mx-auto d-block max-w-100"
+                        src="/images/avatar/avatar-9.png" alt="User Avatar">
+                    <h4 class="profile-username text-center my-10">محمود صلاح الدين</h4>
+                    <h5 class="text-center mt-0"><i class="fa fa-envelope-o me-10"></i>mo-salah@yahoo.com
+                    </h5>
+                    <form>
+                        <div class="form-group w-p-60 text-center">
+                            <label class="me-15 form-label">الحساب الفرعى: 02</label>
+                        </div>
+                    </form>
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- links -->
+                            <div class="media-list media-list-hover media-list-divided w-p100 mt-20">
+                            
+                                <a href="/?c=Pages/user/portfolio" class="media media-single p-15  active">
+                                    <h5>
+                                        <i class="fa me-10 Portfolio "></i><span class="title">المحفظة
+                                            </span>
+                                    </h5>
+                                </a>
+                                <a href="/?c=Pages/user/stocks" class="media media-single p-15">
+                                    <h5>
+                                        <i class="fa me-10 Stocks "></i><span
+                                            class="title">الأسهم</span>
+                                    </h5>
+                                </a>
+                                <a href="#" class="media media-single p-15">
+                                    <h5>
+                                        <i class="fa me-10 Screen "></i><span class="title">شاشة الأسعار</span>
+                                    </h5>
+                                </a>
+                                <a href="/?c=Pages/user/orders" class="media media-single p-15">
+                                    <h5>
+                                        <i class="fa me-10 Orders"></i><span
+                                            class="title">الأوامر</span>
+                                    </h5>
+                                </a>
+                                <a href="/?c=Pages/user/statement" class="media media-single p-15">
+                                    <h5>
+                                        <i class="fa me-10 Statment "></i> <span class="title">كشف حساب</span>
+                                    </h5>
+                                </a>
+                                <a href="/?c=Pages/user/invoices" class="media media-single p-15">
+                                    <h5>
+                                        <i class="fa me-10 Invoices"></i><span
+                                            class="title">الفواتير</span>
+                                    </h5>
+                                </a>
+                                <a href="/?c=Pages/user/requests" class="media media-single p-15">
+                                    <h5>
+                                        <i class="fa me-10 Requests "></i></i><span
+                                            class="title">طلبات</span>
+                                    </h5>
+                                </a>
+                            </div>
+                            <!--/ links -->
+                            <!-- buy & sell buttons -->
+                            <div class="d-flex justify-content-between pt-40 ">
+                                <a href="/?c=Pages/user/buy" class="btn  w-p40 bb"><b>شراء</b></a>
+                                <a href="/?c=Pages/user/sell"  class="btn  w-p40 sb"><b>بيع</b></a>
+                            </div>
+                            <!--/ buy & sell buttons -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ sidebar -->
+        <!-- right side -->
+        <div class="col-xl-9">
+            <div class="row">
+                <div class="box">
+                    <div class="box-header boxy pb-0 b-0">
+                        <h4 class="box-title mt-20"><i class="fa me-10 "><img src="/images/u-icons/Invoices.svg" width="20px" height="20px"></i>
+                            <strong>الفواتير</strong>
+                        </h4>
+                        <ul class="box-controls pull-right">
+                            <li><a class="box-btn-fullscreen" href="#"></a></li>
+                        </ul>
+                      <!-- Buttons & Filters -->
+                        <div class="callout callout-warning mb-0 pull-right" role="alert">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select class="form-select">
+                                            <option>الكل
+                                            </option>
+                                            <option>شراء</option>
+                                            <option>بيع</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- Date range -->
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <input type="text" class="form-control pull-right" id="reservation">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <!-- /.form group -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Buttons & Filters -->
+                    </div>
+                     <!-- table -->
+                    <div class="box px-10">
+                        <div class="table-responsive">
+                            <table id="example" data-page-length='1000'
+                                class="table table-bordered table-hover text-center">
+                                <thead class="headery thfont">
+                                    <tr>
+                                        <th>رقم الفاتورة
+                                        </th>
+                                        <th>النوع
+                                        </th>
+                                        <th>الكود
+                                        </th>
+                                        <th>أسم السهم
+                                        </th>
+                                        <th>العملة
+                                        </th>
+                                        <th>أمين الحفظ
+                                        </th>
+                                        <th>الكمية
+                                        </th>
+                                        <th>تكلفة السهم
+                                        </th>
+                                        <th>القيمة
+                                        </th>
+                                        <th>تاريخ التسوية
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#modal-invoice" data-bs-toggle="modal" data-bs-target="#modal-invoice">10089653</a></td>
+                                        <td class="text-danger">بيع</td>
+                                        <td><strong>ABCD</strong></td>
+                                        <td>Porto Group</td>
+                                        <td>EGP</td>
+                                        <td>QNB</td>
+                                        <td>50,000</td>
+                                        <td>11,563.88</td>
+                                        <td>450.000</td>
+                                        <td>2011/04/25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10089653</td>
+                                        <td class="text-danger">بيع</td>
+                                        <td><strong>ABCD</strong></td>
+                                        <td>Porto Group</td>
+                                        <td>EGP</td>
+                                        <td>QNB</td>
+                                        <td>50,000</td>
+                                        <td>11,563.88</td>
+                                        <td>450.000</td>
+                                        <td>2011/04/25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10089653</td>
+                                        <td class="text-success">شراء</td>
+                                        <td><strong>ABCD</strong></td>
+                                        <td>Porto Group</td>
+                                        <td>EGP</td>
+                                        <td>QNB</td>
+                                        <td>50,000</td>
+                                        <td>11,563.88</td>
+                                        <td>450.000</td>
+                                        <td>2011/04/25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10089653</td>
+                                        <td class="text-success">شراء</td>
+                                        <td><strong>ABCD</strong></td>
+                                        <td>Porto Group</td>
+                                        <td>EGP</td>
+                                        <td>QNB</td>
+                                        <td>50,000</td>
+                                        <td>11,563.88</td>
+                                        <td>450.000</td>
+                                        <td>2011/04/25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10089653</td>
+                                        <td class="text-danger">بيع</td>
+                                        <td><strong>ABCD</strong></td>
+                                        <td>Porto Group</td>
+                                        <td>EGP</td>
+                                        <td>QNB</td>
+                                        <td>50,000</td>
+                                        <td>11,563.88</td>
+                                        <td>450.000</td>
+                                        <td>2011/04/25</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                     <!-- /table -->
+                </div>
+            </div>
+        </div>
+        <!--/ right side -->
+    </div>
+</section>
+<!-- / Main content -->
+<!-- .modal invoice details-->
+<div class="modal fade bs-example-modal-lg" id="modal-invoice" tabindex="-1" role="dialog"
+aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title" id="myLargeModalLabel">فاتورة رقم 10089653  </h4>
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="box overflow-hidden">
+                <div class="row g-0">
+                    <div class="col-md-12">
+                        <div class="box-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover corp  corpkaman">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-white">النوع</td>
+                                            <td class="text-danger">بيع</td>
+                                            <td class="text-white">التاريخ
+                                            </td>
+                                            <td>10:15:00AM 11-12-2020
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td class="text-white">رقم الفاتورة
+                                            </td>
+                                            <td>365584444</td>
+                                            <td class="text-white">العملة
+                                            </td>
+                                            <td>جم
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td class="text-white">العميل
+                                            </td>
+                                            <td>محمود صلاح
+                                            </td>
+                                            <td class="text-white">الحساب  الفرعي
+                                            </td>
+                                            <td>02</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-white">اسم السهم
+                                            </td>
+                                            <td>klkj</td>
+                                            <td class="text-white">كود السهم
+                                            </td>
+                                            <td>GMT</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                        <div class="box-body">
+                            <div class="table-responsive">
+                                <h4>الأوامر المنفذة 			
+                                </h4>
+                                <table class="table table-hover corp text-center">
+                                    <thead>
+                                        <tr>
+                                            <th>الكميه
+                                            </th>
+                                            <th>السعر
+                                            </th>
+                                            <th>المبلغ
+                                            </th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>9.900</td>
+                                            <td>99.000 </td>
+                                        
+                                        </tr>
+
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td class="baby">اجمالي الكميه
+                                            </td>
+                                            <td class="baby">متوسط السعر
+                                            </td>
+                                            <td class="baby"> اجمالي المبلغ  
+                                            </td>
+                                        
+                                        </tr>
+                                        <tr>
+                                            <td class="text-primary">10</td>
+                                            <td class="text-primary">9.900</td>
+                                            <td class="text-primary">99.000 </td>
+                                        
+                                        </tr>
+
+                                    </tfoot>
+                                </table>
+                            </div>
+
+                        </div>
+                        <div class="box-body">
+                            <div class="table-responsive">
+                                <h4>الخدمات
+                                </h4>
+                                <table class="table table-hover corp  corpkaman">
+                                    <tbody>
+                                      
+                                        <tr>
+                                            <td class="text-white">عمولة سمسرة 
+                                            </td>
+                                            <td>0</td>
+                                            <td class="text-white">ضريبه دمغه 
+                                            </td>
+                                            <td>0</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td class="text-white">تأمين مخاطر
+                                            </td>
+                                            <td>0</td>
+                                            <td class="text-white">حفظ مركزي 
+                                            </td>
+                                            <td>0</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td class="text-white">خدمات بورصة 
+                                            </td>
+                                            <td>0</td>
+                                            <td class="text-white">خدمات هيئة 
+                                            </td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-white">FRA </td>
+                                            <td>0</td>
+                                            <td class="text-white">اخرى 
+                                            </td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="baby">اجمالي الخدمات 
+                                            </td>
+                                            <td class="text-primary">0</td>
+                                            <td class="baby"> </td>
+                                            <td class="text-primary"></td>
+                                        </tr>
+                                        <td class="baby">اجمالي المبلغ 
+                                        </td>
+                                        <td class="text-primary">0</td>
+                                        <td class="baby"></td>
+                                        <td class="text-primary"></td>
+                                       
+                                        <tr>
+                                            <td class="baby">اجمالي الفاتورة 
+                                            </td>
+                                            <td class="text-primary">0</td>
+                                            <td ></td>
+                                            <td></td>
+                                            
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer text-end">
+            <button type="button" class="btn btn-primary text-end"
+                data-bs-dismiss="modal">اغلاق</button>
+        </div>
+    </div>
+    <!-- /.modal-content -->
+</div>
+<!-- /.modal-dialog -->
+</div>
+<!-- . /modal invoice details-->

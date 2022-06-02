@@ -1,5 +1,5 @@
 p{
-    font-size: 1.05em;
+    font-size: 1.1em;
 }
 
 /* width */
@@ -218,10 +218,10 @@ table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_des
 }
 
 .app-title{
-     width: 40%;
+     width: 50%;
     float: right;
     top:0;
-    left:800px;
+    left:550px;
    
 }
 .app-download-btns img{
@@ -1350,10 +1350,10 @@ hr {
     left: 0;
     z-index: 1060;
     padding-top: 0.5rem;
-    width:100%;
-    height:auto;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    width:22%;
+    height:100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
     background-color: #112547 !important;
 }
 
@@ -1571,6 +1571,13 @@ tr:nth-child(odd) {
         float: left;
         margin-top: 3px;
     }
+.links{
+    font-size: 1.1em;
+}    
+    @media (max-width: 991px){
+.navbar-custom-menu .navbar-nav > li > a {
+    padding-top: 10px;}
+}
 @media (max-width: 767px) {
 
     .main-header .navbar-custom-menu .navbar-nav > li > a.dropdown-toggle {
@@ -1635,11 +1642,43 @@ tr:nth-child(odd) {
         visibility: visible;
     }
 /**/
+.carousel-caption {
+
+    top: 0.75rem;
+}
+.carousel-caption h2{
+    font-size: 1rem;
+
+}
+.app-title{
+    width: 80%;
+  
+   top:0.4em;
+   left:40px;
+  
+}
+.app-download-btns img{
+    width:100px;
+
+}
+.subs{
+    top: 0.75rem;
+}
+.bw{
+    font-size: 0.7rem;
+}
+navbar-custom-menu .navbar-nav > li > a {
+    margin-top: 10px;
+}
+
     .progress .progress-value {
         font-size: 13px;
     }
-    .app-download-btns{
-        visibility:visible;
+   
+    .sect{
+      
+        width:100%;
+       
     }
     
     }
