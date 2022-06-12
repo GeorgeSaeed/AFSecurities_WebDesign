@@ -401,8 +401,8 @@ table.corp td, th{
 }
 
 
-.lastb {
-    background-color: rgb(78 114 246 / 25%) !important;
+tr>td.lastb {
+    background-color: rgb(78 114 246 / 25%);
 }
 .headery{
     background-color: rgb(86 111 158 / 37%) !important;
